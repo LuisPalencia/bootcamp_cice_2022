@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "DD149886-69FF-4D3B-8C9F-E9F6EEE2B5E5"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1C3ECBE4-5485-4D10-B99E-656A3AB1015B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MiAppAlertas/Sources/InitialView/InitialViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "showAlertViewController(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DAD1462B-5459-4CC4-80BE-218C6366674D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MiAppAlertas/Sources/InitialView/InitialViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "showAlertViewController(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DAD1462B-5459-4CC4-80BE-218C6366674D - 3e22189de746beb9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MiAppAlertas.InitialViewController.showAlertViewController(__C.UIButton) -&gt; ()"
+                  moduleName = "MiAppAlertas"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/CICE/Documents/LP/Curso%20iOS%202022/Projects/bootcamp_cice_2022/18012022/MiAppAlertas/MiAppAlertas/Sources/InitialView/InitialViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  uuid = "DAD1462B-5459-4CC4-80BE-218C6366674D - 3e22189de746beb9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MiAppAlertas.InitialViewController.showAlertViewController(__C.UIButton) -&gt; ()"
+                  moduleName = "MiAppAlertas"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/CICE/Documents/LP/Curso%20iOS%202022/Projects/bootcamp_cice_2022/18012022/MiAppAlertas/MiAppAlertas/Sources/InitialView/InitialViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "172">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CA467F2F-D567-47D2-9ED5-7BDE9092D97D"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MiAppAlertas/Sources/InitialView/InitialViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "showAlertViewController(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
