@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		09DF32FF2799E604008A3546 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DF32FE2799E604008A3546 /* AppDelegate.swift */; };
 		09DF33012799E604008A3546 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DF33002799E604008A3546 /* SceneDelegate.swift */; };
-		09DF33032799E604008A3546 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DF33022799E604008A3546 /* ViewController.swift */; };
 		09DF33062799E604008A3546 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DF33042799E604008A3546 /* Main.storyboard */; };
 		09DF33082799E60C008A3546 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09DF33072799E60C008A3546 /* Assets.xcassets */; };
 		09DF330B2799E60C008A3546 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09DF33092799E60C008A3546 /* LaunchScreen.storyboard */; };
+		09DF33192799E70A008A3546 /* PrimeraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DF33182799E70A008A3546 /* PrimeraViewController.swift */; };
+		09DF331C2799EC40008A3546 /* SegundaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DF331B2799EC40008A3546 /* SegundaViewController.swift */; };
+		09DF331F2799EC49008A3546 /* TerceraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DF331E2799EC49008A3546 /* TerceraViewController.swift */; };
+		09DF33222799EC52008A3546 /* CuartaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DF33212799EC52008A3546 /* CuartaViewController.swift */; };
+		09DF33262799F47D008A3546 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09DF33252799F47D008A3546 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09DF32FB2799E604008A3546 /* MiDataNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiDataNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		09DF32FE2799E604008A3546 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		09DF33002799E604008A3546 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		09DF33022799E604008A3546 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		09DF33052799E604008A3546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		09DF33072799E60C008A3546 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		09DF330A2799E60C008A3546 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09DF330C2799E60C008A3546 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09DF33182799E70A008A3546 /* PrimeraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimeraViewController.swift; sourceTree = "<group>"; };
+		09DF331B2799EC40008A3546 /* SegundaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegundaViewController.swift; sourceTree = "<group>"; };
+		09DF331E2799EC49008A3546 /* TerceraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerceraViewController.swift; sourceTree = "<group>"; };
+		09DF33212799EC52008A3546 /* CuartaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuartaViewController.swift; sourceTree = "<group>"; };
+		09DF33252799F47D008A3546 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		09DF32FD2799E604008A3546 /* MiDataNavigation */ = {
 			isa = PBXGroup;
 			children = (
-				09DF32FE2799E604008A3546 /* AppDelegate.swift */,
-				09DF33002799E604008A3546 /* SceneDelegate.swift */,
-				09DF33022799E604008A3546 /* ViewController.swift */,
+				09DF33242799F049008A3546 /* Utils+Helpers */,
+				09DF33162799E68A008A3546 /* Source */,
+				09DF33142799E681008A3546 /* CoreApp */,
 				09DF33042799E604008A3546 /* Main.storyboard */,
 				09DF33072799E60C008A3546 /* Assets.xcassets */,
 				09DF33092799E60C008A3546 /* LaunchScreen.storyboard */,
 				09DF330C2799E60C008A3546 /* Info.plist */,
 			);
 			path = MiDataNavigation;
+			sourceTree = "<group>";
+		};
+		09DF33142799E681008A3546 /* CoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				09DF32FE2799E604008A3546 /* AppDelegate.swift */,
+				09DF33002799E604008A3546 /* SceneDelegate.swift */,
+			);
+			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		09DF33162799E68A008A3546 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				09DF33182799E70A008A3546 /* PrimeraViewController.swift */,
+				09DF331B2799EC40008A3546 /* SegundaViewController.swift */,
+				09DF331E2799EC49008A3546 /* TerceraViewController.swift */,
+				09DF33212799EC52008A3546 /* CuartaViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		09DF33242799F049008A3546 /* Utils+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				09DF33252799F47D008A3546 /* Utils.swift */,
+			);
+			path = "Utils+Helpers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +173,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09DF33032799E604008A3546 /* ViewController.swift in Sources */,
+				09DF331F2799EC49008A3546 /* TerceraViewController.swift in Sources */,
+				09DF331C2799EC40008A3546 /* SegundaViewController.swift in Sources */,
+				09DF33222799EC52008A3546 /* CuartaViewController.swift in Sources */,
+				09DF33262799F47D008A3546 /* Utils.swift in Sources */,
+				09DF33192799E70A008A3546 /* PrimeraViewController.swift in Sources */,
 				09DF32FF2799E604008A3546 /* AppDelegate.swift in Sources */,
 				09DF33012799E604008A3546 /* SceneDelegate.swift in Sources */,
 			);
