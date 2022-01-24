@@ -79,7 +79,7 @@
                                 <rect key="frame" x="20" y="237" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Direccion" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4mS-hX-bJh">
                                 <rect key="frame" x="20" y="298" width="374" height="34"/>
@@ -91,7 +91,7 @@
                                 <rect key="frame" x="20" y="360" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wxM-X7-tG2">
                                 <rect key="frame" x="20" y="438" width="374" height="56"/>
@@ -180,19 +180,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Codigo postal" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sim-P8-DbO">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Codigo postal" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sim-P8-DbO">
                                 <rect key="frame" x="20" y="438" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Ciudad" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FPG-xS-x0k">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ciudad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FPG-xS-x0k">
                                 <rect key="frame" x="20" y="499" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Posicion geografica" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qCB-wz-5mv">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Posicion geografica" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qCB-wz-5mv">
                                 <rect key="frame" x="20" y="561" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -205,7 +205,7 @@
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Ir a ventana 4"/>
                                 <connections>
-                                    <segue destination="BEt-oT-9yv" kind="show" id="3zc-Aj-jQ2"/>
+                                    <segue destination="BEt-oT-9yv" kind="show" identifier="segueV4" id="3zc-Aj-jQ2"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_ mi Edad de mi perro es:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvW-0F-tVf">
@@ -220,6 +220,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Ventana 3" id="xBj-YL-kLb"/>
+                    <connections>
+                        <outlet property="edadPerroLBL" destination="LvW-0F-tVf" id="G3L-D6-kV8"/>
+                        <outlet property="miApellidoLBL" destination="dFa-BV-m5i" id="W2L-vL-uN0"/>
+                        <outlet property="miCiudadTF" destination="FPG-xS-x0k" id="Js0-sL-LuV"/>
+                        <outlet property="miCodigoPostalTF" destination="Sim-P8-DbO" id="p4e-y3-IKh"/>
+                        <outlet property="miDireccionLBL" destination="ryK-sw-W9I" id="ERV-lf-7vB"/>
+                        <outlet property="miNombreLBL" destination="sqK-8p-Rhs" id="oIh-BF-zS2"/>
+                        <outlet property="miPosicionGeograficaTF" destination="qCB-wz-5mv" id="FVA-Hx-tUL"/>
+                        <outlet property="miTelefonoLBL" destination="yCg-Qk-iLF" id="Vsl-4W-K9n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XEg-07-dyx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -267,6 +277,9 @@
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Enviar mail con toda esta info"/>
+                                <connections>
+                                    <action selector="enviarTodaLaInformacionEmailACTION:" destination="BEt-oT-9yv" eventType="touchUpInside" id="8Sz-k5-rIa"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="_ mi Edad de mi perro es:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiw-Sl-1w2">
                                 <rect key="frame" x="20" y="358" width="374" height="37"/>
@@ -303,6 +316,16 @@
                     <navigationItem key="navigationItem" title="Ventana 4" id="UEH-ul-kNM">
                         <barButtonItem key="rightBarButtonItem" title="Logout" id="A5Y-vh-fJA"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ciudadLBL" destination="tuA-lV-f4w" id="e8b-aU-oFe"/>
+                        <outlet property="codigoPostaLBL" destination="NWj-Ro-hVj" id="XUP-wx-tjQ"/>
+                        <outlet property="edadPerroLBL" destination="uiw-Sl-1w2" id="4q9-Nw-eTU"/>
+                        <outlet property="miApellidoLBL" destination="ykU-y6-77E" id="qu5-0m-UAf"/>
+                        <outlet property="miDireccionLBL" destination="lYn-p6-lPY" id="7kn-1W-4Eb"/>
+                        <outlet property="miNombreLBL" destination="DUv-dC-JFn" id="AD1-T6-7kg"/>
+                        <outlet property="miTelefonoLBL" destination="IED-LG-AC5" id="gTJ-rK-kMO"/>
+                        <outlet property="posicionGeograficaLBL" destination="2GS-Ys-rTO" id="DVf-E3-yCR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aiK-ZN-1nv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

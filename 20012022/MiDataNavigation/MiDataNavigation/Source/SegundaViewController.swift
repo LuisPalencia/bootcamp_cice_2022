@@ -32,7 +32,7 @@ class SegundaViewController: UIViewController {
             self.present(Utils.shared.showAlertVC(title: "Edad de mi Perro",
                                                   message: "El calculo de la edad de mi perro es: \(self.nuevaEdadPerro ?? 0)"),
                          animated: true){
-                //self.edadPerroTF.text = self.nuevaEdadPerro
+                self.edadPerroTF.text = "\(self.nuevaEdadPerro ?? 0)"
             }
         }else{
             self.present(Utils.shared.showAlertVC(title: "Estimado usuario", message: "Por favor introduce la edad de tu perro para calcularla"), animated: true, completion: nil)
@@ -62,22 +62,39 @@ class SegundaViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "segueV3" {
             
-            if !(self.miTelefonoTF.text?.isEmpty ?? false) &&
-                !(self.miDireccionTF.text?.isEmpty ?? false) &&
-                !(self.edadPerroTF.text?.isEmpty ?? false) {
-                
-                let ventana3VC = segue.destination as? TerceraViewController
-                ventana3VC?.datosUsuario.telefonoData = 
-                
+            if let edadPerro = self.nuevaEdadPerro {
+                self.navigationVentana3(segue: segue, edadPerro: edadPerro)
             }else{
                 self.present(Utils.shared.showAlertVC(title: "Heyeee",
                                                       message: "Por favor introduce datos en todos los campos de texto"),
                              animated: true,
                              completion: nil)
-                
             }
         }
     }
     
-
+    
+    private func navigationVentana3(segue: UIStoryboardSegue, edadPerro: Int){
+        if !(self.miTelefonoTF.text?.isEmpty ?? false) &&
+            !(self.miDireccionTF.text?.isEmpty ?? false) &&
+            !("\(edadPerro)".isEmpty) {
+            
+            let ventana3VC = segue.destination as? TerceraViewController
+            ventana3VC?.datosUsuario.nombreData = datosUsuario.nombreData
+            ventana3VC?.datosUsuario.apellidoData = datosUsuario.apellidoData
+            ventana3VC?.datosUsuario.telefonoData = self.miTelefonoTF.text
+            ventana3VC?.datosUsuario.direccionData = self.miDireccionTF.text
+            ventana3VC?.datosUsuario.edadPerroData = self.edadPerroTF.text
+            
+        }else{
+            self.present(Utils.shared.showAlertVC(title: "Heyeee",
+                                                  message: "Por favor introduce datos en todos los campos de texto"),
+                         animated: true,
+                         completion: nil)
+        }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
