@@ -8,22 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		0993A92F279F23850000B91C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993A92E279F23850000B91C /* AppDelegate.swift */; };
-		0993A931279F23850000B91C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993A930279F23850000B91C /* SceneDelegate.swift */; };
-		0993A933279F23850000B91C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993A932279F23850000B91C /* ViewController.swift */; };
-		0993A936279F23850000B91C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0993A934279F23850000B91C /* Main.storyboard */; };
 		0993A938279F23850000B91C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0993A937279F23850000B91C /* Assets.xcassets */; };
 		0993A93B279F23850000B91C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0993A939279F23850000B91C /* LaunchScreen.storyboard */; };
+		0993A949279F25870000B91C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993A948279F25870000B91C /* AppCoordinator.swift */; };
+		0993A951279F29D50000B91C /* ListaCochesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993A94F279F29D50000B91C /* ListaCochesViewController.swift */; };
+		0993A952279F29D50000B91C /* ListaCochesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0993A950279F29D50000B91C /* ListaCochesViewController.xib */; };
+		0993A956279F2A400000B91C /* ListaCochesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993A955279F2A400000B91C /* ListaCochesCoordinator.swift */; };
+		0993A95B279F2DC00000B91C /* MesesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993A959279F2DC00000B91C /* MesesCell.swift */; };
+		0993A95C279F2DC00000B91C /* MesesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0993A95A279F2DC00000B91C /* MesesCell.xib */; };
+		0993A961279F3B7F0000B91C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993A960279F3B7F0000B91C /* Utils.swift */; };
+		0993A967279F3E960000B91C /* ListaSuperCochesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993A965279F3E960000B91C /* ListaSuperCochesViewController.swift */; };
+		0993A968279F3E960000B91C /* ListaSuperCochesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0993A966279F3E960000B91C /* ListaSuperCochesViewController.xib */; };
+		0993A96C279F3EA40000B91C /* ListaSuperCochesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993A96B279F3EA40000B91C /* ListaSuperCochesCoordinator.swift */; };
+		0993A971279F3FBC0000B91C /* HometabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993A96F279F3FBC0000B91C /* HometabBarViewController.swift */; };
+		0993A972279F3FBC0000B91C /* HometabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0993A970279F3FBC0000B91C /* HometabBarViewController.xib */; };
+		0993A976279F3FD40000B91C /* HometabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993A975279F3FD40000B91C /* HometabBarCoordinator.swift */; };
+		0993A97A279F45130000B91C /* CochesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993A979279F45130000B91C /* CochesModel.swift */; };
+		0993A980279F49440000B91C /* CochesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993A97E279F49440000B91C /* CochesCell.swift */; };
+		0993A981279F49440000B91C /* CochesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0993A97F279F49440000B91C /* CochesCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0993A92B279F23840000B91C /* MiAppIntroduccionTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiAppIntroduccionTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0993A92E279F23850000B91C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0993A930279F23850000B91C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0993A932279F23850000B91C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0993A935279F23850000B91C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0993A937279F23850000B91C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0993A93A279F23850000B91C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0993A93C279F23850000B91C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0993A948279F25870000B91C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		0993A94F279F29D50000B91C /* ListaCochesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaCochesViewController.swift; sourceTree = "<group>"; };
+		0993A950279F29D50000B91C /* ListaCochesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaCochesViewController.xib; sourceTree = "<group>"; };
+		0993A955279F2A400000B91C /* ListaCochesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaCochesCoordinator.swift; sourceTree = "<group>"; };
+		0993A959279F2DC00000B91C /* MesesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MesesCell.swift; sourceTree = "<group>"; };
+		0993A95A279F2DC00000B91C /* MesesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MesesCell.xib; sourceTree = "<group>"; };
+		0993A960279F3B7F0000B91C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		0993A965279F3E960000B91C /* ListaSuperCochesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaSuperCochesViewController.swift; sourceTree = "<group>"; };
+		0993A966279F3E960000B91C /* ListaSuperCochesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaSuperCochesViewController.xib; sourceTree = "<group>"; };
+		0993A96B279F3EA40000B91C /* ListaSuperCochesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaSuperCochesCoordinator.swift; sourceTree = "<group>"; };
+		0993A96F279F3FBC0000B91C /* HometabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HometabBarViewController.swift; sourceTree = "<group>"; };
+		0993A970279F3FBC0000B91C /* HometabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HometabBarViewController.xib; sourceTree = "<group>"; };
+		0993A975279F3FD40000B91C /* HometabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HometabBarCoordinator.swift; sourceTree = "<group>"; };
+		0993A979279F45130000B91C /* CochesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CochesModel.swift; sourceTree = "<group>"; };
+		0993A97E279F49440000B91C /* CochesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CochesCell.swift; sourceTree = "<group>"; };
+		0993A97F279F49440000B91C /* CochesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CochesCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +82,108 @@
 		0993A92D279F23840000B91C /* MiAppIntroduccionTableView */ = {
 			isa = PBXGroup;
 			children = (
-				0993A92E279F23850000B91C /* AppDelegate.swift */,
-				0993A930279F23850000B91C /* SceneDelegate.swift */,
-				0993A932279F23850000B91C /* ViewController.swift */,
-				0993A934279F23850000B91C /* Main.storyboard */,
+				0993A978279F44F00000B91C /* Models */,
+				0993A95F279F3B6D0000B91C /* Utils+Helpers */,
+				0993A94B279F28FA0000B91C /* Sources */,
+				0993A946279F25710000B91C /* CoreApp */,
 				0993A937279F23850000B91C /* Assets.xcassets */,
 				0993A939279F23850000B91C /* LaunchScreen.storyboard */,
 				0993A93C279F23850000B91C /* Info.plist */,
 			);
 			path = MiAppIntroduccionTableView;
+			sourceTree = "<group>";
+		};
+		0993A946279F25710000B91C /* CoreApp */ = {
+			isa = PBXGroup;
+			children = (
+				0993A92E279F23850000B91C /* AppDelegate.swift */,
+				0993A948279F25870000B91C /* AppCoordinator.swift */,
+			);
+			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		0993A94B279F28FA0000B91C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0993A94C279F29020000B91C /* Modules */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0993A94C279F29020000B91C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0993A96E279F3F950000B91C /* HomeTabBarView */,
+				0993A964279F3E3C0000B91C /* ListaSuperCoches */,
+				0993A94E279F29210000B91C /* ListaCochesView */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		0993A94E279F29210000B91C /* ListaCochesView */ = {
+			isa = PBXGroup;
+			children = (
+				0993A958279F2D7C0000B91C /* Cell */,
+				0993A94F279F29D50000B91C /* ListaCochesViewController.swift */,
+				0993A950279F29D50000B91C /* ListaCochesViewController.xib */,
+				0993A955279F2A400000B91C /* ListaCochesCoordinator.swift */,
+			);
+			path = ListaCochesView;
+			sourceTree = "<group>";
+		};
+		0993A958279F2D7C0000B91C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0993A959279F2DC00000B91C /* MesesCell.swift */,
+				0993A95A279F2DC00000B91C /* MesesCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		0993A95F279F3B6D0000B91C /* Utils+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0993A960279F3B7F0000B91C /* Utils.swift */,
+			);
+			path = "Utils+Helpers";
+			sourceTree = "<group>";
+		};
+		0993A964279F3E3C0000B91C /* ListaSuperCoches */ = {
+			isa = PBXGroup;
+			children = (
+				0993A97D279F49200000B91C /* Cell */,
+				0993A965279F3E960000B91C /* ListaSuperCochesViewController.swift */,
+				0993A966279F3E960000B91C /* ListaSuperCochesViewController.xib */,
+				0993A96B279F3EA40000B91C /* ListaSuperCochesCoordinator.swift */,
+			);
+			path = ListaSuperCoches;
+			sourceTree = "<group>";
+		};
+		0993A96E279F3F950000B91C /* HomeTabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				0993A96F279F3FBC0000B91C /* HometabBarViewController.swift */,
+				0993A970279F3FBC0000B91C /* HometabBarViewController.xib */,
+				0993A975279F3FD40000B91C /* HometabBarCoordinator.swift */,
+			);
+			path = HomeTabBarView;
+			sourceTree = "<group>";
+		};
+		0993A978279F44F00000B91C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0993A979279F45130000B91C /* CochesModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0993A97D279F49200000B91C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0993A97E279F49440000B91C /* CochesCell.swift */,
+				0993A97F279F49440000B91C /* CochesCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +244,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0993A93B279F23850000B91C /* LaunchScreen.storyboard in Resources */,
+				0993A972279F3FBC0000B91C /* HometabBarViewController.xib in Resources */,
+				0993A952279F29D50000B91C /* ListaCochesViewController.xib in Resources */,
+				0993A981279F49440000B91C /* CochesCell.xib in Resources */,
+				0993A968279F3E960000B91C /* ListaSuperCochesViewController.xib in Resources */,
 				0993A938279F23850000B91C /* Assets.xcassets in Resources */,
-				0993A936279F23850000B91C /* Main.storyboard in Resources */,
+				0993A95C279F2DC00000B91C /* MesesCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,23 +260,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0993A933279F23850000B91C /* ViewController.swift in Sources */,
+				0993A980279F49440000B91C /* CochesCell.swift in Sources */,
+				0993A95B279F2DC00000B91C /* MesesCell.swift in Sources */,
+				0993A949279F25870000B91C /* AppCoordinator.swift in Sources */,
+				0993A956279F2A400000B91C /* ListaCochesCoordinator.swift in Sources */,
+				0993A97A279F45130000B91C /* CochesModel.swift in Sources */,
+				0993A96C279F3EA40000B91C /* ListaSuperCochesCoordinator.swift in Sources */,
+				0993A951279F29D50000B91C /* ListaCochesViewController.swift in Sources */,
+				0993A971279F3FBC0000B91C /* HometabBarViewController.swift in Sources */,
 				0993A92F279F23850000B91C /* AppDelegate.swift in Sources */,
-				0993A931279F23850000B91C /* SceneDelegate.swift in Sources */,
+				0993A976279F3FD40000B91C /* HometabBarCoordinator.swift in Sources */,
+				0993A967279F3E960000B91C /* ListaSuperCochesViewController.swift in Sources */,
+				0993A961279F3B7F0000B91C /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0993A934279F23850000B91C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0993A935279F23850000B91C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0993A939279F23850000B91C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -295,7 +419,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cice.education.Tecnologia.IOS.MiAppIntroduccionTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -313,7 +437,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.cice.education.Tecnologia.IOS.MiAppIntroduccionTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
