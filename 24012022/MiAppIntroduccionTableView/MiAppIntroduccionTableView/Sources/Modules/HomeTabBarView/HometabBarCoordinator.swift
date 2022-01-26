@@ -15,6 +15,7 @@ final class HometabBarCoordinator {
         // Controladores
         let listaMeses = ListaCochesCoordinator.navigation()
         let listaCoches = ListaSuperCochesCoordinator.navigation()
+        let listaPerfilPost = ListaPerfilPostCoordinator.navigation()
         
         // Iconos
         let listaMesesIcon = UITabBarItem(title: "Meses",
@@ -25,12 +26,17 @@ final class HometabBarCoordinator {
                                            image: UIImage(systemName: "car"),
                                            selectedImage: UIImage(systemName: "car.fill"))
         
+        let listaPerfilPostIcon = UITabBarItem(title: "Feed",
+                                           image: UIImage(systemName: "person"),
+                                           selectedImage: UIImage(systemName: "person.fill"))
+        
         // Asignar el icono al controlador
         listaMeses.tabBarItem = listaMesesIcon
         listaCoches.tabBarItem = listaCochesIcon
+        listaPerfilPost.tabBarItem = listaPerfilPostIcon
         
         // Asignamos el array de controladores y su orden
-        tabVC.viewControllers = [listaMeses, listaCoches]
+        tabVC.viewControllers = [listaMeses, listaCoches, listaPerfilPost]
         return tabVC
     }
 }
