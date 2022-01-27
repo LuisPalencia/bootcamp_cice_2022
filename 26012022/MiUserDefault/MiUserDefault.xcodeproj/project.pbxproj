@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0993A9B027A1E3720000B91C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993A9AF27A1E3720000B91C /* AppDelegate.swift */; };
-		0993A9B927A1E3730000B91C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0993A9B827A1E3730000B91C /* Assets.xcassets */; };
-		0993A9BC27A1E3730000B91C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0993A9BA27A1E3730000B91C /* LaunchScreen.storyboard */; };
+		0993A9E627A29E4D0000B91C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993A9E527A29E4D0000B91C /* AppDelegate.swift */; };
+		0993A9EF27A29E4D0000B91C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0993A9EE27A29E4D0000B91C /* Assets.xcassets */; };
+		0993A9F227A29E4D0000B91C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0993A9F027A29E4D0000B91C /* LaunchScreen.storyboard */; };
+		0993A9FF27A29F1D0000B91C /* AppCoreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993A9FE27A29F1D0000B91C /* AppCoreCoordinator.swift */; };
+		0993AA0527A2A0530000B91C /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AA0327A2A0530000B91C /* RegistroViewController.swift */; };
+		0993AA0627A2A0530000B91C /* RegistroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0993AA0427A2A0530000B91C /* RegistroViewController.xib */; };
+		0993AA0A27A2A0640000B91C /* RegistroCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AA0927A2A0640000B91C /* RegistroCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0993A9AC27A1E3720000B91C /* MiUserDefault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiUserDefault.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0993A9AF27A1E3720000B91C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0993A9B827A1E3730000B91C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0993A9BB27A1E3730000B91C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0993A9BD27A1E3730000B91C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0993A9E227A29E4D0000B91C /* MiUserDefault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiUserDefault.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0993A9E527A29E4D0000B91C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0993A9EE27A29E4D0000B91C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0993A9F127A29E4D0000B91C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0993A9F327A29E4D0000B91C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0993A9FE27A29F1D0000B91C /* AppCoreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreCoordinator.swift; sourceTree = "<group>"; };
+		0993AA0327A2A0530000B91C /* RegistroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroViewController.swift; sourceTree = "<group>"; };
+		0993AA0427A2A0530000B91C /* RegistroViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistroViewController.xib; sourceTree = "<group>"; };
+		0993AA0927A2A0640000B91C /* RegistroCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0993A9A927A1E3720000B91C /* Frameworks */ = {
+		0993A9DF27A29E4D0000B91C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,51 +39,71 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0993A9A327A1E3720000B91C = {
+		0993A9D927A29E4D0000B91C = {
 			isa = PBXGroup;
 			children = (
-				0993A9AE27A1E3720000B91C /* MiUserDefault */,
-				0993A9AD27A1E3720000B91C /* Products */,
+				0993A9E427A29E4D0000B91C /* MiUserDefault */,
+				0993A9E327A29E4D0000B91C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0993A9AD27A1E3720000B91C /* Products */ = {
+		0993A9E327A29E4D0000B91C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0993A9AC27A1E3720000B91C /* MiUserDefault.app */,
+				0993A9E227A29E4D0000B91C /* MiUserDefault.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0993A9AE27A1E3720000B91C /* MiUserDefault */ = {
+		0993A9E427A29E4D0000B91C /* MiUserDefault */ = {
 			isa = PBXGroup;
 			children = (
-				0993A9C727A1E3E20000B91C /* CoreApp */,
-				0993A9AF27A1E3720000B91C /* AppDelegate.swift */,
-				0993A9B827A1E3730000B91C /* Assets.xcassets */,
-				0993A9BA27A1E3730000B91C /* LaunchScreen.storyboard */,
-				0993A9BD27A1E3730000B91C /* Info.plist */,
+				0993AA0127A2A0310000B91C /* Sources */,
+				0993A9FC27A29EAD0000B91C /* CoreApp */,
+				0993A9EE27A29E4D0000B91C /* Assets.xcassets */,
+				0993A9F027A29E4D0000B91C /* LaunchScreen.storyboard */,
+				0993A9F327A29E4D0000B91C /* Info.plist */,
 			);
 			path = MiUserDefault;
 			sourceTree = "<group>";
 		};
-		0993A9C727A1E3E20000B91C /* CoreApp */ = {
+		0993A9FC27A29EAD0000B91C /* CoreApp */ = {
 			isa = PBXGroup;
 			children = (
+				0993A9E527A29E4D0000B91C /* AppDelegate.swift */,
+				0993A9FE27A29F1D0000B91C /* AppCoreCoordinator.swift */,
 			);
 			path = CoreApp;
+			sourceTree = "<group>";
+		};
+		0993AA0127A2A0310000B91C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0993AA0227A2A03A0000B91C /* RegistroView */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0993AA0227A2A03A0000B91C /* RegistroView */ = {
+			isa = PBXGroup;
+			children = (
+				0993AA0327A2A0530000B91C /* RegistroViewController.swift */,
+				0993AA0427A2A0530000B91C /* RegistroViewController.xib */,
+				0993AA0927A2A0640000B91C /* RegistroCoordinator.swift */,
+			);
+			path = RegistroView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0993A9AB27A1E3720000B91C /* MiUserDefault */ = {
+		0993A9E127A29E4D0000B91C /* MiUserDefault */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0993A9C027A1E3730000B91C /* Build configuration list for PBXNativeTarget "MiUserDefault" */;
+			buildConfigurationList = 0993A9F627A29E4D0000B91C /* Build configuration list for PBXNativeTarget "MiUserDefault" */;
 			buildPhases = (
-				0993A9A827A1E3720000B91C /* Sources */,
-				0993A9A927A1E3720000B91C /* Frameworks */,
-				0993A9AA27A1E3720000B91C /* Resources */,
+				0993A9DE27A29E4D0000B91C /* Sources */,
+				0993A9DF27A29E4D0000B91C /* Frameworks */,
+				0993A9E027A29E4D0000B91C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -83,24 +111,24 @@
 			);
 			name = MiUserDefault;
 			productName = MiUserDefault;
-			productReference = 0993A9AC27A1E3720000B91C /* MiUserDefault.app */;
+			productReference = 0993A9E227A29E4D0000B91C /* MiUserDefault.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0993A9A427A1E3720000B91C /* Project object */ = {
+		0993A9DA27A29E4D0000B91C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
-					0993A9AB27A1E3720000B91C = {
+					0993A9E127A29E4D0000B91C = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
 			};
-			buildConfigurationList = 0993A9A727A1E3720000B91C /* Build configuration list for PBXProject "MiUserDefault" */;
+			buildConfigurationList = 0993A9DD27A29E4D0000B91C /* Build configuration list for PBXProject "MiUserDefault" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -108,44 +136,48 @@
 				en,
 				Base,
 			);
-			mainGroup = 0993A9A327A1E3720000B91C;
-			productRefGroup = 0993A9AD27A1E3720000B91C /* Products */;
+			mainGroup = 0993A9D927A29E4D0000B91C;
+			productRefGroup = 0993A9E327A29E4D0000B91C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0993A9AB27A1E3720000B91C /* MiUserDefault */,
+				0993A9E127A29E4D0000B91C /* MiUserDefault */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0993A9AA27A1E3720000B91C /* Resources */ = {
+		0993A9E027A29E4D0000B91C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0993A9BC27A1E3730000B91C /* LaunchScreen.storyboard in Resources */,
-				0993A9B927A1E3730000B91C /* Assets.xcassets in Resources */,
+				0993AA0627A2A0530000B91C /* RegistroViewController.xib in Resources */,
+				0993A9F227A29E4D0000B91C /* LaunchScreen.storyboard in Resources */,
+				0993A9EF27A29E4D0000B91C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0993A9A827A1E3720000B91C /* Sources */ = {
+		0993A9DE27A29E4D0000B91C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0993A9B027A1E3720000B91C /* AppDelegate.swift in Sources */,
+				0993A9E627A29E4D0000B91C /* AppDelegate.swift in Sources */,
+				0993AA0527A2A0530000B91C /* RegistroViewController.swift in Sources */,
+				0993A9FF27A29F1D0000B91C /* AppCoreCoordinator.swift in Sources */,
+				0993AA0A27A2A0640000B91C /* RegistroCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0993A9BA27A1E3730000B91C /* LaunchScreen.storyboard */ = {
+		0993A9F027A29E4D0000B91C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0993A9BB27A1E3730000B91C /* Base */,
+				0993A9F127A29E4D0000B91C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -153,7 +185,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0993A9BE27A1E3730000B91C /* Debug */ = {
+		0993A9F427A29E4D0000B91C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -214,7 +246,7 @@
 			};
 			name = Debug;
 		};
-		0993A9BF27A1E3730000B91C /* Release */ = {
+		0993A9F527A29E4D0000B91C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -269,7 +301,7 @@
 			};
 			name = Release;
 		};
-		0993A9C127A1E3730000B91C /* Debug */ = {
+		0993A9F727A29E4D0000B91C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -287,7 +319,7 @@
 			};
 			name = Debug;
 		};
-		0993A9C227A1E3730000B91C /* Release */ = {
+		0993A9F827A29E4D0000B91C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -308,25 +340,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0993A9A727A1E3720000B91C /* Build configuration list for PBXProject "MiUserDefault" */ = {
+		0993A9DD27A29E4D0000B91C /* Build configuration list for PBXProject "MiUserDefault" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0993A9BE27A1E3730000B91C /* Debug */,
-				0993A9BF27A1E3730000B91C /* Release */,
+				0993A9F427A29E4D0000B91C /* Debug */,
+				0993A9F527A29E4D0000B91C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0993A9C027A1E3730000B91C /* Build configuration list for PBXNativeTarget "MiUserDefault" */ = {
+		0993A9F627A29E4D0000B91C /* Build configuration list for PBXNativeTarget "MiUserDefault" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0993A9C127A1E3730000B91C /* Debug */,
-				0993A9C227A1E3730000B91C /* Release */,
+				0993A9F727A29E4D0000B91C /* Debug */,
+				0993A9F827A29E4D0000B91C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0993A9A427A1E3720000B91C /* Project object */;
+	rootObject = 0993A9DA27A29E4D0000B91C /* Project object */;
 }
