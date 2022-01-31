@@ -13,6 +13,26 @@
 		0993AA6027A5ADA30000B91C /* AppCoreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AA5F27A5ADA30000B91C /* AppCoreCoordinator.swift */; };
 		0993AA6927A5B0CB0000B91C /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AA6827A5B0CB0000B91C /* TaskModel.swift */; };
 		0993AA6C27A5B0D30000B91C /* contacts.json in Resources */ = {isa = PBXBuildFile; fileRef = 0993AA6B27A5B0D30000B91C /* contacts.json */; };
+		0993AA7827A7F09A0000B91C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AA7627A7F09A0000B91C /* LoginViewController.swift */; };
+		0993AA7927A7F09A0000B91C /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0993AA7727A7F09A0000B91C /* LoginViewController.xib */; };
+		0993AA7E27A7F0B90000B91C /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AA7C27A7F0B90000B91C /* HomeTabBarViewController.swift */; };
+		0993AA7F27A7F0B90000B91C /* HomeTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0993AA7D27A7F0B90000B91C /* HomeTabBarViewController.xib */; };
+		0993AA8327A7F0D10000B91C /* ContactosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AA8127A7F0D10000B91C /* ContactosViewController.swift */; };
+		0993AA8427A7F0D10000B91C /* ContactosViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0993AA8227A7F0D10000B91C /* ContactosViewController.xib */; };
+		0993AA8827A7F0E60000B91C /* NuevaTareaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AA8627A7F0E60000B91C /* NuevaTareaViewController.swift */; };
+		0993AA8927A7F0E60000B91C /* NuevaTareaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0993AA8727A7F0E60000B91C /* NuevaTareaViewController.xib */; };
+		0993AA9227A7F1110000B91C /* ListaTareasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AA9027A7F1110000B91C /* ListaTareasViewController.swift */; };
+		0993AA9327A7F1110000B91C /* ListaTareasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0993AA9127A7F1110000B91C /* ListaTareasViewController.xib */; };
+		0993AA9827A7F1270000B91C /* CategoriasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AA9627A7F1270000B91C /* CategoriasViewController.swift */; };
+		0993AA9927A7F1270000B91C /* CategoriasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0993AA9727A7F1270000B91C /* CategoriasViewController.xib */; };
+		0993AA9D27A7F1420000B91C /* DetalleTareaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AA9B27A7F1420000B91C /* DetalleTareaViewController.swift */; };
+		0993AA9E27A7F1420000B91C /* DetalleTareaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0993AA9C27A7F1420000B91C /* DetalleTareaViewController.xib */; };
+		0993AAA227A7F1940000B91C /* LoginViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AAA127A7F1940000B91C /* LoginViewCoordinator.swift */; };
+		0993AAA627A7F9750000B91C /* ContactosViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AAA527A7F9750000B91C /* ContactosViewCoordinator.swift */; };
+		0993AAA927A7F9A50000B91C /* NuevaTareaViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AAA827A7F9A50000B91C /* NuevaTareaViewCoordinator.swift */; };
+		0993AAAC27A7F9C70000B91C /* CategoriasViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AAAB27A7F9C70000B91C /* CategoriasViewCoordinator.swift */; };
+		0993AAAF27A7F9E80000B91C /* ListaTareasViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AAAE27A7F9E80000B91C /* ListaTareasViewCoordinator.swift */; };
+		0993AAB227A7FA0F0000B91C /* DetalleTareaViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AAB127A7FA0F0000B91C /* DetalleTareaViewCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +44,26 @@
 		0993AA5F27A5ADA30000B91C /* AppCoreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoreCoordinator.swift; sourceTree = "<group>"; };
 		0993AA6827A5B0CB0000B91C /* TaskModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
 		0993AA6B27A5B0D30000B91C /* contacts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contacts.json; sourceTree = "<group>"; };
+		0993AA7627A7F09A0000B91C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0993AA7727A7F09A0000B91C /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		0993AA7C27A7F0B90000B91C /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		0993AA7D27A7F0B90000B91C /* HomeTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTabBarViewController.xib; sourceTree = "<group>"; };
+		0993AA8127A7F0D10000B91C /* ContactosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactosViewController.swift; sourceTree = "<group>"; };
+		0993AA8227A7F0D10000B91C /* ContactosViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactosViewController.xib; sourceTree = "<group>"; };
+		0993AA8627A7F0E60000B91C /* NuevaTareaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevaTareaViewController.swift; sourceTree = "<group>"; };
+		0993AA8727A7F0E60000B91C /* NuevaTareaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NuevaTareaViewController.xib; sourceTree = "<group>"; };
+		0993AA9027A7F1110000B91C /* ListaTareasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTareasViewController.swift; sourceTree = "<group>"; };
+		0993AA9127A7F1110000B91C /* ListaTareasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaTareasViewController.xib; sourceTree = "<group>"; };
+		0993AA9627A7F1270000B91C /* CategoriasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriasViewController.swift; sourceTree = "<group>"; };
+		0993AA9727A7F1270000B91C /* CategoriasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriasViewController.xib; sourceTree = "<group>"; };
+		0993AA9B27A7F1420000B91C /* DetalleTareaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleTareaViewController.swift; sourceTree = "<group>"; };
+		0993AA9C27A7F1420000B91C /* DetalleTareaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalleTareaViewController.xib; sourceTree = "<group>"; };
+		0993AAA127A7F1940000B91C /* LoginViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewCoordinator.swift; sourceTree = "<group>"; };
+		0993AAA527A7F9750000B91C /* ContactosViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactosViewCoordinator.swift; sourceTree = "<group>"; };
+		0993AAA827A7F9A50000B91C /* NuevaTareaViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevaTareaViewCoordinator.swift; sourceTree = "<group>"; };
+		0993AAAB27A7F9C70000B91C /* CategoriasViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriasViewCoordinator.swift; sourceTree = "<group>"; };
+		0993AAAE27A7F9E80000B91C /* ListaTareasViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTareasViewCoordinator.swift; sourceTree = "<group>"; };
+		0993AAB127A7FA0F0000B91C /* DetalleTareaViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleTareaViewCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +96,7 @@
 		0993AA3F27A33DF40000B91C /* MiTaskVersion3.0 */ = {
 			isa = PBXGroup;
 			children = (
+				0993AA6E27A7F0380000B91C /* Sources */,
 				0993AA6327A5AFE70000B91C /* Resources */,
 				0993AA6227A5AFE20000B91C /* Models */,
 				0993AA5D27A5AD930000B91C /* CoreApp */,
@@ -89,6 +130,89 @@
 				0993AA6B27A5B0D30000B91C /* contacts.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		0993AA6E27A7F0380000B91C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0993AA7427A7F0620000B91C /* ListaTareasView */,
+				0993AA7227A7F0550000B91C /* NuevaTareaView */,
+				0993AA7127A7F0490000B91C /* ContactosView */,
+				0993AA7027A7F0430000B91C /* HomeTabBarView */,
+				0993AA6F27A7F03D0000B91C /* LoginView */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0993AA6F27A7F03D0000B91C /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				0993AA7627A7F09A0000B91C /* LoginViewController.swift */,
+				0993AA7727A7F09A0000B91C /* LoginViewController.xib */,
+				0993AAA127A7F1940000B91C /* LoginViewCoordinator.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		0993AA7027A7F0430000B91C /* HomeTabBarView */ = {
+			isa = PBXGroup;
+			children = (
+				0993AA7C27A7F0B90000B91C /* HomeTabBarViewController.swift */,
+				0993AA7D27A7F0B90000B91C /* HomeTabBarViewController.xib */,
+			);
+			path = HomeTabBarView;
+			sourceTree = "<group>";
+		};
+		0993AA7127A7F0490000B91C /* ContactosView */ = {
+			isa = PBXGroup;
+			children = (
+				0993AA8127A7F0D10000B91C /* ContactosViewController.swift */,
+				0993AA8227A7F0D10000B91C /* ContactosViewController.xib */,
+				0993AAA527A7F9750000B91C /* ContactosViewCoordinator.swift */,
+			);
+			path = ContactosView;
+			sourceTree = "<group>";
+		};
+		0993AA7227A7F0550000B91C /* NuevaTareaView */ = {
+			isa = PBXGroup;
+			children = (
+				0993AA7327A7F05B0000B91C /* CategoriasView */,
+				0993AA8627A7F0E60000B91C /* NuevaTareaViewController.swift */,
+				0993AAA827A7F9A50000B91C /* NuevaTareaViewCoordinator.swift */,
+				0993AA8727A7F0E60000B91C /* NuevaTareaViewController.xib */,
+			);
+			path = NuevaTareaView;
+			sourceTree = "<group>";
+		};
+		0993AA7327A7F05B0000B91C /* CategoriasView */ = {
+			isa = PBXGroup;
+			children = (
+				0993AA9627A7F1270000B91C /* CategoriasViewController.swift */,
+				0993AA9727A7F1270000B91C /* CategoriasViewController.xib */,
+				0993AAAB27A7F9C70000B91C /* CategoriasViewCoordinator.swift */,
+			);
+			path = CategoriasView;
+			sourceTree = "<group>";
+		};
+		0993AA7427A7F0620000B91C /* ListaTareasView */ = {
+			isa = PBXGroup;
+			children = (
+				0993AA7527A7F06C0000B91C /* DetalleTareaView */,
+				0993AA9027A7F1110000B91C /* ListaTareasViewController.swift */,
+				0993AA9127A7F1110000B91C /* ListaTareasViewController.xib */,
+				0993AAAE27A7F9E80000B91C /* ListaTareasViewCoordinator.swift */,
+			);
+			path = ListaTareasView;
+			sourceTree = "<group>";
+		};
+		0993AA7527A7F06C0000B91C /* DetalleTareaView */ = {
+			isa = PBXGroup;
+			children = (
+				0993AA9B27A7F1420000B91C /* DetalleTareaViewController.swift */,
+				0993AA9C27A7F1420000B91C /* DetalleTareaViewController.xib */,
+				0993AAB127A7FA0F0000B91C /* DetalleTareaViewCoordinator.swift */,
+			);
+			path = DetalleTareaView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,9 +272,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0993AA9927A7F1270000B91C /* CategoriasViewController.xib in Resources */,
+				0993AA7927A7F09A0000B91C /* LoginViewController.xib in Resources */,
+				0993AA9E27A7F1420000B91C /* DetalleTareaViewController.xib in Resources */,
+				0993AA8927A7F0E60000B91C /* NuevaTareaViewController.xib in Resources */,
+				0993AA9327A7F1110000B91C /* ListaTareasViewController.xib in Resources */,
+				0993AA8427A7F0D10000B91C /* ContactosViewController.xib in Resources */,
 				0993AA4D27A33DFC0000B91C /* LaunchScreen.storyboard in Resources */,
 				0993AA6C27A5B0D30000B91C /* contacts.json in Resources */,
 				0993AA4A27A33DFC0000B91C /* Assets.xcassets in Resources */,
+				0993AA7F27A7F0B90000B91C /* HomeTabBarViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,9 +292,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0993AA7827A7F09A0000B91C /* LoginViewController.swift in Sources */,
+				0993AA8327A7F0D10000B91C /* ContactosViewController.swift in Sources */,
+				0993AA9827A7F1270000B91C /* CategoriasViewController.swift in Sources */,
+				0993AAA227A7F1940000B91C /* LoginViewCoordinator.swift in Sources */,
+				0993AAAF27A7F9E80000B91C /* ListaTareasViewCoordinator.swift in Sources */,
+				0993AAA927A7F9A50000B91C /* NuevaTareaViewCoordinator.swift in Sources */,
+				0993AAAC27A7F9C70000B91C /* CategoriasViewCoordinator.swift in Sources */,
 				0993AA6927A5B0CB0000B91C /* TaskModel.swift in Sources */,
 				0993AA4127A33DF40000B91C /* AppDelegate.swift in Sources */,
+				0993AAB227A7FA0F0000B91C /* DetalleTareaViewCoordinator.swift in Sources */,
+				0993AA8827A7F0E60000B91C /* NuevaTareaViewController.swift in Sources */,
 				0993AA6027A5ADA30000B91C /* AppCoreCoordinator.swift in Sources */,
+				0993AA9227A7F1110000B91C /* ListaTareasViewController.swift in Sources */,
+				0993AA9D27A7F1420000B91C /* DetalleTareaViewController.swift in Sources */,
+				0993AAA627A7F9750000B91C /* ContactosViewCoordinator.swift in Sources */,
+				0993AA7E27A7F0B90000B91C /* HomeTabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
