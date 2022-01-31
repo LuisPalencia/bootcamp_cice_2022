@@ -34,6 +34,7 @@
 		0993AAAF27A7F9E80000B91C /* ListaTareasViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AAAE27A7F9E80000B91C /* ListaTareasViewCoordinator.swift */; };
 		0993AAB227A7FA0F0000B91C /* DetalleTareaViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AAB127A7FA0F0000B91C /* DetalleTareaViewCoordinator.swift */; };
 		0993AAB527A7FA9F0000B91C /* HomeTabBarViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AAB427A7FA9F0000B91C /* HomeTabBarViewCoordinator.swift */; };
+		0993AAB927A8122E0000B91C /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AAB827A8122E0000B91C /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		0993AAAE27A7F9E80000B91C /* ListaTareasViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTareasViewCoordinator.swift; sourceTree = "<group>"; };
 		0993AAB127A7FA0F0000B91C /* DetalleTareaViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleTareaViewCoordinator.swift; sourceTree = "<group>"; };
 		0993AAB427A7FA9F0000B91C /* HomeTabBarViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewCoordinator.swift; sourceTree = "<group>"; };
+		0993AAB827A8122E0000B91C /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		0993AA3F27A33DF40000B91C /* MiTaskVersion3.0 */ = {
 			isa = PBXGroup;
 			children = (
+				0993AAB727A8121D0000B91C /* Utils+Helpers */,
 				0993AA6E27A7F0380000B91C /* Sources */,
 				0993AA6327A5AFE70000B91C /* Resources */,
 				0993AA6227A5AFE20000B91C /* Models */,
@@ -218,6 +221,14 @@
 			path = DetalleTareaView;
 			sourceTree = "<group>";
 		};
+		0993AAB727A8121D0000B91C /* Utils+Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0993AAB827A8122E0000B91C /* Utils.swift */,
+			);
+			path = "Utils+Helpers";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -306,6 +317,7 @@
 				0993AA6927A5B0CB0000B91C /* TaskModel.swift in Sources */,
 				0993AA4127A33DF40000B91C /* AppDelegate.swift in Sources */,
 				0993AAB227A7FA0F0000B91C /* DetalleTareaViewCoordinator.swift in Sources */,
+				0993AAB927A8122E0000B91C /* Utils.swift in Sources */,
 				0993AA8827A7F0E60000B91C /* NuevaTareaViewController.swift in Sources */,
 				0993AA6027A5ADA30000B91C /* AppCoreCoordinator.swift in Sources */,
 				0993AA9227A7F1110000B91C /* ListaTareasViewController.swift in Sources */,
