@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -63,6 +64,18 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jxl-TZ-pik">
+                        <rect key="frame" x="248" y="99" width="56" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="56" id="qov-ld-3NG"/>
+                            <constraint firstAttribute="width" constant="56" id="r9z-Dp-5E9"/>
+                        </constraints>
+                        <color key="tintColor" name="AccentColor"/>
+                        <state key="normal" title="Button"/>
+                        <connections>
+                            <action selector="showCameraPhotos:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Jgr-FD-aR7"/>
+                        </connections>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="Ifc-Zx-4lg" secondAttribute="trailing" id="1Q3-RB-ejJ"/>
@@ -77,10 +90,12 @@
                     <constraint firstAttribute="trailing" secondItem="7m5-ve-nZa" secondAttribute="trailing" constant="16" id="KJm-PW-rud"/>
                     <constraint firstItem="ZXV-O5-yTk" firstAttribute="top" secondItem="9ZJ-T7-o9d" secondAttribute="bottom" constant="8" id="Kdt-eM-pBc"/>
                     <constraint firstItem="KXn-q9-VFT" firstAttribute="trailing" secondItem="Tjk-uz-hel" secondAttribute="trailing" id="OWe-aR-Mdu"/>
+                    <constraint firstAttribute="trailing" secondItem="Jxl-TZ-pik" secondAttribute="trailing" constant="16" id="S5u-Aa-R0P"/>
                     <constraint firstItem="ZXV-O5-yTk" firstAttribute="trailing" secondItem="9ZJ-T7-o9d" secondAttribute="trailing" id="URK-Lh-8DK"/>
                     <constraint firstItem="Ifc-Zx-4lg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WI8-FW-DNW"/>
                     <constraint firstItem="7m5-ve-nZa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="WKL-ER-Hux"/>
                     <constraint firstItem="axo-i4-OOj" firstAttribute="top" secondItem="7m5-ve-nZa" secondAttribute="bottom" constant="20" id="ZvM-V1-5cZ"/>
+                    <constraint firstItem="7m5-ve-nZa" firstAttribute="top" secondItem="Jxl-TZ-pik" secondAttribute="bottom" constant="53" id="aza-M9-EOE"/>
                     <constraint firstItem="axo-i4-OOj" firstAttribute="trailing" secondItem="7m5-ve-nZa" secondAttribute="trailing" id="fyJ-8Y-7gv"/>
                     <constraint firstItem="Tjk-uz-hel" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="gQn-UD-EZx"/>
                     <constraint firstItem="2aa-aa-A2m" firstAttribute="bottom" secondItem="Ifc-Zx-4lg" secondAttribute="bottom" id="iRz-IA-N0s"/>
@@ -108,5 +123,8 @@
         <image name="backPerfil" width="726" height="443"/>
         <image name="fondodegradado" width="726" height="443"/>
         <image name="placeholder" width="1280" height="800"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.23100000619888306" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

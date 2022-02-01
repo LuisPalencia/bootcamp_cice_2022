@@ -23,7 +23,7 @@ final class HomeTabBarViewCoordinator {
         let iconNuevaTarea = UITabBarItem(title: "Nueva tarea",
                                         image: UIImage(systemName: "pencil.and.outline"),
                                         selectedImage: UIImage(systemName: "pencil.and.outline"))
-        let iconListaTareas = UITabBarItem(title: "Mis contactos",
+        let iconListaTareas = UITabBarItem(title: "Mis tareas",
                                         image: UIImage(systemName: "text.redaction"),
                                         selectedImage: UIImage(systemName: "text.redaction"))
         
