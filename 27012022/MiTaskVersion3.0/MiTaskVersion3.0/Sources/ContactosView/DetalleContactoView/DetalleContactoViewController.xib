@@ -8,9 +8,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactosViewController" customModule="MiTaskVersion3_0" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetalleContactoViewController" customModule="MiTaskVersion3_0" customModuleProvider="target">
             <connections>
-                <outlet property="contactsTableView" destination="tVu-x2-UTw" id="2EY-oq-n4d"/>
+                <outlet property="detalleContactoTableView" destination="6wS-w3-V3N" id="yXZ-aK-GCu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,20 +19,20 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="tVu-x2-UTw">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6wS-w3-V3N">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="tVu-x2-UTw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="OQc-Pj-WVc"/>
-                <constraint firstItem="tVu-x2-UTw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RFg-bJ-tL9"/>
-                <constraint firstAttribute="bottom" secondItem="tVu-x2-UTw" secondAttribute="bottom" id="SaQ-S0-lAC"/>
-                <constraint firstItem="tVu-x2-UTw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="j86-SE-TGf"/>
+                <constraint firstItem="6wS-w3-V3N" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="HAD-da-nhD"/>
+                <constraint firstItem="6wS-w3-V3N" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RMY-jR-hcd"/>
+                <constraint firstItem="6wS-w3-V3N" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="fRY-47-WUJ"/>
+                <constraint firstAttribute="bottom" secondItem="6wS-w3-V3N" secondAttribute="bottom" id="rCx-Ji-1ty"/>
             </constraints>
-            <point key="canvasLocation" x="-257.97101449275362" y="152.67857142857142"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
         </view>
     </objects>
     <resources>
