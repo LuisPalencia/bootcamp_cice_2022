@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,115 +11,179 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NuevaTareaViewController" customModule="MiTaskVersion3_0" customModuleProvider="target">
             <connections>
+                <outlet property="categoriaBTN" destination="DMX-N1-odl" id="b03-Xb-hMi"/>
+                <outlet property="categoriaLBL" destination="0EI-Il-yb4" id="J2m-Tw-nh4"/>
+                <outlet property="descripcionTV" destination="Hyk-RA-NaV" id="2Qn-4z-kAa"/>
+                <outlet property="fechaTF" destination="Vg0-E0-ngS" id="HV0-e8-Yvs"/>
+                <outlet property="imagenTareaIV" destination="MDH-on-CYc" id="FJE-Ka-tFa"/>
+                <outlet property="nuevaTareaTF" destination="xSc-xh-JjV" id="wsx-1i-EDp"/>
+                <outlet property="prioridadTF" destination="iA4-xd-IJV" id="mFa-E8-PNm"/>
+                <outlet property="salvarDatosBTN" destination="70W-od-5k8" id="3yR-CP-7DR"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nueva tarea" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xSc-xh-JjV">
-                    <rect key="frame" x="20" y="116" width="374" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fecha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vg0-E0-ngS">
-                    <rect key="frame" x="20" y="200" width="374" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escribe una nueva tarea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sez-re-no9">
-                    <rect key="frame" x="20" y="64" width="374" height="44"/>
-                    <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="20"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_nombre de la categoría seleccionada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EI-Il-yb4">
-                    <rect key="frame" x="20" y="664" width="374" height="44"/>
-                    <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="20"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Hyk-RA-NaV">
-                    <rect key="frame" x="20" y="246" width="374" height="150"/>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KSM-gs-r1n">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="753"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NLX-Fq-g30" userLabel="ContentView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="753"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nueva tarea" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xSc-xh-JjV">
+                                    <rect key="frame" x="20" y="79" width="374" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                    <connections>
+                                        <action selector="resignFirstResponderACTION:" destination="-1" eventType="editingDidEnd" id="plX-yb-er4"/>
+                                    </connections>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fecha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vg0-E0-ngS">
+                                    <rect key="frame" x="20" y="163" width="374" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escribe una nueva tarea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sez-re-no9">
+                                    <rect key="frame" x="20" y="27" width="374" height="44"/>
+                                    <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_nombre de la categoría seleccionada" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0EI-Il-yb4">
+                                    <rect key="frame" x="20" y="627" width="374" height="44"/>
+                                    <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="20"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Escribe aqui una breve descripcion de la tarea" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Hyk-RA-NaV">
+                                    <rect key="frame" x="20" y="209" width="374" height="150"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="150" id="peD-Cw-Er0"/>
+                                    </constraints>
+                                    <color key="textColor" systemColor="labelColor"/>
+                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="MDH-on-CYc">
+                                    <rect key="frame" x="133.66666666666666" y="379" width="146.99999999999997" height="166"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="147" id="BLz-GD-SyG"/>
+                                        <constraint firstAttribute="height" constant="166" id="ZvY-9N-hrG"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMX-N1-odl">
+                                    <rect key="frame" x="20" y="565" width="374" height="50"/>
+                                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="2bw-Uc-X9l"/>
+                                    </constraints>
+                                    <state key="normal" title="Selecciona una nueva categoría"/>
+                                    <connections>
+                                        <action selector="muestraListaCategorias:" destination="-1" eventType="touchUpInside" id="tvi-vZ-EPm"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70W-od-5k8">
+                                    <rect key="frame" x="20" y="683" width="374" height="50"/>
+                                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="rq8-Fu-4QM"/>
+                                    </constraints>
+                                    <state key="normal" title="Salvar la tarea"/>
+                                    <connections>
+                                        <action selector="salvarTareaUDACTION:" destination="-1" eventType="touchUpInside" id="oSy-Ge-49a"/>
+                                    </connections>
+                                </button>
+                                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Prioridad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iA4-xd-IJV">
+                                    <rect key="frame" x="20" y="121" width="374" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v34-Xg-L5h">
+                                    <rect key="frame" x="236.66666666666663" y="502.00000000000006" width="44" height="42.666666666666629"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="44" id="0jN-zF-mbU"/>
+                                        <constraint firstAttribute="width" constant="44" id="ajJ-MH-om6"/>
+                                    </constraints>
+                                    <color key="tintColor" name="AccentColor"/>
+                                    <state key="normal" backgroundImage="camera.circle.fill" catalog="system"/>
+                                    <connections>
+                                        <action selector="muestraCamaraFotosACTION:" destination="-1" eventType="touchUpInside" id="LPw-lr-Oky"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="0EI-Il-yb4" firstAttribute="leading" secondItem="DMX-N1-odl" secondAttribute="leading" id="13h-Jv-6tf"/>
+                                <constraint firstItem="Hyk-RA-NaV" firstAttribute="top" secondItem="Vg0-E0-ngS" secondAttribute="bottom" constant="12" id="1Rr-Pb-Obx"/>
+                                <constraint firstItem="xSc-xh-JjV" firstAttribute="leading" secondItem="NLX-Fq-g30" secondAttribute="leading" constant="20" id="2RI-tm-FhX"/>
+                                <constraint firstItem="xSc-xh-JjV" firstAttribute="top" secondItem="Sez-re-no9" secondAttribute="bottom" constant="8" id="4IW-ba-14U"/>
+                                <constraint firstItem="70W-od-5k8" firstAttribute="trailing" secondItem="0EI-Il-yb4" secondAttribute="trailing" id="6nz-0L-4f8"/>
+                                <constraint firstItem="70W-od-5k8" firstAttribute="top" secondItem="0EI-Il-yb4" secondAttribute="bottom" constant="12" id="7YD-kV-ppK"/>
+                                <constraint firstItem="iA4-xd-IJV" firstAttribute="trailing" secondItem="xSc-xh-JjV" secondAttribute="trailing" id="7bo-If-Xqf"/>
+                                <constraint firstItem="70W-od-5k8" firstAttribute="leading" secondItem="0EI-Il-yb4" secondAttribute="leading" id="Aba-8N-qXo"/>
+                                <constraint firstItem="Vg0-E0-ngS" firstAttribute="top" secondItem="iA4-xd-IJV" secondAttribute="bottom" constant="8" id="B8Z-hB-WKm"/>
+                                <constraint firstItem="xSc-xh-JjV" firstAttribute="leading" secondItem="Sez-re-no9" secondAttribute="leading" id="B8n-Ma-U3R"/>
+                                <constraint firstItem="DMX-N1-odl" firstAttribute="leading" secondItem="Hyk-RA-NaV" secondAttribute="leading" id="ETY-G4-fRM"/>
+                                <constraint firstItem="70W-od-5k8" firstAttribute="top" secondItem="0EI-Il-yb4" secondAttribute="bottom" constant="12" id="Hnm-JN-Qrb"/>
+                                <constraint firstItem="xSc-xh-JjV" firstAttribute="trailing" secondItem="Sez-re-no9" secondAttribute="trailing" id="Hro-3g-RWx"/>
+                                <constraint firstItem="0EI-Il-yb4" firstAttribute="top" secondItem="DMX-N1-odl" secondAttribute="bottom" constant="12" id="J46-Hg-dyB"/>
+                                <constraint firstItem="DMX-N1-odl" firstAttribute="trailing" secondItem="Hyk-RA-NaV" secondAttribute="trailing" id="JmC-Yv-Oji"/>
+                                <constraint firstItem="iA4-xd-IJV" firstAttribute="leading" secondItem="xSc-xh-JjV" secondAttribute="leading" id="KeE-zq-FxP"/>
+                                <constraint firstItem="Vg0-E0-ngS" firstAttribute="trailing" secondItem="iA4-xd-IJV" secondAttribute="trailing" id="OCP-f3-gtP"/>
+                                <constraint firstItem="v34-Xg-L5h" firstAttribute="trailing" secondItem="MDH-on-CYc" secondAttribute="trailing" id="T7V-lu-voB"/>
+                                <constraint firstItem="Hyk-RA-NaV" firstAttribute="leading" secondItem="Vg0-E0-ngS" secondAttribute="leading" id="TTe-bG-eD4"/>
+                                <constraint firstItem="DMX-N1-odl" firstAttribute="top" secondItem="MDH-on-CYc" secondAttribute="bottom" constant="20" id="Y3w-Zx-YH5"/>
+                                <constraint firstItem="MDH-on-CYc" firstAttribute="centerX" secondItem="NLX-Fq-g30" secondAttribute="centerX" id="cBO-fu-WjA"/>
+                                <constraint firstItem="Vg0-E0-ngS" firstAttribute="leading" secondItem="iA4-xd-IJV" secondAttribute="leading" id="dN5-4y-Wgt"/>
+                                <constraint firstItem="Sez-re-no9" firstAttribute="top" secondItem="NLX-Fq-g30" secondAttribute="top" constant="27" id="dyl-Ba-bRJ"/>
+                                <constraint firstItem="Hyk-RA-NaV" firstAttribute="trailing" secondItem="Vg0-E0-ngS" secondAttribute="trailing" id="eCZ-4t-Tdo"/>
+                                <constraint firstAttribute="trailing" secondItem="xSc-xh-JjV" secondAttribute="trailing" constant="20" id="h3C-pL-QKU"/>
+                                <constraint firstItem="MDH-on-CYc" firstAttribute="top" secondItem="Hyk-RA-NaV" secondAttribute="bottom" constant="20" id="pyO-6a-Pmg"/>
+                                <constraint firstAttribute="bottom" secondItem="70W-od-5k8" secondAttribute="bottom" constant="20" id="qOJ-uW-Vf9"/>
+                                <constraint firstItem="iA4-xd-IJV" firstAttribute="top" secondItem="xSc-xh-JjV" secondAttribute="bottom" constant="8" id="sh8-eg-TDB"/>
+                                <constraint firstItem="0EI-Il-yb4" firstAttribute="trailing" secondItem="DMX-N1-odl" secondAttribute="trailing" id="shB-ny-NI4"/>
+                                <constraint firstItem="v34-Xg-L5h" firstAttribute="bottom" secondItem="MDH-on-CYc" secondAttribute="bottom" id="tFi-bS-Enl"/>
+                            </constraints>
+                        </view>
+                    </subviews>
                     <constraints>
-                        <constraint firstAttribute="height" constant="150" id="peD-Cw-Er0"/>
+                        <constraint firstItem="NLX-Fq-g30" firstAttribute="top" secondItem="KSM-gs-r1n" secondAttribute="top" id="F94-17-tHj"/>
+                        <constraint firstAttribute="bottom" secondItem="NLX-Fq-g30" secondAttribute="bottom" id="GCl-2I-Xsd"/>
+                        <constraint firstItem="NLX-Fq-g30" firstAttribute="leading" secondItem="KSM-gs-r1n" secondAttribute="leading" id="KUN-tJ-zaI"/>
+                        <constraint firstItem="NLX-Fq-g30" firstAttribute="height" secondItem="KSM-gs-r1n" secondAttribute="height" priority="250" id="eHp-2z-tMu"/>
+                        <constraint firstAttribute="trailing" secondItem="NLX-Fq-g30" secondAttribute="trailing" id="emW-fJ-aKh"/>
+                        <constraint firstItem="NLX-Fq-g30" firstAttribute="width" secondItem="KSM-gs-r1n" secondAttribute="width" id="nXV-BV-ooZ"/>
                     </constraints>
-                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                    <color key="textColor" systemColor="labelColor"/>
-                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="20"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="MDH-on-CYc">
-                    <rect key="frame" x="133.5" y="416" width="147" height="166"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="147" id="BLz-GD-SyG"/>
-                        <constraint firstAttribute="height" constant="166" id="ZvY-9N-hrG"/>
-                    </constraints>
-                </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DMX-N1-odl">
-                    <rect key="frame" x="20" y="602" width="374" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="2bw-Uc-X9l"/>
-                    </constraints>
-                    <state key="normal" title="Selecciona una nueva categoría"/>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="70W-od-5k8">
-                    <rect key="frame" x="20" y="720" width="374" height="50"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="50" id="rq8-Fu-4QM"/>
-                    </constraints>
-                    <state key="normal" title="Salvar la tarea"/>
-                </button>
-                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Prioridad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iA4-xd-IJV">
-                    <rect key="frame" x="20" y="158" width="374" height="34"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
+                </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="Hyk-RA-NaV" firstAttribute="trailing" secondItem="Vg0-E0-ngS" secondAttribute="trailing" id="1NK-hb-qP1"/>
-                <constraint firstItem="Vg0-E0-ngS" firstAttribute="top" secondItem="iA4-xd-IJV" secondAttribute="bottom" constant="8" id="3H0-nP-246"/>
-                <constraint firstItem="0EI-Il-yb4" firstAttribute="top" secondItem="DMX-N1-odl" secondAttribute="bottom" constant="12" id="4KF-9p-Ngp"/>
-                <constraint firstItem="Hyk-RA-NaV" firstAttribute="top" secondItem="Vg0-E0-ngS" secondAttribute="bottom" constant="12" id="4lN-h5-Qsp"/>
-                <constraint firstItem="MDH-on-CYc" firstAttribute="top" secondItem="Hyk-RA-NaV" secondAttribute="bottom" constant="20" id="4um-yy-fX2"/>
-                <constraint firstItem="DMX-N1-odl" firstAttribute="trailing" secondItem="Hyk-RA-NaV" secondAttribute="trailing" id="6R6-zq-Bb3"/>
-                <constraint firstItem="iA4-xd-IJV" firstAttribute="leading" secondItem="xSc-xh-JjV" secondAttribute="leading" id="CTx-ft-Fcl"/>
-                <constraint firstItem="0EI-Il-yb4" firstAttribute="trailing" secondItem="DMX-N1-odl" secondAttribute="trailing" id="Cne-Az-quv"/>
-                <constraint firstItem="xSc-xh-JjV" firstAttribute="leading" secondItem="Sez-re-no9" secondAttribute="leading" id="GOO-Yw-poU"/>
-                <constraint firstItem="iA4-xd-IJV" firstAttribute="trailing" secondItem="xSc-xh-JjV" secondAttribute="trailing" id="GYT-GJ-XNV"/>
-                <constraint firstItem="70W-od-5k8" firstAttribute="top" secondItem="0EI-Il-yb4" secondAttribute="bottom" constant="12" id="I5y-Mm-Xfh"/>
-                <constraint firstItem="iA4-xd-IJV" firstAttribute="top" secondItem="xSc-xh-JjV" secondAttribute="bottom" constant="8" id="Izr-3v-DbD"/>
-                <constraint firstItem="70W-od-5k8" firstAttribute="top" secondItem="0EI-Il-yb4" secondAttribute="bottom" constant="12" id="OkQ-Cr-fUh"/>
-                <constraint firstItem="70W-od-5k8" firstAttribute="trailing" secondItem="0EI-Il-yb4" secondAttribute="trailing" id="PiE-G3-liE"/>
-                <constraint firstItem="70W-od-5k8" firstAttribute="leading" secondItem="0EI-Il-yb4" secondAttribute="leading" id="RYt-bl-l3W"/>
-                <constraint firstItem="Vg0-E0-ngS" firstAttribute="trailing" secondItem="iA4-xd-IJV" secondAttribute="trailing" id="TdJ-Sq-nrz"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Sez-re-no9" secondAttribute="trailing" constant="20" id="Uuo-GU-HtD"/>
-                <constraint firstItem="DMX-N1-odl" firstAttribute="top" secondItem="MDH-on-CYc" secondAttribute="bottom" constant="20" id="WKH-xd-qaP"/>
-                <constraint firstItem="xSc-xh-JjV" firstAttribute="trailing" secondItem="Sez-re-no9" secondAttribute="trailing" id="Xio-JT-5NS"/>
-                <constraint firstItem="Hyk-RA-NaV" firstAttribute="leading" secondItem="Vg0-E0-ngS" secondAttribute="leading" id="bhU-Z4-pyt"/>
-                <constraint firstItem="Sez-re-no9" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="fTA-83-07f"/>
-                <constraint firstItem="DMX-N1-odl" firstAttribute="leading" secondItem="Hyk-RA-NaV" secondAttribute="leading" id="fUW-NT-EM3"/>
-                <constraint firstItem="MDH-on-CYc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="huq-zr-sVL"/>
-                <constraint firstItem="0EI-Il-yb4" firstAttribute="leading" secondItem="DMX-N1-odl" secondAttribute="leading" id="kTX-ed-0yF"/>
-                <constraint firstItem="Sez-re-no9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="myv-rn-qxd"/>
-                <constraint firstItem="Vg0-E0-ngS" firstAttribute="leading" secondItem="iA4-xd-IJV" secondAttribute="leading" id="tIA-8T-S6g"/>
-                <constraint firstItem="xSc-xh-JjV" firstAttribute="top" secondItem="Sez-re-no9" secondAttribute="bottom" constant="8" id="tyc-3f-b3R"/>
+                <constraint firstItem="KSM-gs-r1n" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="7t0-5F-CJT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KSM-gs-r1n" secondAttribute="trailing" id="gI7-1g-sze"/>
+                <constraint firstItem="KSM-gs-r1n" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="17" id="hkK-q6-d9a"/>
+                <constraint firstItem="KSM-gs-r1n" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="mhh-cl-xCd"/>
             </constraints>
-            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
+            <point key="canvasLocation" x="136.23188405797103" y="322.76785714285711"/>
         </view>
     </objects>
     <resources>
+        <image name="camera.circle.fill" catalog="system" width="128" height="121"/>
         <image name="placeholder" width="1280" height="800"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.23100000619888306" blue="0.18799999356269836" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

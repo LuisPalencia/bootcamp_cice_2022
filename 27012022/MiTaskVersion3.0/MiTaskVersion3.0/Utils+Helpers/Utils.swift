@@ -29,9 +29,35 @@ class Utils {
         mailCompo.mailComposeDelegate = delegate
         mailCompo.setToRecipients(["info@mail.com", "masinfo@mail.es"])
         mailCompo.setSubject("Datos del contacto")
-        let emailBody = "Los datos del contacto son \(data?.firstName)"
+        let emailBody = "Los datos del contacto son \(data?.firstName ?? "")"
         mailCompo.setMessageBody(emailBody, isHTML: false)
         return mailCompo
+    }
+    
+    static func muestraPhotoMenu(completionFoto: ((UIAlertAction) -> Void)?, completionLibrary: ((UIAlertAction) -> Void)?) -> UIAlertController{
+        let actionSheetVC = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
+        actionSheetVC.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
+        actionSheetVC.addAction(UIAlertAction(title: "Tomar foto", style: .default, handler: completionFoto))
+        actionSheetVC.addAction(UIAlertAction(title: "Escoger de la librería", style: .default, handler: completionLibrary))
+        return actionSheetVC
+    }
+    
+    static func muestraPhotoLibrary(delegate: UIImagePickerControllerDelegate & UINavigationControllerDelegate) -> UIImagePickerController {
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = .photoLibrary
+        imagePicker.delegate = delegate
+        imagePicker.allowsEditing = true
+        return imagePicker
+    }
+    
+    
+    
+    static func tomarFoto(delegate: UIImagePickerControllerDelegate & UINavigationControllerDelegate) -> UIImagePickerController{
+        let imagePicker = UIImagePickerController()
+        imagePicker.sourceType = .camera
+        imagePicker.delegate = delegate
+        imagePicker.allowsEditing = true
+        return imagePicker
     }
 }
 
