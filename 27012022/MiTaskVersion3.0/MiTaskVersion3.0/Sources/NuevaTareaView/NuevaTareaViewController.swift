@@ -29,27 +29,57 @@ class NuevaTareaViewController: UIViewController {
     
     
     @IBAction func muestraListaCategorias(_ sender: Any) {
-        debugPrint(#function)
+        let vc = CategoriasViewCoordinator.view()
+        self.show(vc, sender: nil)
     }
     
     @IBAction func salvarTareaUDACTION(_ sender: Any) {
-        debugPrint(#function)
+        if validacionDatos() {
+            debugPrint(#function)
+        }else{
+            self.present(Utils.muestraAlerta(titulo: "Hey!!",
+                                             mensaje: "Por favor rellena todos los campos y ten en cuenta seleccionar una fotografia de la tarea",
+                                             completionHandler: nil),
+                         animated: true,
+                         completion: nil)
+        }
     }
     
     @IBAction func muestraCamaraFotosACTION(_ sender: Any) {
         self.muestraSelectorFoto()
     }
     
-    @IBAction func resignFirstResponderACTION(_ sender: Any) {
-        self.nuevaTareaTF.resignFirstResponder()
-    }
     
+    @IBAction func muestraDatePickerACTION(_ sender: UITextField) {
+        let datePicker = UIDatePicker()
+        datePicker.datePickerMode = .dateAndTime
+        sender.inputView = datePicker
+        datePicker.addTarget(self, action: #selector(datePickerValueChanged(_:)), for: .valueChanged)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configuracionUI()
         
         // Do any additional setup after loading the view.
+    }
+    
+    @objc
+    func datePickerValueChanged(_ sender: UIDatePicker) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateStyle = .short
+        dateFormatter.timeStyle = .short
+        self.fechaTF.text = dateFormatter.string(from: sender.date)
+        
+    }
+    
+    private func validacionDatos() -> Bool {
+        return !(self.nuevaTareaTF.text?.isEmpty ?? false) &&
+            !(self.prioridadTF.text?.isEmpty ?? false) &&
+            !(self.fechaTF.text?.isEmpty ?? false) &&
+            !(self.descripcionTV.text?.isEmpty ?? false) &&
+            !(self.categoriaLBL.text?.isEmpty ?? false) &&
+            fotoSeleccionada
     }
     
     
