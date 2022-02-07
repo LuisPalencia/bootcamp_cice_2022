@@ -155,6 +155,7 @@ class NuevaTareaViewController: UIViewController {
         
         self.categoriaLBL.text = self.nombreCategoria
         self.nuevaTareaTF.delegate = self
+        //self.salvarDatosBTN.isEnabled = false
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

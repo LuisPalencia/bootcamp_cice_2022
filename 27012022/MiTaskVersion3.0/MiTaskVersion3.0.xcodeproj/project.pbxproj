@@ -45,6 +45,8 @@
 		0993AAD727A87EED0000B91C /* PerfilCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0993AAD527A87EED0000B91C /* PerfilCell.xib */; };
 		0993AADD27AC5CED0000B91C /* CategoriaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AADB27AC5CED0000B91C /* CategoriaCell.swift */; };
 		0993AADE27AC5CED0000B91C /* CategoriaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0993AADC27AC5CED0000B91C /* CategoriaCell.xib */; };
+		0993AAE427AD41420000B91C /* ListaTareasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AAE227AD41420000B91C /* ListaTareasCell.swift */; };
+		0993AAE527AD41420000B91C /* ListaTareasCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0993AAE327AD41420000B91C /* ListaTareasCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +90,8 @@
 		0993AAD527A87EED0000B91C /* PerfilCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PerfilCell.xib; sourceTree = "<group>"; };
 		0993AADB27AC5CED0000B91C /* CategoriaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriaCell.swift; sourceTree = "<group>"; };
 		0993AADC27AC5CED0000B91C /* CategoriaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriaCell.xib; sourceTree = "<group>"; };
+		0993AAE227AD41420000B91C /* ListaTareasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTareasCell.swift; sourceTree = "<group>"; };
+		0993AAE327AD41420000B91C /* ListaTareasCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListaTareasCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +231,7 @@
 		0993AA7427A7F0620000B91C /* ListaTareasView */ = {
 			isa = PBXGroup;
 			children = (
+				0993AAE127AD3D6C0000B91C /* Cell */,
 				0993AA7527A7F06C0000B91C /* DetalleTareaView */,
 				0993AA9027A7F1110000B91C /* ListaTareasViewController.swift */,
 				0993AA9127A7F1110000B91C /* ListaTareasViewController.xib */,
@@ -291,6 +296,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		0993AAE127AD3D6C0000B91C /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0993AAE227AD41420000B91C /* ListaTareasCell.swift */,
+				0993AAE327AD41420000B91C /* ListaTareasCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,6 +364,7 @@
 			files = (
 				0993AA9927A7F1270000B91C /* CategoriasViewController.xib in Resources */,
 				0993AA7927A7F09A0000B91C /* LoginViewController.xib in Resources */,
+				0993AAE527AD41420000B91C /* ListaTareasCell.xib in Resources */,
 				0993AA9E27A7F1420000B91C /* DetalleTareaViewController.xib in Resources */,
 				0993AA8927A7F0E60000B91C /* NuevaTareaViewController.xib in Resources */,
 				0993AAC527A866880000B91C /* ContactosCell.xib in Resources */,
@@ -391,6 +406,7 @@
 				0993AA6027A5ADA30000B91C /* AppCoreCoordinator.swift in Sources */,
 				0993AAD027A87B9A0000B91C /* DetalleContactoViewController.swift in Sources */,
 				0993AA9227A7F1110000B91C /* ListaTareasViewController.swift in Sources */,
+				0993AAE427AD41420000B91C /* ListaTareasCell.swift in Sources */,
 				0993AA9D27A7F1420000B91C /* DetalleTareaViewController.swift in Sources */,
 				0993AAA627A7F9750000B91C /* ContactosViewCoordinator.swift in Sources */,
 				0993AADD27AC5CED0000B91C /* CategoriaCell.swift in Sources */,
