@@ -14,11 +14,21 @@ protocol SplashInteractorInputProtocol {
 
 final class SplashInteractor: BaseInteractor<SplashInteractorOutputProtocol>{
     
+    let splashProvider: SplashProviderInputProtocol = SplashProvider()
+    
 }
 
 // Input del Interactor
 extension SplashInteractor: SplashInteractorInputProtocol {
     func fetchDataFromWebServiceInteractor() {
-        print("AQUI LUIS")
+        self.splashProvider.fetchData { (result) in
+            switch result {
+            case .success(let modelData):
+                self.presenter?.setDataFromWebInteractor(data: modelData.feed?.results)
+            case .failure(let error):
+                debugPrint(error)
+            }
+            
+        }
     }
 }
