@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -23,6 +23,43 @@
 		09F4D90B27B1432C005C7831 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D90A27B1432C005C7831 /* Utils.swift */; };
 		09F4D90F27B15070005C7831 /* SplashProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D90E27B15070005C7831 /* SplashProvider.swift */; };
 		09F4D91327B19DE3005C7831 /* MusicServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D91227B19DE3005C7831 /* MusicServerModel.swift */; };
+		09F4D92027B55B9D005C7831 /* MusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F4D91927B55B9D005C7831 /* MusicViewController.xib */; };
+		09F4D92127B55B9D005C7831 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D91A27B55B9D005C7831 /* MusicViewController.swift */; };
+		09F4D92227B55B9D005C7831 /* MusicRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D91B27B55B9D005C7831 /* MusicRouter.swift */; };
+		09F4D92327B55B9D005C7831 /* MusicProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D91C27B55B9D005C7831 /* MusicProvider.swift */; };
+		09F4D92427B55B9D005C7831 /* MusicCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D91D27B55B9D005C7831 /* MusicCoordinator.swift */; };
+		09F4D92527B55B9D005C7831 /* MusicPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D91E27B55B9D005C7831 /* MusicPresenter.swift */; };
+		09F4D92627B55B9D005C7831 /* MusicInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D91F27B55B9D005C7831 /* MusicInteractor.swift */; };
+		09F4D92F27B55C02005C7831 /* PodcastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F4D92827B55C02005C7831 /* PodcastViewController.xib */; };
+		09F4D93027B55C02005C7831 /* PodcastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D92927B55C02005C7831 /* PodcastViewController.swift */; };
+		09F4D93127B55C02005C7831 /* PodcastRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D92A27B55C02005C7831 /* PodcastRouter.swift */; };
+		09F4D93227B55C02005C7831 /* PodcastProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D92B27B55C02005C7831 /* PodcastProvider.swift */; };
+		09F4D93327B55C02005C7831 /* PodcastCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D92C27B55C02005C7831 /* PodcastCoordinator.swift */; };
+		09F4D93427B55C02005C7831 /* PodcastPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D92D27B55C02005C7831 /* PodcastPresenter.swift */; };
+		09F4D93527B55C02005C7831 /* PodcastInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D92E27B55C02005C7831 /* PodcastInteractor.swift */; };
+		09F4D94827B55D17005C7831 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D94627B55D17005C7831 /* HomeTabBarViewController.swift */; };
+		09F4D94927B55D17005C7831 /* HomeTabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F4D94727B55D17005C7831 /* HomeTabBarViewController.xib */; };
+		09F4D94C27B55D2A005C7831 /* HomeTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D94B27B55D2A005C7831 /* HomeTabBarCoordinator.swift */; };
+		09F4D95127B5701F005C7831 /* MusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D94F27B5701F005C7831 /* MusicCell.swift */; };
+		09F4D95227B5701F005C7831 /* MusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F4D95027B5701F005C7831 /* MusicCell.xib */; };
+		09F4D95727B5728A005C7831 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 09F4D95627B5728A005C7831 /* Kingfisher */; };
+		09F4D96627B58ECD005C7831 /* PodcastServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D96527B58ECD005C7831 /* PodcastServerModel.swift */; };
+		09F4D97027B58FAE005C7831 /* BookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F4D96927B58FAE005C7831 /* BookViewController.xib */; };
+		09F4D97127B58FAE005C7831 /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D96A27B58FAE005C7831 /* BookViewController.swift */; };
+		09F4D97227B58FAE005C7831 /* BookRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D96B27B58FAE005C7831 /* BookRouter.swift */; };
+		09F4D97327B58FAE005C7831 /* BookProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D96C27B58FAE005C7831 /* BookProvider.swift */; };
+		09F4D97427B58FAE005C7831 /* BookCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D96D27B58FAE005C7831 /* BookCoordinator.swift */; };
+		09F4D97527B58FAE005C7831 /* BookPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D96E27B58FAE005C7831 /* BookPresenter.swift */; };
+		09F4D97627B58FAE005C7831 /* BookInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D96F27B58FAE005C7831 /* BookInteractor.swift */; };
+		09F4D97A27B59263005C7831 /* AppleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D97927B59263005C7831 /* AppleViewModel.swift */; };
+		09F4D98827B598B3005C7831 /* AppleGenericDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F4D98127B598B3005C7831 /* AppleGenericDetailViewController.xib */; };
+		09F4D98927B598B3005C7831 /* AppleGenericDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D98227B598B3005C7831 /* AppleGenericDetailViewController.swift */; };
+		09F4D98A27B598B3005C7831 /* AppleGenericDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D98327B598B3005C7831 /* AppleGenericDetailRouter.swift */; };
+		09F4D98B27B598B3005C7831 /* AppleGenericDetailProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D98427B598B3005C7831 /* AppleGenericDetailProvider.swift */; };
+		09F4D98C27B598B3005C7831 /* AppleGenericDetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D98527B598B3005C7831 /* AppleGenericDetailCoordinator.swift */; };
+		09F4D98D27B598B3005C7831 /* AppleGenericDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D98627B598B3005C7831 /* AppleGenericDetailPresenter.swift */; };
+		09F4D98E27B598B3005C7831 /* AppleGenericDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D98727B598B3005C7831 /* AppleGenericDetailInteractor.swift */; };
+		09F4D99C27B68776005C7831 /* AppServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D99B27B68776005C7831 /* AppServerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +81,42 @@
 		09F4D90A27B1432C005C7831 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		09F4D90E27B15070005C7831 /* SplashProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashProvider.swift; sourceTree = "<group>"; };
 		09F4D91227B19DE3005C7831 /* MusicServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicServerModel.swift; sourceTree = "<group>"; };
+		09F4D91927B55B9D005C7831 /* MusicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicViewController.xib; sourceTree = "<group>"; };
+		09F4D91A27B55B9D005C7831 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		09F4D91B27B55B9D005C7831 /* MusicRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicRouter.swift; sourceTree = "<group>"; };
+		09F4D91C27B55B9D005C7831 /* MusicProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicProvider.swift; sourceTree = "<group>"; };
+		09F4D91D27B55B9D005C7831 /* MusicCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCoordinator.swift; sourceTree = "<group>"; };
+		09F4D91E27B55B9D005C7831 /* MusicPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPresenter.swift; sourceTree = "<group>"; };
+		09F4D91F27B55B9D005C7831 /* MusicInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicInteractor.swift; sourceTree = "<group>"; };
+		09F4D92827B55C02005C7831 /* PodcastViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PodcastViewController.xib; sourceTree = "<group>"; };
+		09F4D92927B55C02005C7831 /* PodcastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastViewController.swift; sourceTree = "<group>"; };
+		09F4D92A27B55C02005C7831 /* PodcastRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastRouter.swift; sourceTree = "<group>"; };
+		09F4D92B27B55C02005C7831 /* PodcastProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastProvider.swift; sourceTree = "<group>"; };
+		09F4D92C27B55C02005C7831 /* PodcastCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCoordinator.swift; sourceTree = "<group>"; };
+		09F4D92D27B55C02005C7831 /* PodcastPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPresenter.swift; sourceTree = "<group>"; };
+		09F4D92E27B55C02005C7831 /* PodcastInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastInteractor.swift; sourceTree = "<group>"; };
+		09F4D94627B55D17005C7831 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		09F4D94727B55D17005C7831 /* HomeTabBarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTabBarViewController.xib; sourceTree = "<group>"; };
+		09F4D94B27B55D2A005C7831 /* HomeTabBarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabBarCoordinator.swift; sourceTree = "<group>"; };
+		09F4D94F27B5701F005C7831 /* MusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCell.swift; sourceTree = "<group>"; };
+		09F4D95027B5701F005C7831 /* MusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicCell.xib; sourceTree = "<group>"; };
+		09F4D96527B58ECD005C7831 /* PodcastServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastServerModel.swift; sourceTree = "<group>"; };
+		09F4D96927B58FAE005C7831 /* BookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookViewController.xib; sourceTree = "<group>"; };
+		09F4D96A27B58FAE005C7831 /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
+		09F4D96B27B58FAE005C7831 /* BookRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRouter.swift; sourceTree = "<group>"; };
+		09F4D96C27B58FAE005C7831 /* BookProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookProvider.swift; sourceTree = "<group>"; };
+		09F4D96D27B58FAE005C7831 /* BookCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCoordinator.swift; sourceTree = "<group>"; };
+		09F4D96E27B58FAE005C7831 /* BookPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookPresenter.swift; sourceTree = "<group>"; };
+		09F4D96F27B58FAE005C7831 /* BookInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInteractor.swift; sourceTree = "<group>"; };
+		09F4D97927B59263005C7831 /* AppleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleViewModel.swift; sourceTree = "<group>"; };
+		09F4D98127B598B3005C7831 /* AppleGenericDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AppleGenericDetailViewController.xib; sourceTree = "<group>"; };
+		09F4D98227B598B3005C7831 /* AppleGenericDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleGenericDetailViewController.swift; sourceTree = "<group>"; };
+		09F4D98327B598B3005C7831 /* AppleGenericDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleGenericDetailRouter.swift; sourceTree = "<group>"; };
+		09F4D98427B598B3005C7831 /* AppleGenericDetailProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleGenericDetailProvider.swift; sourceTree = "<group>"; };
+		09F4D98527B598B3005C7831 /* AppleGenericDetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleGenericDetailCoordinator.swift; sourceTree = "<group>"; };
+		09F4D98627B598B3005C7831 /* AppleGenericDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleGenericDetailPresenter.swift; sourceTree = "<group>"; };
+		09F4D98727B598B3005C7831 /* AppleGenericDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleGenericDetailInteractor.swift; sourceTree = "<group>"; };
+		09F4D99B27B68776005C7831 /* AppServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F4D95727B5728A005C7831 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +150,7 @@
 		09F4D8C827B116D1005C7831 /* CiceMusic */ = {
 			isa = PBXGroup;
 			children = (
+				09F4D97827B59250005C7831 /* ViewModels */,
 				09F4D91127B19DD3005C7831 /* Models */,
 				09F4D90927B142F3005C7831 /* Utils+Helpers */,
 				09F4D90127B13F88005C7831 /* NetworkService */,
@@ -109,12 +184,17 @@
 		09F4D8ED27B11DA6005C7831 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				09F4D8EE27B11DAF005C7831 /* Splash */,
+				09F4D98027B5989C005C7831 /* AppleGenericDetail */,
+				09F4D91827B55B8A005C7831 /* BooksView */,
+				09F4D91727B55B63005C7831 /* PodcastView */,
+				09F4D91627B55B5E005C7831 /* MusicView */,
+				09F4D91527B55B51005C7831 /* HomeTabBar */,
+				09F4D8EE27B11DAF005C7831 /* SplashView */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
 		};
-		09F4D8EE27B11DAF005C7831 /* Splash */ = {
+		09F4D8EE27B11DAF005C7831 /* SplashView */ = {
 			isa = PBXGroup;
 			children = (
 				09F4D8EF27B11DD2005C7831 /* SplashViewController.swift */,
@@ -125,7 +205,7 @@
 				09F4D8FE27B13045005C7831 /* SplashCoordinator.swift */,
 				09F4D90E27B15070005C7831 /* SplashProvider.swift */,
 			);
-			path = Splash;
+			path = SplashView;
 			sourceTree = "<group>";
 		};
 		09F4D90127B13F88005C7831 /* NetworkService */ = {
@@ -149,8 +229,94 @@
 			isa = PBXGroup;
 			children = (
 				09F4D91227B19DE3005C7831 /* MusicServerModel.swift */,
+				09F4D96527B58ECD005C7831 /* PodcastServerModel.swift */,
+				09F4D99B27B68776005C7831 /* AppServerModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		09F4D91527B55B51005C7831 /* HomeTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				09F4D94627B55D17005C7831 /* HomeTabBarViewController.swift */,
+				09F4D94727B55D17005C7831 /* HomeTabBarViewController.xib */,
+				09F4D94B27B55D2A005C7831 /* HomeTabBarCoordinator.swift */,
+			);
+			path = HomeTabBar;
+			sourceTree = "<group>";
+		};
+		09F4D91627B55B5E005C7831 /* MusicView */ = {
+			isa = PBXGroup;
+			children = (
+				09F4D94E27B57004005C7831 /* Cell */,
+				09F4D91927B55B9D005C7831 /* MusicViewController.xib */,
+				09F4D91A27B55B9D005C7831 /* MusicViewController.swift */,
+				09F4D91B27B55B9D005C7831 /* MusicRouter.swift */,
+				09F4D91C27B55B9D005C7831 /* MusicProvider.swift */,
+				09F4D91D27B55B9D005C7831 /* MusicCoordinator.swift */,
+				09F4D91E27B55B9D005C7831 /* MusicPresenter.swift */,
+				09F4D91F27B55B9D005C7831 /* MusicInteractor.swift */,
+			);
+			path = MusicView;
+			sourceTree = "<group>";
+		};
+		09F4D91727B55B63005C7831 /* PodcastView */ = {
+			isa = PBXGroup;
+			children = (
+				09F4D92827B55C02005C7831 /* PodcastViewController.xib */,
+				09F4D92927B55C02005C7831 /* PodcastViewController.swift */,
+				09F4D92A27B55C02005C7831 /* PodcastRouter.swift */,
+				09F4D92B27B55C02005C7831 /* PodcastProvider.swift */,
+				09F4D92C27B55C02005C7831 /* PodcastCoordinator.swift */,
+				09F4D92D27B55C02005C7831 /* PodcastPresenter.swift */,
+				09F4D92E27B55C02005C7831 /* PodcastInteractor.swift */,
+			);
+			path = PodcastView;
+			sourceTree = "<group>";
+		};
+		09F4D91827B55B8A005C7831 /* BooksView */ = {
+			isa = PBXGroup;
+			children = (
+				09F4D96927B58FAE005C7831 /* BookViewController.xib */,
+				09F4D96A27B58FAE005C7831 /* BookViewController.swift */,
+				09F4D96B27B58FAE005C7831 /* BookRouter.swift */,
+				09F4D96C27B58FAE005C7831 /* BookProvider.swift */,
+				09F4D96D27B58FAE005C7831 /* BookCoordinator.swift */,
+				09F4D96E27B58FAE005C7831 /* BookPresenter.swift */,
+				09F4D96F27B58FAE005C7831 /* BookInteractor.swift */,
+			);
+			path = BooksView;
+			sourceTree = "<group>";
+		};
+		09F4D94E27B57004005C7831 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09F4D94F27B5701F005C7831 /* MusicCell.swift */,
+				09F4D95027B5701F005C7831 /* MusicCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		09F4D97827B59250005C7831 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				09F4D97927B59263005C7831 /* AppleViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		09F4D98027B5989C005C7831 /* AppleGenericDetail */ = {
+			isa = PBXGroup;
+			children = (
+				09F4D98127B598B3005C7831 /* AppleGenericDetailViewController.xib */,
+				09F4D98227B598B3005C7831 /* AppleGenericDetailViewController.swift */,
+				09F4D98327B598B3005C7831 /* AppleGenericDetailRouter.swift */,
+				09F4D98427B598B3005C7831 /* AppleGenericDetailProvider.swift */,
+				09F4D98527B598B3005C7831 /* AppleGenericDetailCoordinator.swift */,
+				09F4D98627B598B3005C7831 /* AppleGenericDetailPresenter.swift */,
+				09F4D98727B598B3005C7831 /* AppleGenericDetailInteractor.swift */,
+			);
+			path = AppleGenericDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +335,9 @@
 			dependencies = (
 			);
 			name = CiceMusic;
+			packageProductDependencies = (
+				09F4D95627B5728A005C7831 /* Kingfisher */,
+			);
 			productName = CiceMusic;
 			productReference = 09F4D8C627B116D1005C7831 /* CiceMusic.app */;
 			productType = "com.apple.product-type.application";
@@ -196,6 +365,9 @@
 				Base,
 			);
 			mainGroup = 09F4D8BD27B116D1005C7831;
+			packageReferences = (
+				09F4D95527B5728A005C7831 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 09F4D8C727B116D1005C7831 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -210,9 +382,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F4D92F27B55C02005C7831 /* PodcastViewController.xib in Resources */,
+				09F4D97027B58FAE005C7831 /* BookViewController.xib in Resources */,
+				09F4D92027B55B9D005C7831 /* MusicViewController.xib in Resources */,
 				09F4D8D627B116D3005C7831 /* LaunchScreen.storyboard in Resources */,
 				09F4D8F227B11DD2005C7831 /* SplashViewController.xib in Resources */,
 				09F4D8D327B116D3005C7831 /* Assets.xcassets in Resources */,
+				09F4D98827B598B3005C7831 /* AppleGenericDetailViewController.xib in Resources */,
+				09F4D94927B55D17005C7831 /* HomeTabBarViewController.xib in Resources */,
+				09F4D95227B5701F005C7831 /* MusicCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,16 +404,46 @@
 				09F4D91327B19DE3005C7831 /* MusicServerModel.swift in Sources */,
 				09F4D8CA27B116D1005C7831 /* AppDelegate.swift in Sources */,
 				09F4D90F27B15070005C7831 /* SplashProvider.swift in Sources */,
+				09F4D97327B58FAE005C7831 /* BookProvider.swift in Sources */,
+				09F4D93327B55C02005C7831 /* PodcastCoordinator.swift in Sources */,
+				09F4D93227B55C02005C7831 /* PodcastProvider.swift in Sources */,
+				09F4D97427B58FAE005C7831 /* BookCoordinator.swift in Sources */,
 				09F4D8FF27B13045005C7831 /* SplashCoordinator.swift in Sources */,
+				09F4D99C27B68776005C7831 /* AppServerModel.swift in Sources */,
 				09F4D8F927B12057005C7831 /* SplashInteractor.swift in Sources */,
+				09F4D98927B598B3005C7831 /* AppleGenericDetailViewController.swift in Sources */,
+				09F4D98A27B598B3005C7831 /* AppleGenericDetailRouter.swift in Sources */,
+				09F4D93427B55C02005C7831 /* PodcastPresenter.swift in Sources */,
 				09F4D8FC27B1207D005C7831 /* SplashRouter.swift in Sources */,
 				09F4D90327B13FB0005C7831 /* NetworkService.swift in Sources */,
+				09F4D94827B55D17005C7831 /* HomeTabBarViewController.swift in Sources */,
+				09F4D93027B55C02005C7831 /* PodcastViewController.swift in Sources */,
+				09F4D98C27B598B3005C7831 /* AppleGenericDetailCoordinator.swift in Sources */,
 				09F4D8F627B11E0C005C7831 /* SplashPresenter.swift in Sources */,
+				09F4D92127B55B9D005C7831 /* MusicViewController.swift in Sources */,
+				09F4D93127B55C02005C7831 /* PodcastRouter.swift in Sources */,
+				09F4D97227B58FAE005C7831 /* BookRouter.swift in Sources */,
+				09F4D94C27B55D2A005C7831 /* HomeTabBarCoordinator.swift in Sources */,
+				09F4D92427B55B9D005C7831 /* MusicCoordinator.swift in Sources */,
+				09F4D92227B55B9D005C7831 /* MusicRouter.swift in Sources */,
+				09F4D98B27B598B3005C7831 /* AppleGenericDetailProvider.swift in Sources */,
+				09F4D97527B58FAE005C7831 /* BookPresenter.swift in Sources */,
+				09F4D92627B55B9D005C7831 /* MusicInteractor.swift in Sources */,
+				09F4D92327B55B9D005C7831 /* MusicProvider.swift in Sources */,
 				09F4D8EA27B11AF6005C7831 /* BaseVIPER.swift in Sources */,
 				09F4D90B27B1432C005C7831 /* Utils.swift in Sources */,
+				09F4D98E27B598B3005C7831 /* AppleGenericDetailInteractor.swift in Sources */,
+				09F4D97627B58FAE005C7831 /* BookInteractor.swift in Sources */,
+				09F4D98D27B598B3005C7831 /* AppleGenericDetailPresenter.swift in Sources */,
+				09F4D92527B55B9D005C7831 /* MusicPresenter.swift in Sources */,
+				09F4D95127B5701F005C7831 /* MusicCell.swift in Sources */,
+				09F4D97A27B59263005C7831 /* AppleViewModel.swift in Sources */,
 				09F4D8E627B11867005C7831 /* AppCoreCoordinator.swift in Sources */,
 				09F4D8F127B11DD2005C7831 /* SplashViewController.swift in Sources */,
+				09F4D96627B58ECD005C7831 /* PodcastServerModel.swift in Sources */,
+				09F4D97127B58FAE005C7831 /* BookViewController.swift in Sources */,
 				09F4D90727B14153005C7831 /* NetworkError.swift in Sources */,
+				09F4D93527B55C02005C7831 /* PodcastInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +635,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		09F4D95527B5728A005C7831 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		09F4D95627B5728A005C7831 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09F4D95527B5728A005C7831 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 09F4D8BE27B116D1005C7831 /* Project object */;
 }

@@ -24,7 +24,10 @@ final class NetworkService: NetworkServiceProtocol {
         let sessionConfig = URLSessionConfiguration.default
         let session = URLSession(configuration: sessionConfig)
         
-        let baseUrl = URLEnpoint.baseUrl
+        let argument: [CVarArg] = [NSLocale.current.languageCode ?? ""]
+        let baseUrl = String(format: URLEnpoint.baseUrl, arguments: argument)
+        //let baseUrl = URLEnpoint.baseUrl
+        
         let endpoint = "\(baseUrl)\(requestPayload.endpoint)"
         
         guard let urlUnw = URL(string: endpoint) else{
@@ -33,6 +36,9 @@ final class NetworkService: NetworkServiceProtocol {
         }
         
         let urlEndpoint = urlUnw
+        
+        //debugPrint(urlEndpoint)
+
         
         session.dataTask(with: urlEndpoint) { [weak self] (data, response, error) in
             guard self != nil else { return }
