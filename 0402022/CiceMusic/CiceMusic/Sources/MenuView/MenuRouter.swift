@@ -24,34 +24,18 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
+import UIKit
 
-// Input Protocol
-protocol AppleGenericDetailProviderInputProtocol {
-    func fetchData(completionHandler: @escaping (Result<AppServerModel, NetworkError>) -> Void)
+// Input del Router
+protocol MenuRouterInputProtocol {
+
 }
 
-final class AppleGenericDetailProvider: AppleGenericDetailProviderInputProtocol {
-    
-    let networkService: NetworkServiceProtocol = NetworkService()
-    
-    func fetchData(completionHandler: @escaping (Result<AppServerModel, NetworkError>) -> Void) {
-        self.networkService.requestGeneric(requestPayload: AppleGenericDetailRequestDTO.requestData(numeroItems: "10"),
-                                           entityClass: AppServerModel.self) { [weak self] (result) in
-            guard self != nil else { return }
-            guard let resultUnw = result else { return }
-            completionHandler(.success(resultUnw))
-        } failure: { (error) in
-            completionHandler(.failure(error))
-        }
-    }
+final class MenuRouter: BaseRouter<MenuViewController> {
+        
 }
 
-struct AppleGenericDetailRequestDTO {
+// Input del Router
+extension MenuRouter: MenuRouterInputProtocol {
     
-    static func requestData(numeroItems: String) -> RequestDTO {
-        let argument: [CVarArg] = [numeroItems]
-        let urlComplete = String(format: URLEnpoint.apps, arguments: argument)
-        let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete, urlContext: .webService)
-        return request
-    }
 }

@@ -23,35 +23,27 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 POSSIBILITY OF SUCH DAMAGE.
 */
 
-import Foundation
+import UIKit
 
-// Input Protocol
-protocol AppleGenericDetailProviderInputProtocol {
-    func fetchData(completionHandler: @escaping (Result<AppServerModel, NetworkError>) -> Void)
+// Output del Presenter
+protocol MenuPresenterOutputProtocol {
+    func reloadInformationInView()
 }
 
-final class AppleGenericDetailProvider: AppleGenericDetailProviderInputProtocol {
+class MenuViewController: BaseView<MenuPresenterInputProtocol> {
+
     
-    let networkService: NetworkServiceProtocol = NetworkService()
-    
-    func fetchData(completionHandler: @escaping (Result<AppServerModel, NetworkError>) -> Void) {
-        self.networkService.requestGeneric(requestPayload: AppleGenericDetailRequestDTO.requestData(numeroItems: "10"),
-                                           entityClass: AppServerModel.self) { [weak self] (result) in
-            guard self != nil else { return }
-            guard let resultUnw = result else { return }
-            completionHandler(.success(resultUnw))
-        } failure: { (error) in
-            completionHandler(.failure(error))
-        }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+       
     }
+
 }
 
-struct AppleGenericDetailRequestDTO {
-    
-    static func requestData(numeroItems: String) -> RequestDTO {
-        let argument: [CVarArg] = [numeroItems]
-        let urlComplete = String(format: URLEnpoint.apps, arguments: argument)
-        let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete, urlContext: .webService)
-        return request
+// Output del Presenter
+extension MenuViewController: MenuPresenterOutputProtocol {
+
+    func reloadInformationInView() {
+        
     }
 }

@@ -14,7 +14,8 @@ protocol SplashRouterInputProtocol {
 }
 
 final class SplashRouter: BaseRouter<SplashViewController> {
-    
+    let delegate = UIApplication.shared.delegate as! AppDelegate
+    let appCore: AppCoreCoordinatorProtocol = AppCoreCoordinator()
 }
 
 // Input del Router
@@ -24,7 +25,12 @@ extension SplashRouter: SplashRouterInputProtocol {
             let vc = HomeTabBarCoordinator.tabBarController(dto: HomeTabBarCoordinatorDTO(data: dataSource))
             vc.modalTransitionStyle = .crossDissolve
             vc.modalPresentationStyle = .fullScreen
-            self.viewController?.present(vc, animated: true, completion: nil)
+            
+            if let windowUnw = self.delegate.window {
+                self.appCore.createSlidingMenu(window: windowUnw, vc: vc)
+            }
+            
+            //self.viewController?.present(vc, animated: true, completion: nil)
         }
         
     }

@@ -41,6 +41,7 @@ class BookViewController: BaseView<BookPresenterInputProtocol> {
         super.viewDidLoad()
         self.presenter?.fetchPodcastFromWebService()
         self.configuracionTableView()
+        self.menuButton()
     }
 
     private func configuracionTableView(){

@@ -1,5 +1,5 @@
 /*
-
+ 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
@@ -25,33 +25,19 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 
-// Input Protocol
-protocol AppleGenericDetailProviderInputProtocol {
-    func fetchData(completionHandler: @escaping (Result<AppServerModel, NetworkError>) -> Void)
+// Input del Interactor
+protocol MenuInteractorInputProtocol {
+    
 }
 
-final class AppleGenericDetailProvider: AppleGenericDetailProviderInputProtocol {
+final class MenuInteractor: BaseInteractor<MenuInteractorOutputProtocol> {
     
-    let networkService: NetworkServiceProtocol = NetworkService()
+    let provider: MenuProviderInputProtocol = MenuProvider()
+
     
-    func fetchData(completionHandler: @escaping (Result<AppServerModel, NetworkError>) -> Void) {
-        self.networkService.requestGeneric(requestPayload: AppleGenericDetailRequestDTO.requestData(numeroItems: "10"),
-                                           entityClass: AppServerModel.self) { [weak self] (result) in
-            guard self != nil else { return }
-            guard let resultUnw = result else { return }
-            completionHandler(.success(resultUnw))
-        } failure: { (error) in
-            completionHandler(.failure(error))
-        }
-    }
 }
 
-struct AppleGenericDetailRequestDTO {
+// Input del Interactor
+extension MenuInteractor: MenuInteractorInputProtocol {
     
-    static func requestData(numeroItems: String) -> RequestDTO {
-        let argument: [CVarArg] = [numeroItems]
-        let urlComplete = String(format: URLEnpoint.apps, arguments: argument)
-        let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete, urlContext: .webService)
-        return request
-    }
 }

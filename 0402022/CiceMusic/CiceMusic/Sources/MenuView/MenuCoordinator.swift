@@ -25,33 +25,38 @@ POSSIBILITY OF SUCH DAMAGE.
 
 import Foundation
 
-// Input Protocol
-protocol AppleGenericDetailProviderInputProtocol {
-    func fetchData(completionHandler: @escaping (Result<AppServerModel, NetworkError>) -> Void)
+
+final class MenuCoordinator {
+
+    static func navigation(dto: MenuCoordinatorDTO? = nil) -> BaseNavigation {
+        BaseNavigation(rootViewController: view())
+    }
+    
+    static func view(dto: MenuCoordinatorDTO? = nil) -> MenuViewController & MenuPresenterOutputProtocol {
+        let vc = MenuViewController()
+        vc.presenter = presenter(vc: vc)
+        return vc
+    }
+    
+    static func presenter(vc: MenuViewController) -> MenuPresenterInputProtocol & MenuInteractorOutputProtocol {
+        let presenter = MenuPresenter(vc: vc)
+        presenter.interactor = interactor(presenter: presenter)
+        presenter.router = router(vc: vc)
+        return presenter
+    }
+    
+    static func interactor(presenter: MenuPresenter) -> MenuInteractorInputProtocol {
+        let interactor = MenuInteractor(presenter: presenter)
+        return interactor
+    }
+    
+    static func router(vc: MenuViewController) -> MenuRouterInputProtocol {
+        let router = MenuRouter(view: vc)
+        return router
+    }
+    
 }
 
-final class AppleGenericDetailProvider: AppleGenericDetailProviderInputProtocol {
+struct MenuCoordinatorDTO {
     
-    let networkService: NetworkServiceProtocol = NetworkService()
-    
-    func fetchData(completionHandler: @escaping (Result<AppServerModel, NetworkError>) -> Void) {
-        self.networkService.requestGeneric(requestPayload: AppleGenericDetailRequestDTO.requestData(numeroItems: "10"),
-                                           entityClass: AppServerModel.self) { [weak self] (result) in
-            guard self != nil else { return }
-            guard let resultUnw = result else { return }
-            completionHandler(.success(resultUnw))
-        } failure: { (error) in
-            completionHandler(.failure(error))
-        }
-    }
-}
-
-struct AppleGenericDetailRequestDTO {
-    
-    static func requestData(numeroItems: String) -> RequestDTO {
-        let argument: [CVarArg] = [numeroItems]
-        let urlComplete = String(format: URLEnpoint.apps, arguments: argument)
-        let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete, urlContext: .webService)
-        return request
-    }
 }
