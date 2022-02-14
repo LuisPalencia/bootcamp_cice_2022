@@ -14,13 +14,13 @@ final class HomeTabBarCoordinator {
         let tbc = HomeTabBarViewController()
         
         // Controllers
-        let musicVC = MusicCoordinator.navigation(dto: MusicCoordinatorDTO(model: dto?.data))
+        let musicVC = MusicCoordinator.navigation()
         let podcastVC = PodcastCoordinator.navigation()
         let booksVC = BookCoordinator.navigation()
         
         // Icons
         let iconMusic = UITabBarItem(title: "Music", image: UIImage(systemName: "music.note.list"), selectedImage: UIImage(systemName: "music.note.list"))
-        let iconPodcasts = UITabBarItem(title: "Podcasts", image: UIImage(systemName: "music.note.list"), selectedImage: UIImage(systemName: "music.note.list"))
+        let iconPodcasts = UITabBarItem(title: "Podcasts", image: UIImage(systemName: "music.note.house.fill"), selectedImage: UIImage(systemName: "music.note.house.fill"))
         let iconBooks = UITabBarItem(title: "Books", image: UIImage(systemName: "book"), selectedImage: UIImage(systemName: "book.fill"))
         
         // Asignamos el icono al controlador
@@ -36,5 +36,5 @@ final class HomeTabBarCoordinator {
 }
 
 struct HomeTabBarCoordinatorDTO {
-    var data: [GenericResult]?
+    
 }

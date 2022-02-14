@@ -9,6 +9,9 @@ import Foundation
 
 
 protocol NetworkServiceProtocol {
+    
+    
+    
     func requestGeneric<M: Decodable>(requestPayload: RequestDTO,
                                       entityClass: M.Type,
                                       success: @escaping(M?) -> Void,
@@ -16,6 +19,14 @@ protocol NetworkServiceProtocol {
 }
 
 final class NetworkService: NetworkServiceProtocol {
+    
+    typealias HTTPHeaders = [String: String]
+    
+    let defaultHTTPHeaders: HTTPHeaders = {
+        return [Utils.Constantes().Authentication: Utils.Constantes().BearerAuthentication]
+    }()
+    
+    
     func requestGeneric<M>(requestPayload: RequestDTO,
                            entityClass: M.Type,
                            success: @escaping (M?) -> Void,
@@ -29,20 +40,21 @@ final class NetworkService: NetworkServiceProtocol {
         //let baseUrl = URLEnpoint.baseUrl
         let baseUrl = URLEnpoint.getUrlBase(urlContext: requestPayload.urlContext)
         
-        
         let endpoint = "\(baseUrl)\(requestPayload.endpoint)"
         
-        guard let urlUnw = URL(string: endpoint) else{
+        guard let urlUnw = URL(string: endpoint)  else{
             failure(NetworkError(status: .unsupportedURL))
             return
         }
         
-        let urlEndpoint = urlUnw
+        var urlRequest = URLRequest(url: urlUnw)
+        let headers = defaultHTTPHeaders
         
-        //debugPrint(urlEndpoint)
-
+        headers.forEach { (key, value) in
+            urlRequest.setValue(value, forHTTPHeaderField: key)
+        }
         
-        session.dataTask(with: urlEndpoint) { [weak self] (data, response, error) in
+        session.dataTask(with: urlRequest) { [weak self] (data, response, error) in
             guard self != nil else { return }
             if let errorUnw = error {
                 failure(NetworkError(error: errorUnw))
@@ -63,7 +75,6 @@ final class NetworkService: NetworkServiceProtocol {
                 DispatchQueue.main.async {
                     success(jsonObject)
                 }
-                
             }catch {
                 failure(NetworkError(status: .resourceUnavailable))
             }
