@@ -32,7 +32,13 @@ extension SplashPresenter: SplashPresenterInputProtocol {
     }
     
     func fetchDataFromWebService() {
-        self.interactor?.fetchDataFromWebServiceInteractor()
+        
+        
+        if Utils.Constantes().kPrefer.bool(forKey: Utils.Constantes().kUsuarioLogado){
+            self.interactor?.fetchDataFromWebServiceInteractor()
+        }else{
+            self.router?.showLoginViewRouter(dataSource: self.dataSourceViewModel)
+        }
     }
     
 }
