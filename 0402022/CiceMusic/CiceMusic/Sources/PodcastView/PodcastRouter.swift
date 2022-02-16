@@ -28,7 +28,8 @@ import UIKit
 
 // Input del Router
 protocol PodcastRouterInputProtocol {
-    func showAlert(title: String, message: String) 
+    func showAlert(title: String, message: String)
+    func didSelectRowRouter(data: GenericResult)
 }
 
 final class PodcastRouter: BaseRouter<PodcastViewController>  {
@@ -40,6 +41,13 @@ extension PodcastRouter: PodcastRouterInputProtocol {
     func showAlert(title: String, message: String) {
         DispatchQueue.main.async {
             self.viewController?.present(Utils.showAlert(title: title, message: message), animated: true, completion: nil)
+        }
+    }
+    
+    func didSelectRowRouter(data: GenericResult) {
+        DispatchQueue.main.async {
+            let vc = AppleGenericDetailCoordinator.view(dto: AppleGenericDetailCoordinatorDTO(dataModel: data))
+            self.viewController?.show(vc, sender: nil)
         }
     }
 }

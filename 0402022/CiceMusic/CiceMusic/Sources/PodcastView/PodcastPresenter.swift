@@ -60,7 +60,7 @@ extension PodcastPresenter: PodcastPresenterInputProtocol {
     }
     
     func didSelectRow(data: GenericResult) {
-        //self.router?.didSelectRowRouter(data: data)
+        self.router?.didSelectRowRouter(data: data)
     }
 }
 

@@ -54,11 +54,7 @@ class LoginViewController: BaseView<LoginPresenterInputProtocol> {
             Utils.Constantes().kPrefer.setValue(self.usuarioLogado, forKey: Utils.Constantes().kUsuarioLogado)
             self.configuracionUI(color: #colorLiteral(red: 0.2745098174, green: 0.4862745106, blue: 0.1411764771, alpha: 1))
         }else{
-            /*self.present(Utils.muestraAlerta(titulo: "Hey!",
-                                             mensaje: "Rellena el username y el password",
-                                             completionHandler: nil),
-                         animated: true,
-                         completion: nil)*/
+            self.presenter?.showCustomAlertFailure()
         }
     }
     
@@ -68,11 +64,7 @@ class LoginViewController: BaseView<LoginPresenterInputProtocol> {
             self.borrarDatosFormulario()
             
         }else{
-            /*self.present(Utils.muestraAlerta(titulo: "Hey!",
-                                             mensaje: "Rellena el username y el password",
-                                             completionHandler: nil),
-                         animated: true,
-                         completion: nil)*/
+            self.presenter?.showCustomAlertFailure()
         }
     }
     
@@ -109,17 +101,14 @@ class LoginViewController: BaseView<LoginPresenterInputProtocol> {
     }
     
     private func mostrarHomeTabBar() {
-        /*let vc = HomeTabBarViewCoordinator.homeViewController()
-        vc.modalTransitionStyle = .coverVertical
-        vc.modalPresentationStyle = .fullScreen
-        self.present(vc, animated: true, completion: nil)*/
+        self.presenter?.showCustomAlertSuccess()
+        //self.presenter?.showHomeTabBar()
     }
 
 }
 
 // Output del Presenter
 extension LoginViewController: LoginPresenterOutputProtocol {
-
     func reloadInformationInView() {
         
     }

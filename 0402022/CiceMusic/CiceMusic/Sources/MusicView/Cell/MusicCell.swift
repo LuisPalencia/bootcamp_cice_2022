@@ -12,7 +12,7 @@ protocol MusicCellInputProtocol {
     func setupCell(data: GenericResult)
 }
 
-class MusicCell: UITableViewCell {
+class MusicCell: UITableViewCell, ReuseIdentifierProtocol {
     
     //MARK: - IBOutlets
     
@@ -34,7 +34,7 @@ class MusicCell: UITableViewCell {
     
 }
 
-extension MusicCell: MusicCellInputProtocol, ReuseIdentifierProtocol {
+extension MusicCell: MusicCellInputProtocol {
     func setupCell(data: GenericResult) {
         
         

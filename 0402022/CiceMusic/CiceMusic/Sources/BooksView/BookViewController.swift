@@ -79,7 +79,9 @@ extension BookViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //self.presenter
+        if let model = self.presenter?.informationForCell(indexPath: indexPath.row){
+            self.presenter?.didSelectRow(data: model)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
