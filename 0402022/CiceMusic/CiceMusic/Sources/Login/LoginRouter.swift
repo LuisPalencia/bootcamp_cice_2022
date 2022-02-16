@@ -59,7 +59,7 @@ extension LoginRouter: LoginRouterInputProtocol {
             vc.delegate = delegate
             vc.alertManager = model
             //vc.modalPresentationStyle = .fullScreen
-            vc.modalPresentationStyle = .overCurrentContext
+            vc.modalPresentationStyle = .overFullScreen
             vc.modalTransitionStyle = .crossDissolve
             self.viewController?.present(vc, animated: true, completion: nil)
         }
