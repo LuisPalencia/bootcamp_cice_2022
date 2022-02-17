@@ -69,6 +69,7 @@ struct URLEnpoint {
     
     static let baseUrlHeroku = "http://icospartan-app.herokuapp.com/"
     static let menu = "iCoMenuResponse"
+    static let consejos = "iCoResponseConsejos"
 }
 
 extension URLEnpoint {

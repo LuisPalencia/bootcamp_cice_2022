@@ -19,6 +19,7 @@ class GenericWebViewController: UIViewController {
 
     // MARK: - Variables de entorno
     var myWebViewInContainer: WKWebView!
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     // MARK: - IBOutlets
     
@@ -33,6 +34,11 @@ class GenericWebViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        self.appDelegate.canRotate = false
+    }
+    
     private func configuracionWebView(){
         self.title = "Cice Music Web"
         self.myActivityIndicator.isHidden = false
@@ -43,7 +49,8 @@ class GenericWebViewController: UIViewController {
         let prefers = WKWebpagePreferences()
         
         prefers.allowsContentJavaScript = true
-        self.myWebViewInContainer = WKWebView(frame: self.contentWebView.bounds, configuration: config)
+        //self.myWebViewInContainer = WKWebView(frame: self.contentWebView.bounds, configuration: config)
+        self.myWebViewInContainer = WKWebView(frame: CGRect(x: 0, y: 0, width: Int(self.contentWebView.frame.width), height: Int(self.contentWebView.frame.height)), configuration: config)
         self.myWebViewInContainer.configuration.userContentController = contentWebView
         self.myWebViewInContainer.navigationDelegate = self
         
@@ -53,6 +60,7 @@ class GenericWebViewController: UIViewController {
     private func loadWebView(){
         guard let urlUnw = URL(string: "http://www.icologic.co") else { return }
         self.myWebViewInContainer.load(URLRequest(url: urlUnw))
+        self.appDelegate.canRotate = true
     }
 
 }

@@ -12,6 +12,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     let appCore: AppCoreCoordinatorProtocol = AppCoreCoordinator()
+    
+    //var orientationEnable: UIInterfaceOrientationMask = .portrait
+    var canRotate = false
 
 
 
@@ -25,8 +28,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-    
-
-
+    // MARK: - Autorotations
+    func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
+        if canRotate {
+            return .all
+        }else{
+            return .portrait
+        }
+    }
 }
 
