@@ -64,7 +64,7 @@ extension MenuPresenter: MenuPresenterInputProtocol {
     }
     
     func showWebSite() {
-        
+        self.router?.showCustomAlert(delegate: self, model: CustomAlertManager(type: .generalConfirmation))
     }
     
     func showMusicViewController() {
@@ -83,7 +83,8 @@ extension MenuPresenter: MenuPresenterInputProtocol {
         if canSendMail {
             self.router?.canSendMail(delegate: delegate)
         }else{
-            self.router?.cantSentMail(model: CustomAlertManager(type: .cantSendMail))
+            //self.router?.cantSentMail(model: CustomAlertManager(type: .cantSendMail))
+            self.router?.showCustomAlert(delegate: nil, model: CustomAlertManager(type: .cantSendMail))
         }
     }
 }
@@ -97,4 +98,12 @@ extension MenuPresenter: MenuInteractorOutputProtocol {
     }
 }
 
-
+extension MenuPresenter: AlertDefaultViewControllerDelegate {
+    func primaryButtonPressed() {
+        self.router?.showGenericWebView()
+    }
+    
+    func secondaryButtonPressed() {
+        
+    }
+}

@@ -86,6 +86,10 @@
 		09F4D9F627BC3C15005C7831 /* CustomAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D9F527BC3C15005C7831 /* CustomAlertManager.swift */; };
 		09F4D9F927BC3D63005C7831 /* LocalizedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D9F827BC3D63005C7831 /* LocalizedKeys.swift */; };
 		09F4D9FD27BD7E3D005C7831 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 09F4D9FC27BD7E3D005C7831 /* PKHUD */; };
+		09F4DA0427BE78A2005C7831 /* GenericWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DA0227BE78A2005C7831 /* GenericWebViewController.swift */; };
+		09F4DA0527BE78A2005C7831 /* GenericWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F4DA0327BE78A2005C7831 /* GenericWebViewController.xib */; };
+		09F4DA0927BE78B1005C7831 /* GenericWebPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DA0827BE78B1005C7831 /* GenericWebPresenter.swift */; };
+		09F4DA0C27BE78BE005C7831 /* GenericWebCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DA0B27BE78BE005C7831 /* GenericWebCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -176,6 +180,10 @@
 		09F4D9EF27BC31D8005C7831 /* AlertDefaultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertDefaultViewController.xib; sourceTree = "<group>"; };
 		09F4D9F527BC3C15005C7831 /* CustomAlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertManager.swift; sourceTree = "<group>"; };
 		09F4D9F827BC3D63005C7831 /* LocalizedKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedKeys.swift; sourceTree = "<group>"; };
+		09F4DA0227BE78A2005C7831 /* GenericWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebViewController.swift; sourceTree = "<group>"; };
+		09F4DA0327BE78A2005C7831 /* GenericWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericWebViewController.xib; sourceTree = "<group>"; };
+		09F4DA0827BE78B1005C7831 /* GenericWebPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebPresenter.swift; sourceTree = "<group>"; };
+		09F4DA0B27BE78BE005C7831 /* GenericWebCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +256,7 @@
 		09F4D8ED27B11DA6005C7831 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				09F4DA0127BE7876005C7831 /* WebView */,
 				09F4D9C927BAF52D005C7831 /* Login */,
 				09F4D9AA27B7F3F8005C7831 /* MenuView */,
 				09F4D98027B5989C005C7831 /* AppleGenericDetail */,
@@ -478,6 +487,17 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		09F4DA0127BE7876005C7831 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				09F4DA0227BE78A2005C7831 /* GenericWebViewController.swift */,
+				09F4DA0327BE78A2005C7831 /* GenericWebViewController.xib */,
+				09F4DA0827BE78B1005C7831 /* GenericWebPresenter.swift */,
+				09F4DA0B27BE78BE005C7831 /* GenericWebCoordinator.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -554,6 +574,7 @@
 				09F4D8D627B116D3005C7831 /* LaunchScreen.storyboard in Resources */,
 				09F4D8F227B11DD2005C7831 /* SplashViewController.xib in Resources */,
 				09F4D9A227B7D99B005C7831 /* AppsCell.xib in Resources */,
+				09F4DA0527BE78A2005C7831 /* GenericWebViewController.xib in Resources */,
 				09F4D9C727BAECC0005C7831 /* MenuCell.xib in Resources */,
 				09F4D8D327B116D3005C7831 /* Assets.xcassets in Resources */,
 				09F4D9B227B7F422005C7831 /* MenuViewController.xib in Resources */,
@@ -586,6 +607,7 @@
 				09F4D99C27B68776005C7831 /* AppServerModel.swift in Sources */,
 				09F4D8F927B12057005C7831 /* SplashInteractor.swift in Sources */,
 				09F4D9D727BAF557005C7831 /* LoginInteractor.swift in Sources */,
+				09F4DA0C27BE78BE005C7831 /* GenericWebCoordinator.swift in Sources */,
 				09F4D98927B598B3005C7831 /* AppleGenericDetailViewController.swift in Sources */,
 				09F4D98A27B598B3005C7831 /* AppleGenericDetailRouter.swift in Sources */,
 				09F4D93427B55C02005C7831 /* PodcastPresenter.swift in Sources */,
@@ -596,6 +618,7 @@
 				09F4D90327B13FB0005C7831 /* NetworkService.swift in Sources */,
 				09F4D94827B55D17005C7831 /* HomeTabBarViewController.swift in Sources */,
 				09F4D93027B55C02005C7831 /* PodcastViewController.swift in Sources */,
+				09F4DA0427BE78A2005C7831 /* GenericWebViewController.swift in Sources */,
 				09F4D98C27B598B3005C7831 /* AppleGenericDetailCoordinator.swift in Sources */,
 				09F4D9F627BC3C15005C7831 /* CustomAlertManager.swift in Sources */,
 				09F4D8F627B11E0C005C7831 /* SplashPresenter.swift in Sources */,
@@ -609,6 +632,7 @@
 				09F4D9B827B7F422005C7831 /* MenuInteractor.swift in Sources */,
 				09F4D98B27B598B3005C7831 /* AppleGenericDetailProvider.swift in Sources */,
 				09F4D9C127BAD6FE005C7831 /* MenuServerModel.swift in Sources */,
+				09F4DA0927BE78B1005C7831 /* GenericWebPresenter.swift in Sources */,
 				09F4D97527B58FAE005C7831 /* BookPresenter.swift in Sources */,
 				09F4D92627B55B9D005C7831 /* MusicInteractor.swift in Sources */,
 				09F4D92327B55B9D005C7831 /* MusicProvider.swift in Sources */,
