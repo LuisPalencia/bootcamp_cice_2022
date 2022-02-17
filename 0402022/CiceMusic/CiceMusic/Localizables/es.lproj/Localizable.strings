@@ -1,12 +1,12 @@
 // GENERAL
-"general_accept" = "Aceptar";
-"general_cancel" = "Cancelar";
+"general_accept" = "Accept";
+"general_cancel" = "Cancel";
 
 // LOGIN
-"title_my_alert_login_success" = "Enhorabuena!";
-"message_my_alert_login_success" = "Ahora tendrás acceso al portal de musica, podcasts y books de iTunes";
-"title_my_alert_login_failure" = "Tienes un fallo";
-"message_my_alert_login_failure" = "Es necesario rellenar los campos de usuario y contraseña";
+"title_my_alert_login_success" = "Congrats!";
+"message_my_alert_login_success" = "Now you will have access to iTunes portal full of music, podcasts and books";
+"title_my_alert_login_failure" = "Something went wrong";
+"message_my_alert_login_failure" = "You must complete all fields: username and password";
 
 // REGISTRO
 

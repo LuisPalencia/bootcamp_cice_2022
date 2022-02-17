@@ -39,6 +39,7 @@ class BookViewController: BaseView<BookPresenterInputProtocol> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.showLoading()
         self.presenter?.fetchPodcastFromWebService()
         self.configuracionTableView()
         self.menuButton()
@@ -58,6 +59,7 @@ extension BookViewController: BookPresenterOutputProtocol {
 
     func reloadInformationInView() {
         self.booksTableView.reloadData()
+        self.hideLoading()
     }
 }
 

@@ -111,8 +111,20 @@
                                 <constraint firstAttribute="height" constant="34" id="eTs-KY-lNz"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                         </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIW-Ap-YgN">
+                            <rect key="frame" x="312" y="17" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="8jY-8z-foz"/>
+                                <constraint firstAttribute="width" constant="40" id="NCG-CO-QoM"/>
+                            </constraints>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" image="eye" catalog="system"/>
+                            <connections>
+                                <action selector="showOrNotPassword:" destination="-1" eventType="touchUpInside" id="OCB-ac-G6s"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemYellowColor"/>
                     <constraints>
@@ -123,6 +135,8 @@
                         <constraint firstItem="SzT-ba-QdY" firstAttribute="leading" secondItem="Flc-fD-udv" secondAttribute="trailing" constant="16" id="WME-LR-iTn"/>
                         <constraint firstAttribute="trailing" secondItem="SzT-ba-QdY" secondAttribute="trailing" constant="22" id="k24-Pz-fcj"/>
                         <constraint firstItem="SzT-ba-QdY" firstAttribute="top" secondItem="Flc-fD-udv" secondAttribute="top" id="nYu-1d-9a6"/>
+                        <constraint firstItem="JIW-Ap-YgN" firstAttribute="trailing" secondItem="zBM-RG-Azt" secondAttribute="trailing" id="nxv-Vd-ZvE"/>
+                        <constraint firstItem="JIW-Ap-YgN" firstAttribute="centerY" secondItem="HOB-FQ-F3m" secondAttribute="centerY" id="sJv-i9-u6i"/>
                         <constraint firstAttribute="height" constant="74" id="tPs-wp-ybh"/>
                         <constraint firstItem="zBM-RG-Azt" firstAttribute="leading" secondItem="SzT-ba-QdY" secondAttribute="leading" id="wky-v2-Ldb"/>
                     </constraints>
@@ -162,6 +176,7 @@
         </view>
     </objects>
     <resources>
+        <image name="eye" catalog="system" width="128" height="81"/>
         <image name="person.crop.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

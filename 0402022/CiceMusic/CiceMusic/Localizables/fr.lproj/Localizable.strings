@@ -1,0 +1,11 @@
+// GENERAL
+"general_accept" = "Accepter";
+"general_cancel" = "Annuler";
+
+// LOGIN
+"title_my_alert_login_success" = "Félicitations !";
+"message_my_alert_login_success" = "Vous avez maintenant accès au portail iTunes pour la musique, les podcasts et les livres" ;
+"title_my_alert_login_failure" = "Vous avez un échec" ;
+"message_my_alert_login_failure" = "Vous devez remplir les champs du nom d'utilisateur et du mot de passe" ;
+
+// REGISTRO

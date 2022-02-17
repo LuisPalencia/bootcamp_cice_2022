@@ -85,6 +85,7 @@
 		09F4D9F127BC31D8005C7831 /* AlertDefaultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F4D9EF27BC31D8005C7831 /* AlertDefaultViewController.xib */; };
 		09F4D9F627BC3C15005C7831 /* CustomAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D9F527BC3C15005C7831 /* CustomAlertManager.swift */; };
 		09F4D9F927BC3D63005C7831 /* LocalizedKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4D9F827BC3D63005C7831 /* LocalizedKeys.swift */; };
+		09F4D9FD27BD7E3D005C7831 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 09F4D9FC27BD7E3D005C7831 /* PKHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -183,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09F4D95727B5728A005C7831 /* Kingfisher in Frameworks */,
+				09F4D9FD27BD7E3D005C7831 /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +496,7 @@
 			name = CiceMusic;
 			packageProductDependencies = (
 				09F4D95627B5728A005C7831 /* Kingfisher */,
+				09F4D9FC27BD7E3D005C7831 /* PKHUD */,
 			);
 			productName = CiceMusic;
 			productReference = 09F4D8C627B116D1005C7831 /* CiceMusic.app */;
@@ -528,6 +531,7 @@
 			mainGroup = 09F4D8BD27B116D1005C7831;
 			packageReferences = (
 				09F4D95527B5728A005C7831 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				09F4D9FB27BD7E3D005C7831 /* XCRemoteSwiftPackageReference "PKHUD" */,
 			);
 			productRefGroup = 09F4D8C727B116D1005C7831 /* Products */;
 			projectDirPath = "";
@@ -933,6 +937,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		09F4D9FB27BD7E3D005C7831 /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD.git";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -940,6 +952,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 09F4D95527B5728A005C7831 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		09F4D9FC27BD7E3D005C7831 /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 09F4D9FB27BD7E3D005C7831 /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

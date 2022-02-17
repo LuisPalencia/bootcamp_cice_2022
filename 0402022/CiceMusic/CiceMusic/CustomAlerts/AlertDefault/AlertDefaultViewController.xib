@@ -10,8 +10,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertDefaultViewController" customModule="CiceMusic" customModuleProvider="target">
             <connections>
+                <outlet property="alertContentView" destination="ize-oQ-UZG" id="gr8-wF-bH0"/>
                 <outlet property="backgroundContentView" destination="PR0-c9-cfW" id="siP-4f-54p"/>
                 <outlet property="closeBTN" destination="rD2-7e-v7r" id="V6w-uS-oqS"/>
+                <outlet property="constHeightAcceptButton" destination="Jzk-j5-Zm2" id="OEH-l5-3gj"/>
                 <outlet property="constHeightButtonClose" destination="Q6y-Pg-x7y" id="Vd5-Z2-lnL"/>
                 <outlet property="constHeightCancelButton" destination="jmA-3a-9Vi" id="GtD-U2-209"/>
                 <outlet property="messageAlertLBL" destination="Gad-Rc-gyf" id="IVL-eV-3ir"/>
@@ -35,12 +37,13 @@
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rD2-7e-v7r">
                             <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
-                            <color key="backgroundColor" systemColor="systemRedColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="44" id="CCn-0y-46f"/>
                                 <constraint firstAttribute="height" constant="44" id="Q6y-Pg-x7y"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <state key="normal" title="X"/>
                             <connections>
                                 <action selector="closeACTION:" destination="-1" eventType="touchUpInside" id="YNN-ig-qRL"/>
@@ -48,14 +51,16 @@
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_Titulo del Alert View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WfA-za-eWF">
                             <rect key="frame" x="8" y="58" width="342" height="21"/>
-                            <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gad-Rc-gyf">
                             <rect key="frame" x="8" y="98" width="342" height="71.666666666666686"/>
-                            <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <string key="text">_Mensaje del Alert View_Mensaje del Alert View_Mensaje del Alert View_Mensaje del Alert View_Mensaje del Alert View_Mensaje del Alert View</string>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                             <nil key="textColor"/>
@@ -127,12 +132,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

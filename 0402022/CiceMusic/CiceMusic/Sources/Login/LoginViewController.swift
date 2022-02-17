@@ -69,6 +69,15 @@ class LoginViewController: BaseView<LoginPresenterInputProtocol> {
     }
     
     
+    @IBAction func showOrNotPassword(_ sender: Any) {
+        if self.passwordTF.isSecureTextEntry == false {
+            self.passwordTF.isSecureTextEntry = true
+        }else{
+            self.passwordTF.isSecureTextEntry = false
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configuracionUI(color: #colorLiteral(red: 1, green: 0.2823529412, blue: 0.25824927, alpha: 1))

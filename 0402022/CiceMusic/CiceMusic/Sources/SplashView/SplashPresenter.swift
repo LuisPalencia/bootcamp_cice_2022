@@ -27,20 +27,22 @@ final class SplashPresenter: BasePresenter<SplashPresenterOutputProtocol, Splash
 
 // Input del Presenter
 extension SplashPresenter: SplashPresenterInputProtocol {
-    func showHometabBar() {
-        self.router?.showHometabBarRouter(dataSource: self.dataSourceViewModel)
+    func fetchDataFromWebService() {
+        self.interactor?.fetchDataFromWebServiceInteractor()
     }
     
-    func fetchDataFromWebService() {
+    func showHometabBar() {
+        
         
         
         if Utils.Constantes().kPrefer.bool(forKey: Utils.Constantes().kUsuarioLogado){
-            self.interactor?.fetchDataFromWebServiceInteractor()
+            self.router?.showHometabBarRouter(dataSource: self.dataSourceViewModel)
+
         }else{
             self.router?.showLoginViewRouter(dataSource: self.dataSourceViewModel)
         }
+
     }
-    
 }
 
 // OUtput del Interactor
