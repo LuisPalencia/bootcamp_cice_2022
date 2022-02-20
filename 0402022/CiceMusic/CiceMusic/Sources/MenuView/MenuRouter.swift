@@ -32,6 +32,7 @@ protocol MenuRouterInputProtocol {
     func canSendMail(delegate: MFMailComposeViewControllerDelegate)
     func showCustomAlert(delegate: AlertDefaultViewControllerDelegate?, model: CustomAlertManager)
     func showGenericWebView()
+    func showTipsViewController()
 }
 
 final class MenuRouter: BaseRouter<MenuViewController> {
@@ -72,6 +73,13 @@ extension MenuRouter: MenuRouterInputProtocol {
         DispatchQueue.main.async {
             let vc = GenericWebCoordinator.navigation()
             self.viewController?.present(vc, animated: true, completion: nil)
+        }
+    }
+    
+    func showTipsViewController() {
+        DispatchQueue.main.async {
+            let vc = TipCoordinator.view()
+            self.viewController?.show(vc, sender: nil)
         }
     }
     

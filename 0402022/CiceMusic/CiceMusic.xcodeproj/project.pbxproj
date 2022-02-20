@@ -90,6 +90,16 @@
 		09F4DA0527BE78A2005C7831 /* GenericWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F4DA0327BE78A2005C7831 /* GenericWebViewController.xib */; };
 		09F4DA0927BE78B1005C7831 /* GenericWebPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DA0827BE78B1005C7831 /* GenericWebPresenter.swift */; };
 		09F4DA0C27BE78BE005C7831 /* GenericWebCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DA0B27BE78BE005C7831 /* GenericWebCoordinator.swift */; };
+		09F4DA1127BED17F005C7831 /* TipServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DA1027BED17F005C7831 /* TipServerModel.swift */; };
+		09F4DA1D27BED2E4005C7831 /* TipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F4DA1627BED2E4005C7831 /* TipViewController.xib */; };
+		09F4DA1E27BED2E4005C7831 /* TipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DA1727BED2E4005C7831 /* TipViewController.swift */; };
+		09F4DA1F27BED2E4005C7831 /* TipRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DA1827BED2E4005C7831 /* TipRouter.swift */; };
+		09F4DA2027BED2E4005C7831 /* TipProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DA1927BED2E4005C7831 /* TipProvider.swift */; };
+		09F4DA2127BED2E4005C7831 /* TipCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DA1A27BED2E4005C7831 /* TipCoordinator.swift */; };
+		09F4DA2227BED2E4005C7831 /* TipPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DA1B27BED2E4005C7831 /* TipPresenter.swift */; };
+		09F4DA2327BED2E4005C7831 /* TipInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DA1C27BED2E4005C7831 /* TipInteractor.swift */; };
+		09F4DA2827BEDD92005C7831 /* TipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DA2627BEDD92005C7831 /* TipCell.swift */; };
+		09F4DA2927BEDD92005C7831 /* TipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F4DA2727BEDD92005C7831 /* TipCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -184,6 +194,16 @@
 		09F4DA0327BE78A2005C7831 /* GenericWebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GenericWebViewController.xib; sourceTree = "<group>"; };
 		09F4DA0827BE78B1005C7831 /* GenericWebPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebPresenter.swift; sourceTree = "<group>"; };
 		09F4DA0B27BE78BE005C7831 /* GenericWebCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericWebCoordinator.swift; sourceTree = "<group>"; };
+		09F4DA1027BED17F005C7831 /* TipServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipServerModel.swift; sourceTree = "<group>"; };
+		09F4DA1627BED2E4005C7831 /* TipViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipViewController.xib; sourceTree = "<group>"; };
+		09F4DA1727BED2E4005C7831 /* TipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewController.swift; sourceTree = "<group>"; };
+		09F4DA1827BED2E4005C7831 /* TipRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipRouter.swift; sourceTree = "<group>"; };
+		09F4DA1927BED2E4005C7831 /* TipProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipProvider.swift; sourceTree = "<group>"; };
+		09F4DA1A27BED2E4005C7831 /* TipCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCoordinator.swift; sourceTree = "<group>"; };
+		09F4DA1B27BED2E4005C7831 /* TipPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipPresenter.swift; sourceTree = "<group>"; };
+		09F4DA1C27BED2E4005C7831 /* TipInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipInteractor.swift; sourceTree = "<group>"; };
+		09F4DA2627BEDD92005C7831 /* TipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCell.swift; sourceTree = "<group>"; };
+		09F4DA2727BEDD92005C7831 /* TipCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +276,7 @@
 		09F4D8ED27B11DA6005C7831 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				09F4DA1427BED257005C7831 /* TipsView */,
 				09F4DA0127BE7876005C7831 /* WebView */,
 				09F4D9C927BAF52D005C7831 /* Login */,
 				09F4D9AA27B7F3F8005C7831 /* MenuView */,
@@ -307,6 +328,7 @@
 				09F4D96527B58ECD005C7831 /* PodcastServerModel.swift */,
 				09F4D99B27B68776005C7831 /* AppServerModel.swift */,
 				09F4D9C027BAD6FE005C7831 /* MenuServerModel.swift */,
+				09F4DA1027BED17F005C7831 /* TipServerModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -498,6 +520,30 @@
 			path = WebView;
 			sourceTree = "<group>";
 		};
+		09F4DA1427BED257005C7831 /* TipsView */ = {
+			isa = PBXGroup;
+			children = (
+				09F4DA2527BEDD5F005C7831 /* Cell */,
+				09F4DA1627BED2E4005C7831 /* TipViewController.xib */,
+				09F4DA1727BED2E4005C7831 /* TipViewController.swift */,
+				09F4DA1827BED2E4005C7831 /* TipRouter.swift */,
+				09F4DA1927BED2E4005C7831 /* TipProvider.swift */,
+				09F4DA1A27BED2E4005C7831 /* TipCoordinator.swift */,
+				09F4DA1B27BED2E4005C7831 /* TipPresenter.swift */,
+				09F4DA1C27BED2E4005C7831 /* TipInteractor.swift */,
+			);
+			path = TipsView;
+			sourceTree = "<group>";
+		};
+		09F4DA2527BEDD5F005C7831 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09F4DA2627BEDD92005C7831 /* TipCell.swift */,
+				09F4DA2727BEDD92005C7831 /* TipCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -572,7 +618,9 @@
 				09F4D92027B55B9D005C7831 /* MusicViewController.xib in Resources */,
 				09F4D9E427BC2FAF005C7831 /* Localizable.strings in Resources */,
 				09F4D8D627B116D3005C7831 /* LaunchScreen.storyboard in Resources */,
+				09F4DA2927BEDD92005C7831 /* TipCell.xib in Resources */,
 				09F4D8F227B11DD2005C7831 /* SplashViewController.xib in Resources */,
+				09F4DA1D27BED2E4005C7831 /* TipViewController.xib in Resources */,
 				09F4D9A227B7D99B005C7831 /* AppsCell.xib in Resources */,
 				09F4DA0527BE78A2005C7831 /* GenericWebViewController.xib in Resources */,
 				09F4D9C727BAECC0005C7831 /* MenuCell.xib in Resources */,
@@ -619,9 +667,11 @@
 				09F4D94827B55D17005C7831 /* HomeTabBarViewController.swift in Sources */,
 				09F4D93027B55C02005C7831 /* PodcastViewController.swift in Sources */,
 				09F4DA0427BE78A2005C7831 /* GenericWebViewController.swift in Sources */,
+				09F4DA2127BED2E4005C7831 /* TipCoordinator.swift in Sources */,
 				09F4D98C27B598B3005C7831 /* AppleGenericDetailCoordinator.swift in Sources */,
 				09F4D9F627BC3C15005C7831 /* CustomAlertManager.swift in Sources */,
 				09F4D8F627B11E0C005C7831 /* SplashPresenter.swift in Sources */,
+				09F4DA2027BED2E4005C7831 /* TipProvider.swift in Sources */,
 				09F4D92127B55B9D005C7831 /* MusicViewController.swift in Sources */,
 				09F4D93127B55C02005C7831 /* PodcastRouter.swift in Sources */,
 				09F4D97227B58FAE005C7831 /* BookRouter.swift in Sources */,
@@ -630,6 +680,8 @@
 				09F4D92227B55B9D005C7831 /* MusicRouter.swift in Sources */,
 				09F4D9B427B7F422005C7831 /* MenuRouter.swift in Sources */,
 				09F4D9B827B7F422005C7831 /* MenuInteractor.swift in Sources */,
+				09F4DA1E27BED2E4005C7831 /* TipViewController.swift in Sources */,
+				09F4DA2227BED2E4005C7831 /* TipPresenter.swift in Sources */,
 				09F4D98B27B598B3005C7831 /* AppleGenericDetailProvider.swift in Sources */,
 				09F4D9C127BAD6FE005C7831 /* MenuServerModel.swift in Sources */,
 				09F4DA0927BE78B1005C7831 /* GenericWebPresenter.swift in Sources */,
@@ -640,8 +692,10 @@
 				09F4D9F927BC3D63005C7831 /* LocalizedKeys.swift in Sources */,
 				09F4D90B27B1432C005C7831 /* Utils.swift in Sources */,
 				09F4D9A827B7DF1C005C7831 /* SWRevealViewController .m in Sources */,
+				09F4DA1F27BED2E4005C7831 /* TipRouter.swift in Sources */,
 				09F4D98E27B598B3005C7831 /* AppleGenericDetailInteractor.swift in Sources */,
 				09F4D97627B58FAE005C7831 /* BookInteractor.swift in Sources */,
+				09F4DA2827BEDD92005C7831 /* TipCell.swift in Sources */,
 				09F4D98D27B598B3005C7831 /* AppleGenericDetailPresenter.swift in Sources */,
 				09F4D9D427BAF557005C7831 /* LoginProvider.swift in Sources */,
 				09F4D9F027BC31D8005C7831 /* AlertDefaultViewController.swift in Sources */,
@@ -653,10 +707,12 @@
 				09F4D8F127B11DD2005C7831 /* SplashViewController.swift in Sources */,
 				09F4D96627B58ECD005C7831 /* PodcastServerModel.swift in Sources */,
 				09F4D97127B58FAE005C7831 /* BookViewController.swift in Sources */,
+				09F4DA1127BED17F005C7831 /* TipServerModel.swift in Sources */,
 				09F4D9A127B7D99B005C7831 /* AppsCell.swift in Sources */,
 				09F4D90727B14153005C7831 /* NetworkError.swift in Sources */,
 				09F4D9B527B7F422005C7831 /* MenuProvider.swift in Sources */,
 				09F4D93527B55C02005C7831 /* PodcastInteractor.swift in Sources */,
+				09F4DA2327BED2E4005C7831 /* TipInteractor.swift in Sources */,
 				09F4D9B327B7F422005C7831 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
