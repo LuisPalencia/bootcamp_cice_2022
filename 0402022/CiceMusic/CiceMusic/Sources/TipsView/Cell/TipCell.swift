@@ -15,6 +15,10 @@ class TipCell: UITableViewCell, ReuseIdentifierProtocol {
     
     // MARK: - IBOutlets
     
+    @IBOutlet weak var tipImage: UIImageView!
+    @IBOutlet weak var tipTitleLBL: UILabel!
+    @IBOutlet weak var tipSubtitleLBL: UILabel!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,7 +35,7 @@ class TipCell: UITableViewCell, ReuseIdentifierProtocol {
 
 extension TipCell:TipCellInputProtocol {
     func setupCell(data: ConsejosGenerale) {
-        
+        self.tipTitleLBL.text = data.title
+        self.tipSubtitleLBL.text = data.subtitle
     }
-    
 }

@@ -46,7 +46,7 @@ class TipViewController: BaseView<TipPresenterInputProtocol> {
     private func configuracionTableView(){
         self.tipsTableView.delegate = self
         self.tipsTableView.dataSource = self
-        self.tipsTableView.register(UINib(nibName: MusicCell.defaultReuseIdentifier, bundle: nil), forCellReuseIdentifier: MusicCell.defaultReuseIdentifier)
+        self.tipsTableView.register(UINib(nibName: TipCell.defaultReuseIdentifier, bundle: nil), forCellReuseIdentifier: TipCell.defaultReuseIdentifier)
     }
     
 
@@ -72,14 +72,22 @@ extension TipViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let tipCell = self.tipsTableView.dequeueReusableCell(withIdentifier: TipCell.defaultReuseIdentifier, for: indexPath) as! TipCell
         
+        if let model = self.presenter?.informationForCell(indexPath: indexPath.row){
+            tipCell.setupCell(data: model)
+        }
+        
+        return tipCell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        if let model = self.presenter?.informationForCell(indexPath: indexPath.row){
+            self.presenter?.didSelectRow(data: model)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 10
+        return 110
     }
 }

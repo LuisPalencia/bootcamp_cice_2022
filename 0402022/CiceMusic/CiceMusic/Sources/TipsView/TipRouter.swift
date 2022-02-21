@@ -28,7 +28,7 @@ import UIKit
 
 // Input del Router
 protocol TipRouterInputProtocol {
-
+    func didSelectRowRouter(data: ConsejosGenerale)
 }
 
 final class TipRouter: BaseRouter<TipViewController> {
@@ -37,5 +37,7 @@ final class TipRouter: BaseRouter<TipViewController> {
 
 // Input del Router
 extension TipRouter: TipRouterInputProtocol {
-    
+    func didSelectRowRouter(data: ConsejosGenerale) {
+        
+    }
 }

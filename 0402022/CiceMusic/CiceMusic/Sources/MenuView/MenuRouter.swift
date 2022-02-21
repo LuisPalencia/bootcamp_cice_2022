@@ -78,7 +78,7 @@ extension MenuRouter: MenuRouterInputProtocol {
     
     func showTipsViewController() {
         DispatchQueue.main.async {
-            let vc = TipCoordinator.view()
+            let vc = TipCoordinator.navigation()
             self.viewController?.show(vc, sender: nil)
         }
     }

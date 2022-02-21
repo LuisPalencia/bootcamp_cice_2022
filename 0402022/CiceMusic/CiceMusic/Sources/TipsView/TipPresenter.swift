@@ -30,6 +30,7 @@ protocol TipPresenterInputProtocol {
     func fetchDataFromWebService()
     func numberOfRows() -> Int
     func informationForCell(indexPath: Int) -> ConsejosGenerale?
+    func didSelectRow(data: ConsejosGenerale)
 }
 
 // Output del Interactor
@@ -59,6 +60,10 @@ extension TipPresenter: TipPresenterInputProtocol {
     
     func informationForCell(indexPath: Int) -> ConsejosGenerale? {
         return self.dataSourceViewModel[indexPath]
+    }
+    
+    func didSelectRow(data: ConsejosGenerale) {
+        self.router?.didSelectRowRouter(data: data)
     }
 }
 

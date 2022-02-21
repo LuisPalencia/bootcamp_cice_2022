@@ -35,14 +35,23 @@ final class TipProvider: TipProviderInputProtocol {
     let networkService: NetworkServiceProtocol = NetworkService()
     
     func fetchData(completionHandler: @escaping (Result<TipServerModel, NetworkError>) -> Void) {
-        
+        self.networkService.requestGeneric(requestPayload: TipRequestDTO.requestData(),
+                                           entityClass: TipServerModel.self) { [weak self] (result) in
+            guard self != nil else { return }
+            guard let resultUnw = result else { return }
+            completionHandler(.success(resultUnw))
+        } failure: { [weak self] (error) in
+            guard self != nil else { return }
+            completionHandler(.failure(error))
+        }
+
     }
     
 }
 
 struct TipRequestDTO {
     
-    static func requestData(numeroItems: String) -> RequestDTO {
+    static func requestData() -> RequestDTO {
         let request = RequestDTO(params: nil, method: .get, endpoint: URLEnpoint.tips, urlContext: .heroku)
         return request
     }
