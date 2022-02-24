@@ -60,7 +60,10 @@ struct URLEnpoint {
     }
     
     // Endpoint's of movies
-    static let endpointMoviesNowPlaying = "3/movie/now_playing?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
+    static let endpointMoviesNowPlaying = "movie/now_playing?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
+    static let endpointMoviesPopular = "movie/popular?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
+    static let endpointMoviesTopRated = "movie/top_rated?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
+    static let endpointMoviesUpcoming = "movie/upcoming?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
     
 }
 
@@ -83,7 +86,7 @@ extension URLEnpoint {
             case .PRE:
                 return ""
             case .PRO:
-                return "https://api.themoviedb.org/"
+                return "https://api.themoviedb.org/3/"
             }
         case .heroku:
             switch self.environmentDefault {

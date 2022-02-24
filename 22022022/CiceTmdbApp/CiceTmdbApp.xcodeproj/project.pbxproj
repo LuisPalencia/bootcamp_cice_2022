@@ -26,6 +26,9 @@
 		09F4DAD327C6B8A9005C7831 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DAD227C6B8A8005C7831 /* NetworkError.swift */; };
 		09F4DAD727C6CC71005C7831 /* MoviesPosterCarrousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DAD627C6CC71005C7831 /* MoviesPosterCarrousel.swift */; };
 		09F4DADB27C6CED5005C7831 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DADA27C6CED5005C7831 /* ImageLoader.swift */; };
+		09F4DAF227C80184005C7831 /* MoviesTVModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DAF127C80184005C7831 /* MoviesTVModelView.swift */; };
+		09F4DAFE27C80E75005C7831 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DAFD27C80E75005C7831 /* HomeView.swift */; };
+		09F4DB0127C80E88005C7831 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DB0027C80E88005C7831 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +53,9 @@
 		09F4DAD227C6B8A8005C7831 /* NetworkError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NetworkError.swift; path = ../../../../0402022/CiceMusic/CiceMusic/NetworkService/NetworkError.swift; sourceTree = "<group>"; };
 		09F4DAD627C6CC71005C7831 /* MoviesPosterCarrousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesPosterCarrousel.swift; sourceTree = "<group>"; };
 		09F4DADA27C6CED5005C7831 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		09F4DAF127C80184005C7831 /* MoviesTVModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTVModelView.swift; sourceTree = "<group>"; };
+		09F4DAFD27C80E75005C7831 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		09F4DB0027C80E88005C7831 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,7 @@
 		09F4DA6B27C56FA6005C7831 /* CiceTmdbApp */ = {
 			isa = PBXGroup;
 			children = (
+				09F4DAF027C80149005C7831 /* ModelView */,
 				09F4DAD527C6CC55005C7831 /* Components */,
 				09F4DACD27C6B772005C7831 /* WebService */,
 				09F4DABB27C584DA005C7831 /* Sources */,
@@ -152,6 +159,7 @@
 		09F4DABB27C584DA005C7831 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				09F4DAFC27C80E56005C7831 /* HomeView */,
 				09F4DABC27C584E1005C7831 /* MoviesView */,
 			);
 			path = Sources;
@@ -184,6 +192,23 @@
 				09F4DAD627C6CC71005C7831 /* MoviesPosterCarrousel.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		09F4DAF027C80149005C7831 /* ModelView */ = {
+			isa = PBXGroup;
+			children = (
+				09F4DAF127C80184005C7831 /* MoviesTVModelView.swift */,
+			);
+			path = ModelView;
+			sourceTree = "<group>";
+		};
+		09F4DAFC27C80E56005C7831 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				09F4DAFD27C80E75005C7831 /* HomeView.swift */,
+				09F4DB0027C80E88005C7831 /* HomeViewModel.swift */,
+			);
+			path = HomeView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,14 +281,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09F4DB0127C80E88005C7831 /* HomeViewModel.swift in Sources */,
 				09F4DAB927C58177005C7831 /* MoviesServerModel.swift in Sources */,
 				09F4DAD327C6B8A9005C7831 /* NetworkError.swift in Sources */,
 				09F4DAC827C6B1A5005C7831 /* MoviesProvider.swift in Sources */,
 				09F4DABE27C584F6005C7831 /* MoviesView.swift in Sources */,
 				09F4DA6F27C56FA6005C7831 /* ContentView.swift in Sources */,
+				09F4DAF227C80184005C7831 /* MoviesTVModelView.swift in Sources */,
 				09F4DAC527C6AF8F005C7831 /* MoviesInteractor.swift in Sources */,
 				09F4DADB27C6CED5005C7831 /* ImageLoader.swift in Sources */,
 				09F4DAD727C6CC71005C7831 /* MoviesPosterCarrousel.swift in Sources */,
+				09F4DAFE27C80E75005C7831 /* HomeView.swift in Sources */,
 				09F4DA6D27C56FA6005C7831 /* CiceTmdbAppApp.swift in Sources */,
 				09F4DAC227C585EF005C7831 /* MoviesViewModel.swift in Sources */,
 				09F4DA7E27C5702A005C7831 /* BaseVIP.swift in Sources */,
