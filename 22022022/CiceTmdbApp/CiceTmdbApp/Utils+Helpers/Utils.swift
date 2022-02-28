@@ -65,6 +65,13 @@ struct URLEnpoint {
     static let endpointMoviesTopRated = "movie/top_rated?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
     static let endpointMoviesUpcoming = "movie/upcoming?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
     
+    // Endpoint's of shows
+    static let endpointShowsAiringToday = "tv/airing_today?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
+    static let endpointShowsOnTheAir = "tv/on_the_air?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
+    static let endpointShowsPopular = "tv/popular?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
+    static let endpointShowsTopRated = "tv/top_rated?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))"
+
+    
 }
 
 extension URLEnpoint {
@@ -98,5 +105,14 @@ extension URLEnpoint {
                 return "http://icospartan-app.herokuapp.com/"
             }
         }
+    }
+}
+
+extension Bundle {
+    func loadAndDecodeJSON<D: Decodable>(filename: String) throws -> D? {
+        guard let url = self.url(forResource: filename, withExtension: ".json") else { return nil }
+        let data = try Data(contentsOf: url)
+        let decodeModel = try JSONDecoder().decode(D.self, from: data)
+        return decodeModel
     }
 }
