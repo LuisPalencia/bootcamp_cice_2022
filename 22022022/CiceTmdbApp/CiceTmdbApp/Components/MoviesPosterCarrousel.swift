@@ -50,7 +50,7 @@ struct MoviesPosterCarrousel: View {
         if isMovie{
             DetailMovieCoordinator.view(dto: DetailMovieCoordinatorDTO(dataId: id))
         }else{
-            DetailShowCoordinator.view()
+            DetailShowCoordinator.view(dto: DetailShowCoordinatorDTO(dataId: id))
         }
     }
 }

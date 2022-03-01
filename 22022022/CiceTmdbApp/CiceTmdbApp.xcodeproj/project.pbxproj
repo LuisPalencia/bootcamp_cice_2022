@@ -49,6 +49,10 @@
 		09F4DB5F27CD097C005C7831 /* DetailMovieServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DB5E27CD097C005C7831 /* DetailMovieServerModel.swift */; };
 		09F4DB6327CD5891005C7831 /* MovieCastCarrouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DB6227CD5891005C7831 /* MovieCastCarrouselView.swift */; };
 		09F4DB6727CE2A5E005C7831 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DB6627CE2A5E005C7831 /* SafariView.swift */; };
+		09F4DB6B27CEA464005C7831 /* DetailShowServerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DB6A27CEA464005C7831 /* DetailShowServerModel.swift */; };
+		09F4DB6E27CEA799005C7831 /* DetailShow.json in Resources */ = {isa = PBXBuildFile; fileRef = 09F4DB6D27CEA799005C7831 /* DetailShow.json */; };
+		09F4DB7227CEBFAB005C7831 /* MoviesTVSimilarCarrouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DB7127CEBFAB005C7831 /* MoviesTVSimilarCarrouselView.swift */; };
+		09F4DB7527CEC5EE005C7831 /* ShowsSeasonsCarrousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DB7427CEC5EE005C7831 /* ShowsSeasonsCarrousel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +100,10 @@
 		09F4DB5E27CD097C005C7831 /* DetailMovieServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailMovieServerModel.swift; sourceTree = "<group>"; };
 		09F4DB6227CD5891005C7831 /* MovieCastCarrouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCastCarrouselView.swift; sourceTree = "<group>"; };
 		09F4DB6627CE2A5E005C7831 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		09F4DB6A27CEA464005C7831 /* DetailShowServerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailShowServerModel.swift; sourceTree = "<group>"; };
+		09F4DB6D27CEA799005C7831 /* DetailShow.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DetailShow.json; sourceTree = "<group>"; };
+		09F4DB7127CEBFAB005C7831 /* MoviesTVSimilarCarrouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTVSimilarCarrouselView.swift; sourceTree = "<group>"; };
+		09F4DB7427CEC5EE005C7831 /* ShowsSeasonsCarrousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowsSeasonsCarrousel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +194,7 @@
 			children = (
 				09F4DA8A27C57C67005C7831 /* MoviesModel.json */,
 				09F4DB5B27CD095F005C7831 /* DetailMovie.json */,
+				09F4DB6D27CEA799005C7831 /* DetailShow.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -196,6 +205,7 @@
 				09F4DAB827C58177005C7831 /* MoviesServerModel.swift */,
 				09F4DB2727C82848005C7831 /* ShowsServerModel.swift */,
 				09F4DB5E27CD097C005C7831 /* DetailMovieServerModel.swift */,
+				09F4DB6A27CEA464005C7831 /* DetailShowServerModel.swift */,
 			);
 			path = ServerModel;
 			sourceTree = "<group>";
@@ -238,6 +248,8 @@
 			children = (
 				09F4DAD627C6CC71005C7831 /* MoviesPosterCarrousel.swift */,
 				09F4DB6227CD5891005C7831 /* MovieCastCarrouselView.swift */,
+				09F4DB7127CEBFAB005C7831 /* MoviesTVSimilarCarrouselView.swift */,
+				09F4DB7427CEC5EE005C7831 /* ShowsSeasonsCarrousel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -361,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09F4DA7427C56FB4005C7831 /* Preview Assets.xcassets in Resources */,
+				09F4DB6E27CEA799005C7831 /* DetailShow.json in Resources */,
 				09F4DA8B27C57C67005C7831 /* MoviesModel.json in Resources */,
 				09F4DA7127C56FB4005C7831 /* Assets.xcassets in Resources */,
 				09F4DB5C27CD095F005C7831 /* DetailMovie.json in Resources */,
@@ -376,6 +389,7 @@
 			files = (
 				09F4DB0127C80E88005C7831 /* HomeViewModel.swift in Sources */,
 				09F4DAB927C58177005C7831 /* MoviesServerModel.swift in Sources */,
+				09F4DB6B27CEA464005C7831 /* DetailShowServerModel.swift in Sources */,
 				09F4DB5F27CD097C005C7831 /* DetailMovieServerModel.swift in Sources */,
 				09F4DAD327C6B8A9005C7831 /* NetworkError.swift in Sources */,
 				09F4DB2127C8247E005C7831 /* ShowsViewModel.swift in Sources */,
@@ -395,6 +409,7 @@
 				09F4DAFE27C80E75005C7831 /* HomeView.swift in Sources */,
 				09F4DB2227C8247E005C7831 /* ShowsProvider.swift in Sources */,
 				09F4DB4927CD0519005C7831 /* DetailShowViewModel.swift in Sources */,
+				09F4DB7227CEBFAB005C7831 /* MoviesTVSimilarCarrouselView.swift in Sources */,
 				09F4DA6D27C56FA6005C7831 /* CiceTmdbAppApp.swift in Sources */,
 				09F4DAC227C585EF005C7831 /* MoviesViewModel.swift in Sources */,
 				09F4DB5627CD058E005C7831 /* DetailMovieProvider.swift in Sources */,
@@ -406,6 +421,7 @@
 				09F4DB5727CD058E005C7831 /* DetailMovieView.swift in Sources */,
 				09F4DA8E27C57D88005C7831 /* Obfuscator.swift in Sources */,
 				09F4DB4C27CD0519005C7831 /* DetailShowCoordinator.swift in Sources */,
+				09F4DB7527CEC5EE005C7831 /* ShowsSeasonsCarrousel.swift in Sources */,
 				09F4DACF27C6B797005C7831 /* NetworkService.swift in Sources */,
 				09F4DB4A27CD0519005C7831 /* DetailShowProvider.swift in Sources */,
 				09F4DA9127C57E5E005C7831 /* Constants.swift in Sources */,
