@@ -24,24 +24,48 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
-import UIKit
 
-// Input del Router
-protocol TipRouterInputProtocol {
-    func didSelectRowRouter(data: ConsejosGenerale)
+// Input del Presenter
+protocol MessageTipPresenterInputProtocol {
+    func getConsejoGenerale() -> ConsejosGenerale?
+    func numberOfRows() -> Int
+    func informationForIndexPath(indexPath: Int) -> MessageArray?
 }
 
-final class TipRouter: BaseRouter<TipViewController> {
-        
+// Output del Interactor
+protocol MessageTipInteractorOutputProtocol {
+    
 }
 
-// Input del Router
-extension TipRouter: TipRouterInputProtocol {
-    func didSelectRowRouter(data: ConsejosGenerale) {
-        DispatchQueue.main.async {
-            let vc = MessageTipCoordinator.view(dto: MessageTipCoordinatorDTO(dataModel: data))
-            self.viewController?.show(vc, sender: nil)
-        }
+final class MessageTipPresenter: BasePresenter<MessageTipPresenterOutputProtocol, MessageTipInteractorInputProtocol, MessageTipRouterInputProtocol> {
+    
+    var dataModel: ConsejosGenerale?
+    
+}
 
+// Input del Presenter
+extension MessageTipPresenter: MessageTipPresenterInputProtocol {
+    
+    func getConsejoGenerale() -> ConsejosGenerale? {
+        return dataModel
     }
+    
+    func numberOfRows() -> Int {
+        return dataModel?.messageArray?.count ?? 0
+    }
+    
+    func informationForIndexPath(indexPath: Int) -> MessageArray? {
+        if let dataUnw = dataModel?.messageArray?[indexPath] {
+            return dataUnw
+        }
+        return nil
+    }
+    
 }
+
+// Output del Interactor
+extension MessageTipPresenter: MessageTipInteractorOutputProtocol {
+    
+}
+
+

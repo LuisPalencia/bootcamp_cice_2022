@@ -27,21 +27,15 @@ import Foundation
 import UIKit
 
 // Input del Router
-protocol TipRouterInputProtocol {
-    func didSelectRowRouter(data: ConsejosGenerale)
+protocol MessageTipRouterInputProtocol {
+
 }
 
-final class TipRouter: BaseRouter<TipViewController> {
+final class MessageTipRouter: BaseRouter<MessageTipViewController> {
         
 }
 
 // Input del Router
-extension TipRouter: TipRouterInputProtocol {
-    func didSelectRowRouter(data: ConsejosGenerale) {
-        DispatchQueue.main.async {
-            let vc = MessageTipCoordinator.view(dto: MessageTipCoordinatorDTO(dataModel: data))
-            self.viewController?.show(vc, sender: nil)
-        }
-
-    }
+extension MessageTipRouter: MessageTipRouterInputProtocol {
+    
 }

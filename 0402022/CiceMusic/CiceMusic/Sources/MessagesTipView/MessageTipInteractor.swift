@@ -1,5 +1,5 @@
 /*
-
+ 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
 
@@ -24,24 +24,20 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
-import UIKit
 
-// Input del Router
-protocol TipRouterInputProtocol {
-    func didSelectRowRouter(data: ConsejosGenerale)
+// Input del Interactor
+protocol MessageTipInteractorInputProtocol {
+    
 }
 
-final class TipRouter: BaseRouter<TipViewController> {
-        
+final class MessageTipInteractor: BaseInteractor<MessageTipInteractorOutputProtocol> {
+    
+    let provider: MessageTipProviderInputProtocol = MessageTipProvider()
+
+    
 }
 
-// Input del Router
-extension TipRouter: TipRouterInputProtocol {
-    func didSelectRowRouter(data: ConsejosGenerale) {
-        DispatchQueue.main.async {
-            let vc = MessageTipCoordinator.view(dto: MessageTipCoordinatorDTO(dataModel: data))
-            self.viewController?.show(vc, sender: nil)
-        }
-
-    }
+// Input del Interactor
+extension MessageTipInteractor: MessageTipInteractorInputProtocol {
+    
 }

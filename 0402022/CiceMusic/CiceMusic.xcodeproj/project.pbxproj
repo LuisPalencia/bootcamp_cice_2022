@@ -100,6 +100,15 @@
 		09F4DA2327BED2E4005C7831 /* TipInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DA1C27BED2E4005C7831 /* TipInteractor.swift */; };
 		09F4DA2827BEDD92005C7831 /* TipCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DA2627BEDD92005C7831 /* TipCell.swift */; };
 		09F4DA2927BEDD92005C7831 /* TipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F4DA2727BEDD92005C7831 /* TipCell.xib */; };
+		09F4DAE527C7FCA4005C7831 /* MessageTipViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F4DADE27C7FCA4005C7831 /* MessageTipViewController.xib */; };
+		09F4DAE627C7FCA4005C7831 /* MessageTipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DADF27C7FCA4005C7831 /* MessageTipViewController.swift */; };
+		09F4DAE727C7FCA4005C7831 /* MessageTipRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DAE027C7FCA4005C7831 /* MessageTipRouter.swift */; };
+		09F4DAE827C7FCA4005C7831 /* MessageTipProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DAE127C7FCA4005C7831 /* MessageTipProvider.swift */; };
+		09F4DAE927C7FCA4005C7831 /* MessageTipCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DAE227C7FCA4005C7831 /* MessageTipCoordinator.swift */; };
+		09F4DAEA27C7FCA4005C7831 /* MessageTipPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DAE327C7FCA4005C7831 /* MessageTipPresenter.swift */; };
+		09F4DAEB27C7FCA4005C7831 /* MessageTipInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DAE427C7FCA4005C7831 /* MessageTipInteractor.swift */; };
+		09F4DAF827C80E11005C7831 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DAF627C80E11005C7831 /* MessageCell.swift */; };
+		09F4DAF927C80E11005C7831 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09F4DAF727C80E11005C7831 /* MessageCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -204,6 +213,15 @@
 		09F4DA1C27BED2E4005C7831 /* TipInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipInteractor.swift; sourceTree = "<group>"; };
 		09F4DA2627BEDD92005C7831 /* TipCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipCell.swift; sourceTree = "<group>"; };
 		09F4DA2727BEDD92005C7831 /* TipCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TipCell.xib; sourceTree = "<group>"; };
+		09F4DADE27C7FCA4005C7831 /* MessageTipViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageTipViewController.xib; sourceTree = "<group>"; };
+		09F4DADF27C7FCA4005C7831 /* MessageTipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTipViewController.swift; sourceTree = "<group>"; };
+		09F4DAE027C7FCA4005C7831 /* MessageTipRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTipRouter.swift; sourceTree = "<group>"; };
+		09F4DAE127C7FCA4005C7831 /* MessageTipProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTipProvider.swift; sourceTree = "<group>"; };
+		09F4DAE227C7FCA4005C7831 /* MessageTipCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTipCoordinator.swift; sourceTree = "<group>"; };
+		09F4DAE327C7FCA4005C7831 /* MessageTipPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTipPresenter.swift; sourceTree = "<group>"; };
+		09F4DAE427C7FCA4005C7831 /* MessageTipInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTipInteractor.swift; sourceTree = "<group>"; };
+		09F4DAF627C80E11005C7831 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		09F4DAF727C80E11005C7831 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -276,6 +294,7 @@
 		09F4D8ED27B11DA6005C7831 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				09F4DADD27C7FC6B005C7831 /* MessagesTipView */,
 				09F4DA1427BED257005C7831 /* TipsView */,
 				09F4DA0127BE7876005C7831 /* WebView */,
 				09F4D9C927BAF52D005C7831 /* Login */,
@@ -544,6 +563,30 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		09F4DADD27C7FC6B005C7831 /* MessagesTipView */ = {
+			isa = PBXGroup;
+			children = (
+				09F4DAF527C80DE6005C7831 /* Cell */,
+				09F4DADE27C7FCA4005C7831 /* MessageTipViewController.xib */,
+				09F4DADF27C7FCA4005C7831 /* MessageTipViewController.swift */,
+				09F4DAE027C7FCA4005C7831 /* MessageTipRouter.swift */,
+				09F4DAE127C7FCA4005C7831 /* MessageTipProvider.swift */,
+				09F4DAE227C7FCA4005C7831 /* MessageTipCoordinator.swift */,
+				09F4DAE327C7FCA4005C7831 /* MessageTipPresenter.swift */,
+				09F4DAE427C7FCA4005C7831 /* MessageTipInteractor.swift */,
+			);
+			path = MessagesTipView;
+			sourceTree = "<group>";
+		};
+		09F4DAF527C80DE6005C7831 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				09F4DAF627C80E11005C7831 /* MessageCell.swift */,
+				09F4DAF727C80E11005C7831 /* MessageCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -618,7 +661,9 @@
 				09F4D92027B55B9D005C7831 /* MusicViewController.xib in Resources */,
 				09F4D9E427BC2FAF005C7831 /* Localizable.strings in Resources */,
 				09F4D8D627B116D3005C7831 /* LaunchScreen.storyboard in Resources */,
+				09F4DAF927C80E11005C7831 /* MessageCell.xib in Resources */,
 				09F4DA2927BEDD92005C7831 /* TipCell.xib in Resources */,
+				09F4DAE527C7FCA4005C7831 /* MessageTipViewController.xib in Resources */,
 				09F4D8F227B11DD2005C7831 /* SplashViewController.xib in Resources */,
 				09F4DA1D27BED2E4005C7831 /* TipViewController.xib in Resources */,
 				09F4D9A227B7D99B005C7831 /* AppsCell.xib in Resources */,
@@ -642,6 +687,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09F4D9D227BAF557005C7831 /* LoginViewController.swift in Sources */,
+				09F4DAF827C80E11005C7831 /* MessageCell.swift in Sources */,
 				09F4D91327B19DE3005C7831 /* MusicServerModel.swift in Sources */,
 				09F4D8CA27B116D1005C7831 /* AppDelegate.swift in Sources */,
 				09F4D9C627BAECC0005C7831 /* MenuCell.swift in Sources */,
@@ -649,6 +695,7 @@
 				09F4D97327B58FAE005C7831 /* BookProvider.swift in Sources */,
 				09F4D93327B55C02005C7831 /* PodcastCoordinator.swift in Sources */,
 				09F4D93227B55C02005C7831 /* PodcastProvider.swift in Sources */,
+				09F4DAEA27C7FCA4005C7831 /* MessageTipPresenter.swift in Sources */,
 				09F4D9D327BAF557005C7831 /* LoginRouter.swift in Sources */,
 				09F4D97427B58FAE005C7831 /* BookCoordinator.swift in Sources */,
 				09F4D8FF27B13045005C7831 /* SplashCoordinator.swift in Sources */,
@@ -677,6 +724,7 @@
 				09F4D97227B58FAE005C7831 /* BookRouter.swift in Sources */,
 				09F4D94C27B55D2A005C7831 /* HomeTabBarCoordinator.swift in Sources */,
 				09F4D92427B55B9D005C7831 /* MusicCoordinator.swift in Sources */,
+				09F4DAE627C7FCA4005C7831 /* MessageTipViewController.swift in Sources */,
 				09F4D92227B55B9D005C7831 /* MusicRouter.swift in Sources */,
 				09F4D9B427B7F422005C7831 /* MenuRouter.swift in Sources */,
 				09F4D9B827B7F422005C7831 /* MenuInteractor.swift in Sources */,
@@ -688,6 +736,7 @@
 				09F4D97527B58FAE005C7831 /* BookPresenter.swift in Sources */,
 				09F4D92627B55B9D005C7831 /* MusicInteractor.swift in Sources */,
 				09F4D92327B55B9D005C7831 /* MusicProvider.swift in Sources */,
+				09F4DAEB27C7FCA4005C7831 /* MessageTipInteractor.swift in Sources */,
 				09F4D8EA27B11AF6005C7831 /* BaseVIPER.swift in Sources */,
 				09F4D9F927BC3D63005C7831 /* LocalizedKeys.swift in Sources */,
 				09F4D90B27B1432C005C7831 /* Utils.swift in Sources */,
@@ -700,6 +749,7 @@
 				09F4D9D427BAF557005C7831 /* LoginProvider.swift in Sources */,
 				09F4D9F027BC31D8005C7831 /* AlertDefaultViewController.swift in Sources */,
 				09F4D92527B55B9D005C7831 /* MusicPresenter.swift in Sources */,
+				09F4DAE927C7FCA4005C7831 /* MessageTipCoordinator.swift in Sources */,
 				09F4D95127B5701F005C7831 /* MusicCell.swift in Sources */,
 				09F4D97A27B59263005C7831 /* AppleViewModel.swift in Sources */,
 				09F4D8E627B11867005C7831 /* AppCoreCoordinator.swift in Sources */,
@@ -707,10 +757,12 @@
 				09F4D8F127B11DD2005C7831 /* SplashViewController.swift in Sources */,
 				09F4D96627B58ECD005C7831 /* PodcastServerModel.swift in Sources */,
 				09F4D97127B58FAE005C7831 /* BookViewController.swift in Sources */,
+				09F4DAE727C7FCA4005C7831 /* MessageTipRouter.swift in Sources */,
 				09F4DA1127BED17F005C7831 /* TipServerModel.swift in Sources */,
 				09F4D9A127B7D99B005C7831 /* AppsCell.swift in Sources */,
 				09F4D90727B14153005C7831 /* NetworkError.swift in Sources */,
 				09F4D9B527B7F422005C7831 /* MenuProvider.swift in Sources */,
+				09F4DAE827C7FCA4005C7831 /* MessageTipProvider.swift in Sources */,
 				09F4D93527B55C02005C7831 /* PodcastInteractor.swift in Sources */,
 				09F4DA2327BED2E4005C7831 /* TipInteractor.swift in Sources */,
 				09F4D9B327B7F422005C7831 /* MenuViewController.swift in Sources */,

@@ -24,24 +24,24 @@ POSSIBILITY OF SUCH DAMAGE.
 */
 
 import Foundation
-import UIKit
 
-// Input del Router
-protocol TipRouterInputProtocol {
-    func didSelectRowRouter(data: ConsejosGenerale)
+// Input Protocol
+protocol MessageTipProviderInputProtocol {
+    
 }
 
-final class TipRouter: BaseRouter<TipViewController> {
-        
+final class MessageTipProvider: MessageTipProviderInputProtocol {
+    
+    let networkService: NetworkServiceProtocol = NetworkService()
+    
 }
 
-// Input del Router
-extension TipRouter: TipRouterInputProtocol {
-    func didSelectRowRouter(data: ConsejosGenerale) {
-        DispatchQueue.main.async {
-            let vc = MessageTipCoordinator.view(dto: MessageTipCoordinatorDTO(dataModel: data))
-            self.viewController?.show(vc, sender: nil)
-        }
-
+struct MessageTipRequestDTO {
+    
+    static func requestData(numeroItems: String) -> RequestDTO {
+        let argument: [CVarArg] = [numeroItems]
+        let urlComplete = String(format: URLEnpoint.music, arguments: argument)
+        let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete, urlContext: .webService)
+        return request
     }
 }
