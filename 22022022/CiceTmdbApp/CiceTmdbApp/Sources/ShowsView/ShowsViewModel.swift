@@ -49,7 +49,6 @@ final class ShowsViewModel: BaseViewModel, ObservableObject {
     
     // MARK: - Metodospublicos
     func fetchData(){
-        debugPrint("Launching requests from viewmodel")
         self.interactor?.fetchDataAiringTodayInteractor()
         self.interactor?.fetchDataOnTheAirInteractor()
         self.interactor?.fetchDataPopularInteractor()

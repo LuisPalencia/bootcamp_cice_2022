@@ -12,6 +12,7 @@ struct MoviesPosterCarrousel: View {
     var title: String
     var moviesModel: [MoviesTVModelView]
     var isPoster: Bool
+    var isMovie: Bool
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5, content: {
@@ -28,16 +29,29 @@ struct MoviesPosterCarrousel: View {
             ScrollView(.horizontal, showsIndicators: false){
                 HStack(alignment: .top, spacing: 20, content: {
                     ForEach(self.moviesModel){ movie in
-                        MoviePosterCell(model: movie, isPoster: self.isPoster)
+                        
+                        NavigationLink(
+                            destination: self.setContentView(isMovie: isMovie, id: movie.id ?? 0),
+                            label: {
+                                MoviePosterCell(model: movie, isPoster: self.isPoster)
+                            })
+                            .buttonStyle(PlainButtonStyle())
                     }
                 })
             }
-            
-            
         })
         .padding(.bottom, 20)
         
         
+    }
+    
+    @ViewBuilder
+    func setContentView(isMovie: Bool, id: Int) -> some View {
+        if isMovie{
+            DetailMovieCoordinator.view(dto: DetailMovieCoordinatorDTO(dataId: id))
+        }else{
+            DetailShowCoordinator.view()
+        }
     }
 }
 
