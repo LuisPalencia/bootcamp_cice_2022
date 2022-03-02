@@ -30,6 +30,7 @@ struct DetailShowView: View {
     @StateObject var viewModel = DetailShowViewModel()
     //var viewModel: DetailShowServerModel
     @SwiftUI.Environment(\.presentationMode) var presenterMode
+    @State private var selectedTrailer: ResultVideo?
     
 
     var body: some View {
@@ -176,6 +177,27 @@ struct DetailShowView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false, content: {
                     MoviesTVSimilarCarrouselView(model: self.viewModel.data?.similar?.results ?? [])
+                })
+            }
+            
+            if self.viewModel.data?.youtubeTrailers != nil && !(self.viewModel.data?.youtubeTrailers?.isEmpty ?? false){
+                VStack(alignment: .leading, spacing: 20, content: {
+                    Text("Trailers")
+                        .font(.title)
+                        .fontWeight(.bold)
+                    ForEach((self.viewModel.data?.youtubeTrailers)!){ item in
+                        Button(action: {
+                            self.selectedTrailer = item
+                        }, label: {
+                            HStack{
+                                Text(item.name ?? "")
+                                Spacer()
+                                Image(systemName: "play.circle.fill")
+                                    .foregroundColor(.red)
+                            }
+                        })
+                        .buttonStyle(PlainButtonStyle())
+                    }
                 })
             }
             
