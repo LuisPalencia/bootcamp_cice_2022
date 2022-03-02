@@ -64,6 +64,7 @@
 		09F4DB8D27CFF18A005C7831 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DB8C27CFF18A005C7831 /* PeopleViewModel.swift */; };
 		09F4DB9027CFF642005C7831 /* PeopleCarrousel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DB8F27CFF642005C7831 /* PeopleCarrousel.swift */; };
 		09F4DB9427CFF994005C7831 /* DetailPersonPopularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DB9327CFF994005C7831 /* DetailPersonPopularView.swift */; };
+		09F4DB9927D006FE005C7831 /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09F4DB9827D006FE005C7831 /* OnBoardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -126,6 +127,7 @@
 		09F4DB8C27CFF18A005C7831 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
 		09F4DB8F27CFF642005C7831 /* PeopleCarrousel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCarrousel.swift; sourceTree = "<group>"; };
 		09F4DB9327CFF994005C7831 /* DetailPersonPopularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPersonPopularView.swift; sourceTree = "<group>"; };
+		09F4DB9827D006FE005C7831 /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +240,7 @@
 		09F4DABB27C584DA005C7831 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				09F4DB9727D006E8005C7831 /* OnBoardingView */,
 				09F4DB9227CFF964005C7831 /* DetailPopularPersonView */,
 				09F4DB7A27CFEC67005C7831 /* PeoplePopularView */,
 				09F4DB4327CD04FB005C7831 /* DetailShowView */,
@@ -364,6 +367,14 @@
 			path = DetailPopularPersonView;
 			sourceTree = "<group>";
 		};
+		09F4DB9727D006E8005C7831 /* OnBoardingView */ = {
+			isa = PBXGroup;
+			children = (
+				09F4DB9827D006FE005C7831 /* OnBoardingView.swift */,
+			);
+			path = OnBoardingView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -447,6 +458,7 @@
 				09F4DB5F27CD097C005C7831 /* DetailMovieServerModel.swift in Sources */,
 				09F4DAD327C6B8A9005C7831 /* NetworkError.swift in Sources */,
 				09F4DB8A27CFEE20005C7831 /* PeoplePopularServerModel.swift in Sources */,
+				09F4DB9927D006FE005C7831 /* OnBoardingView.swift in Sources */,
 				09F4DB2127C8247E005C7831 /* ShowsViewModel.swift in Sources */,
 				09F4DB5527CD058E005C7831 /* DetailMovieViewModel.swift in Sources */,
 				09F4DAC827C6B1A5005C7831 /* MoviesProvider.swift in Sources */,

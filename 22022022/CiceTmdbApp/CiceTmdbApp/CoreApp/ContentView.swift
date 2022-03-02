@@ -8,10 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @AppStorage("currentPage") var currentPage = 1
+    
     var body: some View {
         VStack{
             //MoviesCoordinator.navigation().environment(\.colorScheme, .dark)
-            HomeView()
+            if currentPage > Constants.totalPages{
+                HomeView()
+            }else{
+                OnBoardingView()
+            }
         }
     }
 }
