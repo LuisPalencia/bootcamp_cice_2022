@@ -10,13 +10,19 @@ import SwiftUI
 struct ContentView: View {
     
     @AppStorage("currentPage") var currentPage = 1
+    @EnvironmentObject var viewModelSession: LoginViewModel
     
     var body: some View {
         VStack{
             //MoviesCoordinator.navigation().environment(\.colorScheme, .dark)
             if currentPage > Constants.totalPages{
-                //HomeView()
-                LoginView(authType: .signIn)
+                if self.viewModelSession.userLogged != nil {
+                    HomeView()
+                }else{
+                    LoginView(authType: .signUp)
+                }
+                
+                
             }else{
                 OnBoardingView()
             }
