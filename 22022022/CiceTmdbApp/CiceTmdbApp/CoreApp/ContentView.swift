@@ -15,7 +15,8 @@ struct ContentView: View {
         VStack{
             //MoviesCoordinator.navigation().environment(\.colorScheme, .dark)
             if currentPage > Constants.totalPages{
-                HomeView()
+                //HomeView()
+                LoginView(authType: .signIn)
             }else{
                 OnBoardingView()
             }
