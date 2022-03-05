@@ -29,42 +29,27 @@ struct LoginView: View {
                         CustomTextField(placeholder: "email",
                                         title: "email",
                                         text: self.$email)
-                            .padding(10)
-                            .background(
-                                Color(red: 239/255,
-                                      green: 243/255,
-                                      blue: 244/255,
-                                      opacity: 1)
-                            )
-                            .cornerRadius(10)
-                            .shadow(color: Color.gray.opacity(0.3), radius: 5, x: 5, y: 5)
+                            .textfieldStyle()
+//                            .padding(10)
+//                            .background(
+//                                Color(red: 239/255,
+//                                      green: 243/255,
+//                                      blue: 244/255,
+//                                      opacity: 1)
+//                            )
+//                            .cornerRadius(10)
+//                            .shadow(color: Color.gray.opacity(0.3), radius: 5, x: 5, y: 5)
                         
                         if self.showPassword{
                             CustomTextField(placeholder: "Password",
                                             title: "Password",
                                             text: self.$password)
-                                .padding(10)
-                                .background(
-                                    Color(red: 239/255,
-                                          green: 243/255,
-                                          blue: 244/255,
-                                          opacity: 1)
-                                )
-                                .cornerRadius(10)
-                                .shadow(color: Color.gray.opacity(0.3), radius: 5, x: 5, y: 5)
+                                .textfieldStyle()
                         }else{
                             CustomSecureTextField(placeholder: "Password",
                                                   title: "Password",
                                                   text: self.$password)
-                                .padding(10)
-                                .background(
-                                    Color(red: 239/255,
-                                          green: 243/255,
-                                          blue: 244/255,
-                                          opacity: 1)
-                                )
-                                .cornerRadius(10)
-                                .shadow(color: Color.gray.opacity(0.3), radius: 5, x: 5, y: 5)
+                                .textfieldStyle()
                             
                         }
                         
@@ -73,28 +58,12 @@ struct LoginView: View {
                                 CustomTextField(placeholder: "Confirmation Password",
                                                 title: "Confirmation Password",
                                                 text: self.$confirmationPassword)
-                                    .padding(10)
-                                    .background(
-                                        Color(red: 239/255,
-                                              green: 243/255,
-                                              blue: 244/255,
-                                              opacity: 1)
-                                    )
-                                    .cornerRadius(10)
-                                    .shadow(color: Color.gray.opacity(0.3), radius: 5, x: 5, y: 5)
+                                    .textfieldStyle()
                             } else{
                                 CustomSecureTextField(placeholder: "Confirmation Password",
                                                       title: "Confirmation Password",
                                                       text: self.$confirmationPassword)
-                                    .padding(10)
-                                    .background(
-                                        Color(red: 239/255,
-                                              green: 243/255,
-                                              blue: 244/255,
-                                              opacity: 1)
-                                    )
-                                    .cornerRadius(10)
-                                    .shadow(color: Color.gray.opacity(0.3), radius: 5, x: 5, y: 5)
+                                    .textfieldStyle()
                             }
                         }
                         
@@ -108,13 +77,7 @@ struct LoginView: View {
                             self.authEmailTouched()
                         }, label: {
                             Text(self.authType.text)
-                                .font(.headline)
-                                .lineLimit(2)
-                                .frame(width: UIScreen.main.bounds.width * 0.8, height: 50)
-                                .background(
-                                    Color(red: 239/255, green: 243/255, blue: 244/255)
-                                )
-                                .clipShape(Capsule())
+                                .buttonStyleH1()
                         })
                         .foregroundColor(.gray)
                         .padding()
@@ -125,13 +88,7 @@ struct LoginView: View {
                             self.footerTouched()
                         }, label: {
                             Text(self.authType.footterText)
-                                .font(.headline)
-                                .lineLimit(2)
-                                .frame(width: UIScreen.main.bounds.width * 0.8, height: 50)
-                                .background(
-                                    Color(red: 239/255, green: 243/255, blue: 244/255)
-                                )
-                                .clipShape(Capsule())
+                                .buttonStyleH1()
                         })
                         .foregroundColor(.gray)
                         .padding()
