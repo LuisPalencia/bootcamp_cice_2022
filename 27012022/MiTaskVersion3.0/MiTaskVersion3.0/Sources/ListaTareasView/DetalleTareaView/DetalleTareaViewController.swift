@@ -8,6 +8,8 @@
 import UIKit
 
 class DetalleTareaViewController: UIViewController {
+    
+    var dataModel: DownloadNewModel?
 
     override func viewDidLoad() {
         super.viewDidLoad()

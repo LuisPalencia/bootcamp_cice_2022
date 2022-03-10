@@ -42,7 +42,7 @@ class ListaTareasViewController: UIViewController {
     private func configuracionTV(){
         self.listaTareasTableView.delegate = self
         self.listaTareasTableView.dataSource = self
-        self.listaTareasTableView.register(UINib(nibName: CategoriaCell.defaultReuseIdentifier, bundle: nil), forCellReuseIdentifier: CategoriaCell.defaultReuseIdentifier)
+        self.listaTareasTableView.register(UINib(nibName: ListaTareasCell.defaultReuseIdentifier, bundle: nil), forCellReuseIdentifier: ListaTareasCell.defaultReuseIdentifier)
     }
 
 }
@@ -57,16 +57,18 @@ extension ListaTareasViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.listaTareasTableView.dequeueReusableCell(withIdentifier: CategoriaCell.defaultReuseIdentifier, for: indexPath) as! CategoriaCell
-        cell.nombreCategoriaLBL.text = self.datasourceTareas[indexPath.row].newTask
+        let cell = self.listaTareasTableView.dequeueReusableCell(withIdentifier: ListaTareasCell.defaultReuseIdentifier, for: indexPath) as! ListaTareasCell
+        cell.configuracionCell(data: self.datasourceTareas[indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //
+        let model = self.datasourceTareas[indexPath.row]
+        let vc = DetalleTareaCoordinator.view(dto: DetalleTareaCoordinatorDTO(model: model))
+        self.show(vc, sender: nil)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 105
     }
 }

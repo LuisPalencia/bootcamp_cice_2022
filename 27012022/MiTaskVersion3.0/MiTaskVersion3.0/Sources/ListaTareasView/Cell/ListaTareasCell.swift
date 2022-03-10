@@ -19,6 +19,7 @@ class ListaTareasCell: UITableViewCell, ReuseIdentifierProtocol {
     @IBOutlet weak var imageTarea: UIImageView!
     @IBOutlet weak var nombreTareaLBL: UILabel!
     @IBOutlet weak var fechaTareaLBL: UILabel!
+    @IBOutlet weak var prioridadTareaLBL: UILabel!
     @IBOutlet weak var customContentView: UIView!
     
     
@@ -56,8 +57,14 @@ class ListaTareasCell: UITableViewCell, ReuseIdentifierProtocol {
 
 extension ListaTareasCell: ListaTareasCellProtocol {
     func configuracionCell(data: DownloadNewModel) {
-        //self.imageTarea.image = UIImage(data: data.taskImage) ?? UIImage(named: "placeholder")
+        if let imageUnw = data.taskImage {
+            self.imageTarea.image = UIImage(data: imageUnw)
+        }else{
+            self.imageTarea.image = UIImage(named: "placeholder")
+        }
+        
         self.nombreTareaLBL.text = data.newTask
         self.fechaTareaLBL.text = data.taskDate
+        self.prioridadTareaLBL.text = "Prioridad: \(data.priority ?? "Sin prioridad")"
     }
 }
