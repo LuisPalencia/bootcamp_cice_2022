@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
+    //@SwiftUI.Environment(\.presentationMode) var presenterMode
     @Environment(\.managedObjectContext) private var viewContext
     @FetchRequest(fetchRequest: Contacto.mostrarContactos()) var contactos: FetchedResults<Contacto>
     
@@ -24,7 +25,11 @@ struct ContentView: View {
             VStack{
                 List{
                     ForEach(self.contactos){ item in
-                        ContactosCell(contacto: item)
+                        NavigationLink(
+                            destination: DetalleContactoView(data: item),
+                            label: {
+                                ContactosCell(contacto: item)
+                            })
                     }.onDelete(perform: { indexSet in
                         self.borrarRegistros(data: indexSet)
                     })
@@ -46,6 +51,9 @@ struct ContentView: View {
                         .clipShape(Capsule())
                     })
             }
+            .onAppear(perform: {
+                //contactos.
+            })
             .navigationBarItems(leading: EditButton())
             .navigationTitle("Contactos")
         }

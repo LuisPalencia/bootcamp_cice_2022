@@ -17,6 +17,9 @@
 		0976AAA527D94862004DE39E /* AgregarContactoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0976AAA427D94862004DE39E /* AgregarContactoView.swift */; };
 		0976AAAA27D94911004DE39E /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0976AAA927D94911004DE39E /* TextFieldModifier.swift */; };
 		0976AAB927DA7670004DE39E /* PersistanceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0976AAB827DA7670004DE39E /* PersistanceViewModel.swift */; };
+		0976AABC27DA8B44004DE39E /* DetalleContactoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0976AABB27DA8B44004DE39E /* DetalleContactoView.swift */; };
+		0976AABF27DA8BC4004DE39E /* BotonCircularModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0976AABE27DA8BC4004DE39E /* BotonCircularModifier.swift */; };
+		0976AAC227DA99D8004DE39E /* emoji.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0976AAC127DA99D8004DE39E /* emoji.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		0976AAA427D94862004DE39E /* AgregarContactoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarContactoView.swift; sourceTree = "<group>"; };
 		0976AAA927D94911004DE39E /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
 		0976AAB827DA7670004DE39E /* PersistanceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceViewModel.swift; sourceTree = "<group>"; };
+		0976AABB27DA8B44004DE39E /* DetalleContactoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleContactoView.swift; sourceTree = "<group>"; };
+		0976AABE27DA8BC4004DE39E /* BotonCircularModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotonCircularModifier.swift; sourceTree = "<group>"; };
+		0976AAC127DA99D8004DE39E /* emoji.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = emoji.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,7 @@
 				0976AA9927D9448F004DE39E /* Modelos */,
 				0976AA9427D94299004DE39E /* CoreApp */,
 				0976AA8827D94267004DE39E /* Assets.xcassets */,
+				0976AAC127DA99D8004DE39E /* emoji.jpeg */,
 				0976AA8D27D94267004DE39E /* Info.plist */,
 				0976AA8A27D94267004DE39E /* Preview Content */,
 				0976AA9527D942B7004DE39E /* Contactos.xcdatamodeld */,
@@ -115,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				0976AAA427D94862004DE39E /* AgregarContactoView.swift */,
+				0976AABB27DA8B44004DE39E /* DetalleContactoView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -123,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				0976AAA927D94911004DE39E /* TextFieldModifier.swift */,
+				0976AABE27DA8BC4004DE39E /* BotonCircularModifier.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -185,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0976AA8C27D94267004DE39E /* Preview Assets.xcassets in Resources */,
+				0976AAC227DA99D8004DE39E /* emoji.jpeg in Resources */,
 				0976AA8927D94267004DE39E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,6 +207,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				0976AA9B27D9449D004DE39E /* Contactos.swift in Sources */,
+				0976AABC27DA8B44004DE39E /* DetalleContactoView.swift in Sources */,
+				0976AABF27DA8BC4004DE39E /* BotonCircularModifier.swift in Sources */,
 				0976AA8727D9425E004DE39E /* ContentView.swift in Sources */,
 				0976AAB927DA7670004DE39E /* PersistanceViewModel.swift in Sources */,
 				0976AA9727D942B7004DE39E /* Contactos.xcdatamodeld in Sources */,

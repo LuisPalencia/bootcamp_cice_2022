@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContactosCell: View {
     
-    var contacto: Contacto
+    @ObservedObject var contacto: Contacto
     
     var body: some View {
         HStack{
@@ -18,7 +18,7 @@ struct ContactosCell: View {
                 .background(Color.gray)
                 .clipShape(Circle())
                 .foregroundColor(.white)
-                .font(.title)
+                .font(.title2)
             
             VStack(alignment: .leading, content: {
                 Text(contacto.nombre)
