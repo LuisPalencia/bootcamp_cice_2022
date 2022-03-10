@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0976AAAE27DA6522004DE39E /* DetalleTareaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0976AAAD27DA6522004DE39E /* DetalleTareaCoordinator.swift */; };
+		0976AAB427DA6BA0004DE39E /* TareasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0976AAB227DA6BA0004DE39E /* TareasCell.swift */; };
+		0976AAB527DA6BA0004DE39E /* TareasCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0976AAB327DA6BA0004DE39E /* TareasCell.xib */; };
 		0993AA4127A33DF40000B91C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0993AA4027A33DF40000B91C /* AppDelegate.swift */; };
 		0993AA4A27A33DFC0000B91C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0993AA4927A33DFC0000B91C /* Assets.xcassets */; };
 		0993AA4D27A33DFC0000B91C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0993AA4B27A33DFC0000B91C /* LaunchScreen.storyboard */; };
@@ -51,6 +53,8 @@
 
 /* Begin PBXFileReference section */
 		0976AAAD27DA6522004DE39E /* DetalleTareaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleTareaCoordinator.swift; sourceTree = "<group>"; };
+		0976AAB227DA6BA0004DE39E /* TareasCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareasCell.swift; sourceTree = "<group>"; };
+		0976AAB327DA6BA0004DE39E /* TareasCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TareasCell.xib; sourceTree = "<group>"; };
 		0993AA3D27A33DF40000B91C /* MiTaskVersion3.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiTaskVersion3.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0993AA4027A33DF40000B91C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0993AA4927A33DFC0000B91C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,6 +109,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0976AAB127DA6B6B004DE39E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0976AAB227DA6BA0004DE39E /* TareasCell.swift */,
+				0976AAB327DA6BA0004DE39E /* TareasCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		0993AA3427A33DF40000B91C = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +256,7 @@
 		0993AA7527A7F06C0000B91C /* DetalleTareaView */ = {
 			isa = PBXGroup;
 			children = (
+				0976AAB127DA6B6B004DE39E /* Cell */,
 				0993AA9B27A7F1420000B91C /* DetalleTareaViewController.swift */,
 				0993AA9C27A7F1420000B91C /* DetalleTareaViewController.xib */,
 				0976AAAD27DA6522004DE39E /* DetalleTareaCoordinator.swift */,
@@ -377,6 +391,7 @@
 				0993AA4A27A33DFC0000B91C /* Assets.xcassets in Resources */,
 				0993AA7F27A7F0B90000B91C /* HomeTabBarViewController.xib in Resources */,
 				0993AADE27AC5CED0000B91C /* CategoriaCell.xib in Resources */,
+				0976AAB527DA6BA0004DE39E /* TareasCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +419,7 @@
 				0993AA8827A7F0E60000B91C /* NuevaTareaViewController.swift in Sources */,
 				0993AA6027A5ADA30000B91C /* AppCoreCoordinator.swift in Sources */,
 				0993AAD027A87B9A0000B91C /* DetalleContactoViewController.swift in Sources */,
+				0976AAB427DA6BA0004DE39E /* TareasCell.swift in Sources */,
 				0976AAAE27DA6522004DE39E /* DetalleTareaCoordinator.swift in Sources */,
 				0993AA9227A7F1110000B91C /* ListaTareasViewController.swift in Sources */,
 				0993AAE427AD41420000B91C /* ListaTareasCell.swift in Sources */,
