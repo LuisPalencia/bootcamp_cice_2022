@@ -40,16 +40,16 @@ class TareasCell: UITableViewCell, ReuseIdentifierProtocol {
 
 extension TareasCell: TareasCellProtocol{
     func configuracionCell(data: DownloadNewModel) {
-        if let imageData = Utils.Constantes().kPrefs.object(forKey: Utils.Constantes().kImageProfile) as? Data {
-            self.imageTask.image = UIImage(data: imageData)
+        if let imageUnw = data.taskImage {
+            self.imageTask.image = UIImage(data: imageUnw)
         }else{
             self.imageTask.image = UIImage(named: "placeholder")
         }
         
         self.nombreTareaLBL.text = data.newTask
-        self.fechaTareaLBL.text = data.taskDate
-        self.prioridadTareaLBL.text = data.priority
-        self.categoriaTareaLBL.text = data.taskCategory
+        self.fechaTareaLBL.text = "Fecha: \(data.taskDate ?? "")"
+        self.prioridadTareaLBL.text = "Prioridad: \(data.priority ?? "")"
+        self.categoriaTareaLBL.text = "Categoria: \(data.taskCategory ?? "")"
         self.descripcionTareaLBL.text = data.taskDescription
     }
 }

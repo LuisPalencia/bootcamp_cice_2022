@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="434"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backPerfil" translatesAutoresizingMaskIntoConstraints="NO" id="EoE-5w-8DE">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="task_image" translatesAutoresizingMaskIntoConstraints="NO" id="EoE-5w-8DE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
                         <constraints>
                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="162" id="L1Q-EI-F4Y"/>
@@ -119,8 +119,8 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="backPerfil" width="726" height="443"/>
         <image name="fondodegradado" width="726" height="443"/>
         <image name="placeholder" width="1280" height="800"/>
+        <image name="task_image" width="640" height="503"/>
     </resources>
 </document>
