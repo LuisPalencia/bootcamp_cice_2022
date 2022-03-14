@@ -9,7 +9,7 @@ import SwiftUI
 
 struct MoviesTVSimilarCarrouselView: View {
     
-    let model: [SimilarResult]
+    let model: [SimilarResultShow]
     
     var body: some View {
         VStack(alignment: .leading, spacing: 5, content: {
@@ -27,10 +27,10 @@ struct MoviesTVSimilarCarrouselView: View {
 
 struct MovieTVSimilarCell: View {
     
-    let model: SimilarResult
+    let model: SimilarResultShow
     @ObservedObject var imageLoaderVM = ImageLoader()
     
-    init(model: SimilarResult){
+    init(model: SimilarResultShow){
         self.model = model
         self.imageLoaderVM.loadImage(whit: self.model.posterPathUrl)
     }
@@ -59,7 +59,7 @@ struct MovieTVSimilarCell: View {
 
 struct MoviesTVSimilarCarrouselView_Previews: PreviewProvider {
     static var previews: some View {
-        MoviesTVSimilarCarrouselView(model: [SimilarResult(adult: false,
+        MoviesTVSimilarCarrouselView(model: [SimilarResultShow(adult: false,
                                                     backdropPath: "",
                                                     genreIDS: [0,1],
                                                     id: 1,

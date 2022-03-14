@@ -16,7 +16,13 @@ struct MovieCastCarrouselView: View {
             ScrollView(.horizontal, showsIndicators: false, content: {
                 HStack(alignment: .top, spacing: 12, content: {
                     ForEach(self.model) { item in
-                        MovieCastCell(model: item)
+                        NavigationLink(
+                            destination: DetailPersonCoordinator.view(dto: DetailPersonCoordinatorDTO(dataId: item.id ?? 0)),
+                            label: {
+                                MovieCastCell(model: item)
+                            })
+                            .buttonStyle(PlainButtonStyle())
+                        
                     }
                 })
             })

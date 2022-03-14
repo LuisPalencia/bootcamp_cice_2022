@@ -23,6 +23,16 @@ struct ProfileView: View {
                     .buttonStyleH1()
                     //.font(.title3)
                 }
+                
+                Section(header: Text("Mis favoritos")) {
+                    Button(action: {
+                        self.viewModelSession.logoutSession()
+                    }, label: {
+                        Text("Logout")
+                    })
+                    .buttonStyleH1()
+                    //.font(.title3)
+                }
             }
         }else{
             ContentView()

@@ -80,6 +80,9 @@ struct URLEnpoint {
     
     // Buscador de peliculas
     static let endpointSearchMovie = "search/movie?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")&query=%@"
+    
+    // Endpoint of Details Person
+    static let endpointDetailPerson = "person/%@?api_key=\(Obfuscator().reveal(key: Constants.Api.apiKey))&language=\(NSLocale.current.languageCode ?? "ES")&append_to_response=%@"
 
 }
 

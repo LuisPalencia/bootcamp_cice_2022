@@ -27,75 +27,55 @@ import Foundation
 import Combine
 
 // Input Protocol
-protocol DetailMovieProviderInputProtocol: BaseProviderInputProtocol {
-    func fetchDataDetailMovieProvider()
+protocol DetailPersonProviderInputProtocol: BaseProviderInputProtocol {
+    func fetchDataDetailPersonProvider()
 }
 
-final class DetailMovieProvider: BaseProvider{
+final class DetailPersonProvider: BaseProvider{
     
     // MARK: - DI
-    weak var interactor: DetailMovieProviderOutputProtocol?{
-        super.baseInteractor as? DetailMovieProviderOutputProtocol
+    weak var interactor: DetailPersonProviderOutputProtocol?{
+        super.baseInteractor as? DetailPersonProviderOutputProtocol
     }
     
     let networkService: NetworkServiceInputProtocol = NetworkService()
     var cancellable: Set<AnyCancellable> = []
-    var dataDTO: DetailMovieCoordinatorDTO?
+    var dataDTO: DetailPersonCoordinatorDTO?
     
 }
 
-extension DetailMovieProvider: DetailMovieProviderInputProtocol{
+extension DetailPersonProvider: DetailPersonProviderInputProtocol{
     
-    /*
     // ->Este metodo nos muestra la forma de suscripcion del metodo al AnyPublisher
      
-    func fetchDataNowPlayingProvider(){
-        let request = RequestDTO(params: nil,
-                                 method: .get,
-                                 endpoint: URLEnpoint.endpointMoviesNowPlaying,
-                                 urlContext: .webService)
-        self.networkService.requestGeneric(payloadRequest: request, entityClass: MoviesServerModel.self)
+    func fetchDataDetailPersonProvider(){
+        self.networkService.requestGeneric(payloadRequest: DetailPersonRequestDTO.requestDataDetail(idPerson: "\(dataDTO?.dataId ?? 0)", moreParams: "movie_credits,tv_credits"), entityClass: DetailPersonServerModel.self)
             .sink { [weak self] completion in
                 guard self != nil else { return }
                 switch completion{
                 case .finished:
                     debugPrint("finished")
                 case let .failure(error):
-                    self?.interactor?.setInformationNowPlaying(completion: .failure(error))
+                    self?.interactor?.setInformationDetailPerson(completion: .failure(error))
                 }
             } receiveValue: { [weak self] resultData in
                 guard self != nil else { return }
-                self?.interactor?.setInformationNowPlaying(completion: .success(resultData.results))
+                self?.interactor?.setInformationDetailPerson(completion: .success(resultData))
             }
             .store(in: &cancellable)
     }
- */
-    func fetchDataDetailMovieProvider() {
-        self.networkService.requestGeneric(payloadRequest: DetailMovieRequestDTO.requestDataDetail(idMovie: "\(dataDTO?.dataId ?? 0)", moreParams: "credits,videos,similar"), entityClass: DetailMovieServerModel.self)
-            .sink { [weak self] completion in
-                guard self != nil else { return }
-                switch completion{
-                case .finished:
-                    debugPrint("finished")
-                case let .failure(error):
-                    self?.interactor?.setInformationDetailMovie(completion: .failure(error))
-                }
-            } receiveValue: { [weak self] resultData in
-                guard self != nil else { return }
-                self?.interactor?.setInformationDetailMovie(completion: .success(resultData))
-            }
-            .store(in: &cancellable)
-    }
+ 
     
 }
 
 // MARK: - Request de apoyo
-struct DetailMovieRequestDTO {
+struct DetailPersonRequestDTO {
     
-    static func requestDataDetail(idMovie: String, moreParams: String) -> RequestDTO {
-        let argument: [CVarArg] = [idMovie, moreParams]
-        let urlComplete = String(format: URLEnpoint.endpointDetailMovie, arguments: argument)
+    static func requestDataDetail(idPerson: String, moreParams: String) -> RequestDTO {
+        let argument: [CVarArg] = [idPerson, moreParams]
+        let urlComplete = String(format: URLEnpoint.endpointDetailPerson, arguments: argument)
         let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete, urlContext: .webService)
         return request
     }
 }
+

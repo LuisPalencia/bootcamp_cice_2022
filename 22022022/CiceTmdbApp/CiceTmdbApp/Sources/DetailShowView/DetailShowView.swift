@@ -200,11 +200,16 @@ struct DetailShowView: View {
                     }
                 })
             }
-            
-            
-            
-            
         })
+        .padding()
+        .padding(.bottom, 100)
+        .background(
+            roundedShape()
+                .fill(Color.white)
+                .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: -50)
+        
+        )
+        .padding(.top, -50)
     }
 }
 

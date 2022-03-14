@@ -40,7 +40,7 @@ struct DetailShowServerModel: Codable {
     let voteAverage: Double?
     let voteCount: Int?
     let credits: Credits?
-    let similar: Similar?
+    let similar: SimilarShow?
     let videos: Videos?
 
     enum CodingKeys: String, CodingKey {
@@ -222,9 +222,9 @@ struct Season: Codable, Identifiable {
 }
 
 // MARK: - Similar
-struct Similar: Codable {
+struct SimilarShow: Codable {
     let page: Int?
-    let results: [SimilarResult]?
+    let results: [SimilarResultShow]?
     let totalPages: Int?
     let totalResults: Int?
 
@@ -237,7 +237,7 @@ struct Similar: Codable {
 }
 
 // MARK: - SimilarResult
-struct SimilarResult: Codable, Identifiable {
+struct SimilarResultShow: Codable, Identifiable {
     let adult: Bool?
     let backdropPath: String?
     let genreIDS: [Int]?
