@@ -10,6 +10,7 @@ import SwiftUI
 struct ProfileView: View {
     
     @EnvironmentObject var viewModelSession: LoginViewModel
+    @State private var isPresented = false
     
     var body: some View {
         if self.viewModelSession.userLogged != nil{
@@ -26,11 +27,14 @@ struct ProfileView: View {
                 
                 Section(header: Text("Mis favoritos")) {
                     Button(action: {
-                        self.viewModelSession.logoutSession()
+                        self.isPresented.toggle()
                     }, label: {
-                        Text("Logout")
+                        Text("Favourites")
                     })
                     .buttonStyleH1()
+                    .sheet(isPresented: self.$isPresented, content: {
+                        FavouritesCoordinator.navigation()
+                    })
                     //.font(.title3)
                 }
             }

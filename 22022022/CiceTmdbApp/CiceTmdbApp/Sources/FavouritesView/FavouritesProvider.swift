@@ -27,26 +27,32 @@ import Foundation
 import Combine
 
 // Input Protocol
-protocol DetailMovieProviderInputProtocol: BaseProviderInputProtocol {
-    func fetchDataDetailMovieProvider()
-    func saveDataAsFavouritesProvider()
+protocol FavouritesProviderInputProtocol: BaseProviderInputProtocol {
+    func fetchDataFromDBProvider()
 }
 
-final class DetailMovieProvider: BaseProvider{
+final class FavouritesProvider: BaseProvider{
     
     // MARK: - DI
-    weak var interactor: DetailMovieProviderOutputProtocol?{
-        super.baseInteractor as? DetailMovieProviderOutputProtocol
+    weak var interactor: FavouritesProviderOutputProtocol?{
+        super.baseInteractor as? FavouritesProviderOutputProtocol
     }
     
     let networkService: NetworkServiceInputProtocol = NetworkService()
     var cancellable: Set<AnyCancellable> = []
-    var dataDTO: DetailMovieCoordinatorDTO?
+    
+    func getMovieFromDB(completionHandler: @escaping (DownloadNewModels?) -> ()){
+        DDBB.shared.getAllLocal { results in
+            completionHandler(results)
+        } failure: { error in
+            debugPrint(error ?? "")
+        }
+
+    }
     
 }
 
-extension DetailMovieProvider: DetailMovieProviderInputProtocol{
-    
+extension FavouritesProvider: FavouritesProviderInputProtocol{
     /*
     // ->Este metodo nos muestra la forma de suscripcion del metodo al AnyPublisher
      
@@ -71,41 +77,40 @@ extension DetailMovieProvider: DetailMovieProviderInputProtocol{
             .store(in: &cancellable)
     }
  */
-    func fetchDataDetailMovieProvider() {
-        self.networkService.requestGeneric(payloadRequest: DetailMovieRequestDTO.requestDataDetail(idMovie: "\(dataDTO?.dataId ?? 0)", moreParams: "credits,videos,similar"), entityClass: DetailMovieServerModel.self)
-            .sink { [weak self] completion in
-                guard self != nil else { return }
-                switch completion{
-                case .finished:
-                    debugPrint("finished")
-                case let .failure(error):
-                    self?.interactor?.setInformationDetailMovie(completion: .failure(error))
-                }
-            } receiveValue: { [weak self] resultData in
-                guard self != nil else { return }
-                self?.interactor?.setInformationDetailMovie(completion: .success(resultData))
-            }
-            .store(in: &cancellable)
-    }
     
-    func saveDataAsFavouritesProvider(){
-        DDBB.shared.addLocal(favorite: DownloadNewModel(pId: "\(self.dataDTO?.dataId ?? 0)")) { result in
-            self.interactor?.savedCorrectly()
-        } failure: { error in
-            debugPrint("Error no se ha salvado correctamente, \(error ?? "")")
+    func fetchDataFromDBProvider(){
+        self.getMovieFromDB { results in
+            results?.downloads.map{ item in
+                item.map { itemX in
+                    self.networkService.requestGeneric(payloadRequest: FavouritesRequestDTO.requestData(movieId: itemX.id, supportParameters: "videos,credits"), entityClass: DetailMovieServerModel.self)
+                        .sink { [weak self] completion in
+                            guard self != nil else { return }
+                            switch completion{
+                            case .finished:
+                                debugPrint("finished")
+                            case let .failure(error):
+                                self?.interactor?.setInformationFavourites(completion: .failure(error))
+                            }
+                        } receiveValue: { [weak self] resultData in
+                            guard self != nil else { return }
+                            self?.interactor?.setInformationFavourites(completion: .success(resultData))
+                        }
+                        .store(in: &self.cancellable)
+                }
+            }
         }
-
     }
     
 }
 
 // MARK: - Request de apoyo
-struct DetailMovieRequestDTO {
+struct FavouritesRequestDTO {
     
-    static func requestDataDetail(idMovie: String, moreParams: String) -> RequestDTO {
-        let argument: [CVarArg] = [idMovie, moreParams]
+    static func requestData(movieId: String, supportParameters: String) -> RequestDTO {
+        let argument: [CVarArg] = [movieId, supportParameters]
         let urlComplete = String(format: URLEnpoint.endpointDetailMovie, arguments: argument)
         let request = RequestDTO(params: nil, method: .get, endpoint: urlComplete, urlContext: .webService)
         return request
     }
+ 
 }

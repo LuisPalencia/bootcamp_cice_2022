@@ -94,8 +94,8 @@
             filePath = "CiceTmdbApp/Sources/DetailMovieView/DetailMovieView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "bodyView"
             landmarkType = "24">
          </BreakpointContent>
@@ -110,8 +110,8 @@
             filePath = "CiceTmdbApp/Sources/DetailMovieView/DetailMovieView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "175"
-            endingLineNumber = "175"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
             landmarkName = "bodyView"
             landmarkType = "24">
          </BreakpointContent>
@@ -145,6 +145,22 @@
             startingLineNumber = "77"
             endingLineNumber = "77"
             landmarkName = "requestDataDetail(idPerson:moreParams:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "33B29BD0-C103-4689-91EB-A90891F58A32"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CiceTmdbApp/Sources/FavouritesView/FavouritesViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "setInformationFavourites(data:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

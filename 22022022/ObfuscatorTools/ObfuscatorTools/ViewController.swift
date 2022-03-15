@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print(Obfuscator().bytesByObfuscatingString(string: "aac47ddd12dd972d3bc906d649ec1c68"))
+        print(Obfuscator().bytesByObfuscatingString(string: "64b4292692msh3c16ecdda490640p10aaf5jsna5ce257e6e41"))
     }
 
 
