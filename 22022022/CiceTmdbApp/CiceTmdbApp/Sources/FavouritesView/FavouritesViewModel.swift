@@ -50,7 +50,6 @@ final class FavouritesViewModel: BaseViewModel, ObservableObject {
 // Output del Interactor
 extension FavouritesViewModel: FavouritesInteractorOutputProtocol {
     func setInformationFavourites(data: [DetailMovieServerModel]?) {
-        debugPrint("ACTUALIZANDO FAVORITOS")
         self.dataSource?.removeAll()
         self.dataSource = data ?? []
     }
